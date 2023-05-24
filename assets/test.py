@@ -7,10 +7,10 @@ eye_data = cv.CascadeClassifier(
     "C:\\Users\\reday\\Documents\\Drone-Project\\assets\\haarcascade_eye.xml"
 )
 
-image = cv.imread("C:\\Users\\reday\\Documents\\Drone-Project\\assets\\face.jpg")
+image = cv.imread("C:\\Users\\reday\\Documents\\Drone-Project\\assets\\newface.jpg")
 
 gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
-face = face_data.detectMultiScale(gray, 1.3, 5)
+face = face_data.detectMultiScale(gray, 1.1, 5)
 print(len(face))
 
 for x, y, w, h in face:
