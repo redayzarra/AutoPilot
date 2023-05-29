@@ -73,3 +73,16 @@ class Drone(object):
             logging.info(f"Socket connection to drone at {self.droneAddress} closed.")
         except Exception as e:
             logging.error(f"Failed to close the socket connection: {e}")
+
+    def send_command(self, command):
+        """Send a command to the drone."""
+        logging.info({"action": "send_command", "command": command})
+        self.socket.sendto(command.encode("utf-8"), self.droneAddress)
+
+    def takeoff(self):
+        """Command the drone to take off."""
+        self.send_command("takeoff")
+
+    def land(self):
+        """Command the drone to land."""
+        self.send_command("land")
