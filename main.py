@@ -86,3 +86,15 @@ class Drone(object):
     def land(self):
         """Command the drone to land."""
         self.send_command("land")
+
+
+if __name__ == "__main__":
+    myDrone = Drone("config.json")
+    try:
+        myDrone.takeoff()
+        time.sleep(10)
+    except Exception as e:
+        logging.error(f"An error occurred: {e}")
+    finally:
+        myDrone.land()
+        myDrone.stop()
