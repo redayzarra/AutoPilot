@@ -1,0 +1,6 @@
+2023-05-29 06:23:04,458 - INFO: Command sent to drone at ('192.168.10.1', 8889)
+2023-05-29 06:23:04,458 - INFO: Stream started on drone at ('192.168.10.1', 8889)
+2023-05-29 06:23:04,459 - INFO: {'action': 'send_command', 'command': 'takeoff'}
+2023-05-29 06:23:14,460 - INFO: {'action': 'send_command', 'command': 'land'}
+2023-05-29 06:23:14,461 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.
+2023-05-29 06:23:14,469 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.

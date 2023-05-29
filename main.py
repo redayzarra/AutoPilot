@@ -76,7 +76,7 @@ class Drone(object):
 
     def send_command(self, command):
         """Send a command to the drone."""
-        logging.info({"action": "send_command", "command": command})
+        logging.info({"Action: Sending command", f"Command: {command}"})
         self.socket.sendto(command.encode("utf-8"), self.droneAddress)
 
     def takeoff(self):
