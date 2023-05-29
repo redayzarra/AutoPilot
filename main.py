@@ -62,4 +62,14 @@ class Drone(object):
             logging.error(f"Socket error occurred: {e}")
             raise
 
+    def __del__(self):
+        """Cleanup method called when the instance is being deleted."""
+        self.stop()
 
+    def stop(self):
+        """Close the socket connection to the drone."""
+        try:
+            self.socket.close()
+            logging.info(f"Socket connection to drone at {self.droneAddress} closed.")
+        except Exception as e:
+            logging.error(f"Failed to close the socket connection: {e}")
