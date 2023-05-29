@@ -1,6 +1,6 @@
 {
     "hostIP": "192.168.10.2",
-    "hostPort": "8889",
+    "hostPort": 8889,
     "droneIP": "192.168.10.1",
-    "dronePort": "8889"
+    "dronePort": 8889
 }

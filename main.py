@@ -37,7 +37,7 @@ class Drone(object):
 
         self.hostIp = config["hostIP"]
         self.hostPort = config["hostPort"]
-        self.droneIP = config["droneIp"]
+        self.droneIP = config["droneIP"]
         self.dronePort = config["dronePort"]
 
         self.droneAddress = (self.droneIP, self.dronePort)
