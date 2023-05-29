@@ -35,3 +35,13 @@ class Drone(object):
             logging.error(f"Config file {config_file} has invalid JSON.")
             raise
 
+        self.hostIp = config["hostIP"]
+        self.hostPort = config["hostPort"]
+        self.droneIP = config["droneIp"]
+        self.dronePort = config["dronePort"]
+
+        self.droneAddress = (self.droneIP, self.dronePort)
+        self.socket = None
+        self.initialize_socket()
+
+
