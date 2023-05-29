@@ -44,4 +44,22 @@ class Drone(object):
         self.socket = None
         self.initialize_socket()
 
+    def initialize_socket(self):
+        """
+        Initialize the socket connection to the drone and send the initial
+        'command' and 'streamon' commands.
+        """
+        try:
+            self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            self.socket.bind((self.hostIp, self.hostPort))
+
+            self.socket.sendto(b"command", self.droneAddress)
+            logging.info(f"Command sent to drone at {self.droneAddress}")
+
+            self.socket.sendto(b"streamon", self.droneAddress)
+            logging.info(f"Stream started on drone at {self.droneAddress}")
+        except socket.error as e:
+            logging.error(f"Socket error occurred: {e}")
+            raise
+
 
