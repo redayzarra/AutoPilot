@@ -35,11 +35,12 @@ class Drone(object):
             logging.error(f"Config file {config_file} has invalid JSON.")
             raise
 
-        self.hostIp = config["hostIP"]
+        self.hostIP = config["hostIP"]
         self.hostPort = config["hostPort"]
         self.droneIP = config["droneIP"]
         self.dronePort = config["dronePort"]
 
+        self.hostAddress = (self.hostIP, self.hostPort)
         self.droneAddress = (self.droneIP, self.dronePort)
         self.socket = None
         self.initialize_socket()
@@ -51,7 +52,7 @@ class Drone(object):
         """
         try:
             self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            self.socket.bind((self.hostIp, self.hostPort))
+            self.socket.bind((self.hostAddress))
 
             self.socket.sendto(b"command", self.droneAddress)
             logging.info(f"Command sent to drone at {self.droneAddress}")
