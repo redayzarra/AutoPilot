@@ -1,9 +1,9 @@
 import json
+import logging
 import os
 import socket
 import sys
 import time
-import logging
 
 from logger import initialize_logging
 
@@ -52,7 +52,7 @@ class Drone(object):
         """
         try:
             self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            self.socket.bind((self.hostAddress))
+            self.socket.bind(self.hostAddress)
 
             self.socket.sendto(b"command", self.droneAddress)
             logging.info(f"Command sent to drone at {self.droneAddress}")
@@ -77,7 +77,7 @@ class Drone(object):
 
     def send_command(self, command):
         """Send a command to the drone."""
-        logging.info({"Action: Sending command", f"Command: {command}"})
+        logging.info({f"Action: Sending command - Command: {command}"})
         self.socket.sendto(command.encode("utf-8"), self.droneAddress)
 
     def takeoff(self):
