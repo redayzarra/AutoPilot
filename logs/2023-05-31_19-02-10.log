@@ -1,0 +1,2 @@
+2023-05-31 19:02:10,945 - ERROR: Socket error occurred: [WinError 10049] The requested address is not valid in its context
+2023-05-31 19:02:10,948 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.

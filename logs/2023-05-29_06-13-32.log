@@ -1,1 +1,0 @@
-2023-05-29 06:13:32,866 - ERROR: Failed to close the socket connection: 'Drone' object has no attribute 'socket'

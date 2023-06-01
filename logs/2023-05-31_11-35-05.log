@@ -1,6 +1,0 @@
-2023-05-31 11:35:05,552 - INFO: Command sent to drone at ('192.168.10.1', 8889)
-2023-05-31 11:35:05,552 - INFO: Stream started on drone at ('192.168.10.1', 8889)
-2023-05-31 11:35:05,553 - INFO: {"Action: Sending command - Command: b'takeoff'"}
-2023-05-31 11:35:05,553 - ERROR: An error occurred: 'bytes' object has no attribute 'encode'
-2023-05-31 11:35:05,553 - INFO: {"Action: Sending command - Command: b'land'"}
-2023-05-31 11:35:05,558 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.
