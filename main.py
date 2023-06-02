@@ -106,20 +106,32 @@ class Drone:
 
     def send_command(self, command):
         """Send a command to the drone."""
+        logging.info(f"Action: Sending command - Command: {command}")
+
         try:
             self.socket.sendto(command.encode("utf-8"), self.droneAddress)
-            logging.info(f"Action: Sending command - Command: {command}")
         except Exception as e:
             logging.error(f"Failed to send command: {command} - Error: {e}")
             raise
 
+        retry = 0
+        while self.response is None and retry < 3:
+            time.sleep(0.3)
+            retry += 1
+
+        if self.response is None:
+            logging.error(f"No response from drone for command: {command}")
+            return None
+
+        return self.response.decode("utf-8")
+
     def takeoff(self):
         """Command the drone to take off."""
-        self.send_command("takeoff")
+        return self.send_command("takeoff")
 
     def land(self):
         """Command the drone to land."""
-        self.send_command("land")
+        return self.send_command("land")
 
 
 if __name__ == "__main__":
