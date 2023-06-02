@@ -52,6 +52,9 @@ class Drone:
         self.thread = threading.Thread(target=self.receive, args=(self.stop_event,))
         self.thread.start()
 
+        self.distance = config["defaultDistance"]
+        self.DIRECTIONS = ("up", "down", "left", "right", "forward", "back")
+
         try:
             self.is_imperial = bool(config.get("imperial", 0))
         except ValueError:
@@ -79,7 +82,7 @@ class Drone:
             self.socket.bind(self.hostAddress)
 
             self.send_command("command")
-            logging.info(f"Action: Sending Command at {self.droneIP}")
+            logging.info(f"Action: Initiating Drone at {self.droneIP}")
 
             self.send_command("streamon")
             logging.info(f"Action: Turning Stream On at {self.droneIP}")
@@ -170,6 +173,24 @@ class Drone:
 
         logging.info(f"Moving drone to {direction} by {distance}")
         return response
+
+    def move_in_direction(self, direction, distance=None):
+        """
+        Moves the drone in the specified direction by the given distance.
+
+        Args:
+            direction (str): The direction to move in. Should be one of DIRECTIONS.
+            distance (float): The distance to move. If None, uses self.distance.
+        Returns:
+            str: Response from the drone.
+        """
+        if direction not in self.DIRECTIONS:
+            raise ValueError(
+                f"Invalid direction '{direction}'. Must be one of {self.DIRECTIONS}."
+            )
+        if distance is None:
+            distance = self.distance
+        return self.move(direction, distance)
 
 
 if __name__ == "__main__":

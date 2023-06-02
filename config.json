@@ -3,6 +3,6 @@
     "hostPort": 8889,
     "droneIP": "192.168.10.1",
     "dronePort": 8889,
-    "distance": 0.3,
+    "defaultDistance": 0.3,
     "imperial": 0
 }
