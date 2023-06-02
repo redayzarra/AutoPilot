@@ -29,31 +29,36 @@ class Drone:
         try:
             with open(config_file, "r") as f:
                 config = json.load(f)
-
-            self.hostIP = config["hostIP"]
-            self.hostPort = config["hostPort"]
-            self.droneIP = config["droneIP"]
-            self.dronePort = config["dronePort"]
-
-            self.hostAddress = (self.hostIP, self.hostPort)
-            self.droneAddress = (self.droneIP, self.dronePort)
-            self.socket = None
-            self.initialize_socket()
-
-            self.response = None
-            self.stop_event = threading.Event()
-            self.thread = threading.Thread(target=self.receive, args=(self.stop_event,))
-            self.thread.start()
-
         except FileNotFoundError:
             logging.error(f"Config file {config_file} not found.")
             raise
         except json.JSONDecodeError:
             logging.error(f"Config file {config_file} has invalid JSON.")
             raise
-        except Exception as e:
-            logging.error(f"Failed to initialize Drone: {e}")
-            raise
+
+        self.hostIP = config["hostIP"]
+        self.hostPort = config["hostPort"]
+        self.droneIP = config["droneIP"]
+        self.dronePort = config["dronePort"]
+
+        self.hostAddress = (self.hostIP, self.hostPort)
+        self.droneAddress = (self.droneIP, self.dronePort)
+
+        self.socket = None
+        self.initialize_socket()
+
+        self.response = None
+        self.stop_event = threading.Event()
+        self.thread = threading.Thread(target=self.receive, args=(self.stop_event,))
+        self.thread.start()
+
+        try:
+            self.is_imperial = bool(config.get("imperial", 0))
+        except ValueError:
+            logging.error(
+                "Invalid value for imperial in config. Expected 0 or 1, setting default to False."
+            )
+            self.is_imperial = False
 
     def receive(self, stop_event):
         while not stop_event.is_set():
