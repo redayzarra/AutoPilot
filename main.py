@@ -44,6 +44,7 @@ class Drone:
             self.stop_event = threading.Event()
             self.thread = threading.Thread(target=self.receive, args=(self.stop_event,))
             self.thread.start()
+
         except FileNotFoundError:
             logging.error(f"Config file {config_file} not found.")
             raise
@@ -77,7 +78,6 @@ class Drone:
 
             self.send_command("streamon")
             logging.info(f"Action: Turning Stream On at {self.droneIP}")
-
         except socket.error as e:
             logging.error(f"Socket error occurred: {e}")
             raise
@@ -86,14 +86,24 @@ class Drone:
         """Cleanup method called when the instance is being deleted."""
         self.stop()
 
-    def stop(self):
-        """Close the socket connection to the drone."""
-        try:
-            self.stop_event.set()
-            self.socket.close()
-            logging.info(f"Socket connection to drone at {self.droneAddress} closed.")
-        except Exception as e:
-            logging.error(f"Failed to close the socket connection: {e}")
+
+def stop(self):
+    """Close the socket connection to the drone."""
+    try:
+        self.stop_event.set()
+        max_retries = 10
+        sleep_interval = 0.3
+        for _ in range(max_retries):
+            if not self.thread.is_alive():
+                break
+            time.sleep(sleep_interval)
+        else:
+            logging.warning("Could not stop the thread within the allocated time.")
+
+        self.socket.close()
+        logging.info(f"Socket connection to drone at {self.droneAddress} closed.")
+    except Exception as e:
+        logging.error(f"Failed to close the socket connection: {e}")
 
     def send_command(self, command):
         """Send a command to the drone."""
