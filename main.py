@@ -138,6 +138,39 @@ class Drone:
         """Command the drone to land."""
         return self.send_command("land")
 
+    def move(self, direction, distance):
+        """
+        Move the drone to a specific direction by a specific distance.
+
+        Args:
+            direction (str): Direction to move the drone.
+            distance (float): Distance to move the drone.
+
+        Returns:
+            str: Response from the drone.
+        """
+        try:
+            distance = float(distance)
+        except ValueError:
+            logging.error(f"Invalid distance provided: {distance}")
+            raise
+
+        # Metric conversion factor for imperial to metric distance.
+        # 1 foot equals 30.48 centimeters.
+        imperial_to_metric = 30.48
+
+        # Default factor for metric system (100 cm = 1 m)
+        default_factor = 100
+
+        factor = imperial_to_metric if self.is_imperial else default_factor
+        distance = int(round(distance * factor))
+
+        command = f"{direction} {distance}"
+        response = self.send_command(command)
+
+        logging.info(f"Moving drone to {direction} by {distance}")
+        return response
+
 
 if __name__ == "__main__":
     myDrone = Drone("config.json")
