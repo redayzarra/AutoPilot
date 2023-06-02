@@ -45,10 +45,13 @@ class Drone:
         self.droneAddress = (self.droneIP, self.dronePort)
 
         self.socket = None
-        self.initialize_socket()
-
         self.response = None
         self.stop_event = threading.Event()
+        self.thread = None
+
+        self.initialize_socket()
+
+        # Start the thread after `stop_event` has been defined
         self.thread = threading.Thread(target=self.receive, args=(self.stop_event,))
         self.thread.start()
 

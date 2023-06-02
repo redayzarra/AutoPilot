@@ -1,0 +1,2 @@
+2023-06-02 08:18:27,696 - INFO: Action: Sending command - Command: command
+2023-06-02 08:18:27,700 - ERROR: Failed to close the socket connection: 'Drone' object has no attribute 'stop_event'
