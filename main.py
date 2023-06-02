@@ -198,6 +198,21 @@ if __name__ == "__main__":
     try:
         myDrone.takeoff()
         time.sleep(10)
+
+        # DIRECTIONS = ("up", "down", "left", "right", "forward", "back")
+        myDrone.move_in_direction("forward", 0.5)
+        time.sleep(5)
+        myDrone.move_in_direction("right", 0.5)
+        time.sleep(5)
+        myDrone.move_in_direction("left", 0.5)
+        time.sleep(5)
+        myDrone.move_in_direction("back", 0.5)
+        time.sleep(5)
+        myDrone.move_in_direction("up", 0.5)
+        time.sleep(5)
+        myDrone.move_in_direction("down", 0.5)
+        time.sleep(5)
+
         myDrone.land()
     except Exception as e:
         logging.error(f"An error occurred: {e}")
