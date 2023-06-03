@@ -1,0 +1,33 @@
+2023-06-03 15:25:52,630 - INFO: Action: Sending command - Command: command
+2023-06-03 15:25:53,533 - ERROR: No response from drone for command: command
+2023-06-03 15:25:53,534 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-03 15:25:53,535 - INFO: Action: Sending command - Command: streamon
+2023-06-03 15:25:54,437 - ERROR: No response from drone for command: streamon
+2023-06-03 15:25:54,437 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-03 15:25:54,438 - INFO: Action: Sending command - Command: takeoff
+2023-06-03 15:25:54,438 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 15:25:54,440 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 15:26:02,534 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 15:26:04,439 - INFO: Action: Sending command - Command: forward 50
+2023-06-03 15:26:04,440 - INFO: Moving drone to forward by 50
+2023-06-03 15:26:06,567 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 15:26:09,442 - INFO: Action: Sending command - Command: right 50
+2023-06-03 15:26:09,443 - INFO: Moving drone to right by 50
+2023-06-03 15:26:11,366 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 15:26:14,444 - INFO: Action: Sending command - Command: left 50
+2023-06-03 15:26:14,444 - INFO: Moving drone to left by 50
+2023-06-03 15:26:16,646 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 15:26:19,445 - INFO: Action: Sending command - Command: back 50
+2023-06-03 15:26:19,445 - INFO: Moving drone to back by 50
+2023-06-03 15:26:21,593 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 15:26:24,446 - INFO: Action: Sending command - Command: up 50
+2023-06-03 15:26:24,446 - INFO: Moving drone to up by 50
+2023-06-03 15:26:26,693 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 15:26:29,448 - INFO: Action: Sending command - Command: down 50
+2023-06-03 15:26:29,448 - INFO: Moving drone to down by 50
+2023-06-03 15:26:32,105 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 15:26:34,449 - INFO: Action: Sending command - Command: land
+2023-06-03 15:26:37,453 - WARNING: Could not stop the thread within the allocated time.
+2023-06-03 15:26:37,454 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.
+2023-06-03 15:26:37,454 - ERROR: Action: Receiving response - Error: [WinError 10038] An operation was attempted on something that is not a socket
+2023-06-03 15:26:37,461 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.

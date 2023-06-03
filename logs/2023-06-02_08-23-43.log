@@ -1,0 +1,12 @@
+2023-06-02 08:23:43,917 - INFO: Action: Sending command - Command: command
+2023-06-02 08:23:44,819 - ERROR: No response from drone for command: command
+2023-06-02 08:23:44,819 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-02 08:23:44,819 - INFO: Action: Sending command - Command: streamon
+2023-06-02 08:23:45,721 - ERROR: No response from drone for command: streamon
+2023-06-02 08:23:45,721 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-02 08:23:45,722 - INFO: Action: Sending command - Command: takeoff
+2023-06-02 08:23:45,722 - INFO: Action: Receiving response - Response: b'\xcc\x18\x01\xb9\x88V\x00$\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00Z\x00\x00d\x10\x00\x06\x00\x00\x00\x00\x00\x86\xc8'
+2023-06-02 08:23:45,722 - ERROR: An error occurred: 'utf-8' codec can't decode byte 0xcc in position 0: invalid continuation byte
+2023-06-02 08:23:45,722 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-02 08:23:46,023 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.
+2023-06-02 08:23:46,026 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.
