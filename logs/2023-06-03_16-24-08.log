@@ -1,0 +1,16 @@
+2023-06-03 16:24:08,676 - INFO: Action: Sending command - Command: command
+2023-06-03 16:24:09,577 - ERROR: No response from drone for command: command
+2023-06-03 16:24:09,577 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-03 16:24:09,577 - INFO: Action: Sending command - Command: streamon
+2023-06-03 16:24:10,479 - ERROR: No response from drone for command: streamon
+2023-06-03 16:24:10,480 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-03 16:24:10,482 - INFO: Action: Sending command - Command: takeoff
+2023-06-03 16:24:10,483 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 16:24:10,484 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 16:24:10,521 - INFO: Action: Receiving response - Response: b'error'
+2023-06-03 16:24:20,484 - INFO: Action: Sending command - Command: forward 50
+2023-06-03 16:24:20,485 - INFO: Moving drone to forward by 50
+2023-06-03 16:24:20,519 - INFO: Action: Receiving response - Response: b'error Motor stop'
+2023-06-03 16:24:25,486 - INFO: Action: Sending command - Command: right 50
+2023-06-03 16:24:25,486 - INFO: Moving drone to right by 50
+2023-06-03 16:24:25,524 - INFO: Action: Receiving response - Response: b'error Motor stop'

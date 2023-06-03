@@ -1,0 +1,10 @@
+2023-06-03 16:34:23,964 - INFO: Action: Sending command - Command: command
+2023-06-03 16:34:24,866 - ERROR: No response from drone for command: command
+2023-06-03 16:34:24,867 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-03 16:34:24,868 - INFO: Action: Sending command - Command: streamon
+2023-06-03 16:34:25,772 - ERROR: No response from drone for command: streamon
+2023-06-03 16:34:25,772 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-03 16:34:25,774 - INFO: Action: Sending command - Command: takeoff
+2023-06-03 16:34:25,774 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 16:34:25,776 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 16:34:25,804 - INFO: Action: Receiving response - Response: b'error'

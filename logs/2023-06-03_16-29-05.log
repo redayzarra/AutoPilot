@@ -1,0 +1,32 @@
+2023-06-03 16:29:05,302 - INFO: Action: Sending command - Command: command
+2023-06-03 16:29:06,204 - ERROR: No response from drone for command: command
+2023-06-03 16:29:06,204 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-03 16:29:06,204 - INFO: Action: Sending command - Command: streamon
+2023-06-03 16:29:07,107 - ERROR: No response from drone for command: streamon
+2023-06-03 16:29:07,108 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-03 16:29:07,111 - INFO: Action: Sending command - Command: takeoff
+2023-06-03 16:29:07,112 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 16:29:07,115 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-03 16:29:07,127 - INFO: Action: Receiving response - Response: b'error'
+2023-06-03 16:29:17,113 - INFO: Action: Sending command - Command: forward 50
+2023-06-03 16:29:17,114 - INFO: Moving drone to forward by 50
+2023-06-03 16:29:17,175 - INFO: Action: Receiving response - Response: b'error Motor stop'
+2023-06-03 16:29:22,116 - INFO: Action: Sending command - Command: right 50
+2023-06-03 16:29:22,116 - INFO: Moving drone to right by 50
+2023-06-03 16:29:22,174 - INFO: Action: Receiving response - Response: b'error Motor stop'
+2023-06-03 16:29:27,118 - INFO: Action: Sending command - Command: left 50
+2023-06-03 16:29:27,119 - INFO: Moving drone to left by 50
+2023-06-03 16:29:27,176 - INFO: Action: Receiving response - Response: b'error Motor stop'
+2023-06-03 16:29:32,120 - INFO: Action: Sending command - Command: back 50
+2023-06-03 16:29:32,120 - INFO: Moving drone to back by 50
+2023-06-03 16:29:32,178 - INFO: Action: Receiving response - Response: b'error Motor stop'
+2023-06-03 16:29:37,122 - INFO: Action: Sending command - Command: up 50
+2023-06-03 16:29:37,123 - INFO: Moving drone to up by 50
+2023-06-03 16:29:37,176 - INFO: Action: Receiving response - Response: b'error Motor stop'
+2023-06-03 16:29:42,125 - INFO: Action: Sending command - Command: down 50
+2023-06-03 16:29:42,125 - INFO: Moving drone to down by 50
+2023-06-03 16:29:42,173 - INFO: Action: Receiving response - Response: b'error Motor stop'
+2023-06-03 16:29:47,126 - INFO: Action: Sending command - Command: land
+2023-06-03 16:29:47,173 - INFO: Action: Receiving response - Response: b'error'
+2023-06-03 16:29:47,427 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.
+2023-06-03 16:29:47,430 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.

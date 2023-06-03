@@ -5,7 +5,6 @@ import socket
 import sys
 import threading
 import time
-from enum import Enum
 
 from logger import initialize_logging
 
@@ -20,14 +19,6 @@ class Drone:
     commands to the drone.
     """
 
-    class Direction(Enum):
-        UP = "up"
-        DOWN = "down"
-        LEFT = "left"
-        RIGHT = "right"
-        FORWARD = "forward"
-        BACK = "back"
-
     def __init__(self, config_file):
         """
         Initialize a Drone instance using the provided configuration file.
@@ -38,9 +29,11 @@ class Drone:
         try:
             with open(config_file, "r") as f:
                 config = json.load(f)
+
         except FileNotFoundError:
             logging.error(f"Config file {config_file} not found.")
             raise
+
         except json.JSONDecodeError:
             logging.error(f"Config file {config_file} has invalid JSON.")
             raise
@@ -75,7 +68,7 @@ class Drone:
             )
             self.is_imperial = False
 
-    def receive(self, stop_event, retries=3, delay=5):
+    def receive(self, stop_event):
         """
         Continually receive responses from the drone.
 
@@ -85,20 +78,12 @@ class Drone:
             delay (int): The delay (in seconds) between retries.
         """
         while not stop_event.is_set():
-            for attempt in range(retries):
-                try:
-                    self.response, _ = self.socket.recvfrom(3000)
-                    logging.info(
-                        f"Action: Receiving response - Response: {self.response}"
-                    )
-                    break
-                except (socket.timeout, socket.gaierror) as ex:
-                    logging.error(f"Action: Receiving response - Error: {ex}")
-                    if attempt < retries - 1:  # no delay on the last attempt
-                        time.sleep(delay)
-                    else:
-                        logging.error("Max retries exceeded. Stopping reception.")
-                        return
+            try:
+                self.response, _ = self.socket.recvfrom(3000)
+                logging.info(f"Action: Receiving response - Response: {self.response}")
+            except socket.error as ex:
+                logging.error(f"Action: Receiving response - Error: {ex}")
+                break
 
     def initialize_socket(self):
         """
@@ -127,7 +112,7 @@ class Drone:
         try:
             self.stop_event.set()
             max_retries = 10
-            sleep_interval = 0.3  # can increase this value to allow the thread to close, not concerned with this yet
+            sleep_interval = 0.3
             for _ in range(max_retries):
                 if not self.thread.is_alive():
                     break
