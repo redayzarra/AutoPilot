@@ -1,3 +1,4 @@
+from enum import Enum
 import json
 import logging
 import os
@@ -10,6 +11,16 @@ from logger import initialize_logging
 
 # Initialize logging
 initialize_logging()
+
+
+# Defining enum for directions
+class Direction(Enum):
+    UP = "up"
+    DOWN = "down"
+    LEFT = "left"
+    RIGHT = "right"
+    FORWARD = "forward"
+    BACK = "back"
 
 
 class Drone:
