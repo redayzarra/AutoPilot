@@ -55,7 +55,7 @@ class Drone:
         self.thread = threading.Thread(target=self.receive, args=(self.stop_event,))
         self.thread.start()
 
-        self.distance = config["defaultDistance"]
+        self.defaultDistance = config["defaultDistance"]
         self.DIRECTIONS = ("up", "down", "left", "right", "forward", "back")
 
         try:
@@ -102,7 +102,7 @@ class Drone:
         try:
             self.stop_event.set()
             max_retries = 10
-            sleep_interval = 0.3
+            sleep_interval = 0.3  # can increase this value to allow the thread to close, not concerned with this yet
             for _ in range(max_retries):
                 if not self.thread.is_alive():
                     break
@@ -183,7 +183,7 @@ class Drone:
 
         Args:
             direction (str): The direction to move in. Should be one of DIRECTIONS.
-            distance (float): The distance to move. If None, uses self.distance.
+            distance (float): The distance to move. If None, uses default distance.
         Returns:
             str: Response from the drone.
         """
@@ -192,7 +192,7 @@ class Drone:
                 f"Invalid direction '{direction}'. Must be one of {self.DIRECTIONS}."
             )
         if distance is None:
-            distance = self.distance
+            distance = self.defaultDistance
         return self.move(direction, distance)
 
 
