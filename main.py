@@ -5,6 +5,7 @@ import socket
 import sys
 import threading
 import time
+from enum import Enum
 
 from logger import initialize_logging
 
@@ -74,14 +75,30 @@ class Drone:
             )
             self.is_imperial = False
 
-    def receive(self, stop_event):
+    def receive(self, stop_event, retries=3, delay=5):
+        """
+        Continually receive responses from the drone.
+
+        Args:
+            stop_event (threading.Event): An event that can be set to stop the function.
+            retries (int): The number of retries if a socket error occurs.
+            delay (int): The delay (in seconds) between retries.
+        """
         while not stop_event.is_set():
-            try:
-                self.response, _ = self.socket.recvfrom(3000)
-                logging.info(f"Action: Receiving response - Response: {self.response}")
-            except socket.error as ex:
-                logging.error(f"Action: Receiving response - Error: {ex}")
-                break
+            for attempt in range(retries):
+                try:
+                    self.response, _ = self.socket.recvfrom(3000)
+                    logging.info(
+                        f"Action: Receiving response - Response: {self.response}"
+                    )
+                    break
+                except (socket.timeout, socket.gaierror) as ex:
+                    logging.error(f"Action: Receiving response - Error: {ex}")
+                    if attempt < retries - 1:  # no delay on the last attempt
+                        time.sleep(delay)
+                    else:
+                        logging.error("Max retries exceeded. Stopping reception.")
+                        return
 
     def initialize_socket(self):
         """
