@@ -19,6 +19,14 @@ class Drone:
     commands to the drone.
     """
 
+    class Direction(Enum):
+        UP = "up"
+        DOWN = "down"
+        LEFT = "left"
+        RIGHT = "right"
+        FORWARD = "forward"
+        BACK = "back"
+
     def __init__(self, config_file):
         """
         Initialize a Drone instance using the provided configuration file.
