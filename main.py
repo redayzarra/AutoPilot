@@ -49,26 +49,41 @@ class Drone:
             logging.error(f"Config file {config_file} has invalid JSON.")
             raise
 
+        # Define host and drone address details from the configuration
         self.hostIP = config["hostIP"]
         self.hostPort = config["hostPort"]
         self.droneIP = config["droneIP"]
         self.dronePort = config["dronePort"]
 
+        # Form complete address from IP and port details
         self.hostAddress = (self.hostIP, self.hostPort)
         self.droneAddress = (self.droneIP, self.dronePort)
 
+        # Initialize socket, response, and thread variables
         self.socket = None
         self.response = None
-        self.stop_event = threading.Event()
         self.thread = None
 
+        # Initialize threading stop event
+        self.stop_event = threading.Event()
+
+        # Initialize drone socket connection
         self.initialize_socket()
 
-        # Start the thread after `stop_event` has been defined
+        # Prepare thread for handling drone responses, but don't start it yet
         self.thread = threading.Thread(target=self.receive, args=(self.stop_event,))
+
+        # Start the response handling thread
         self.thread.start()
 
+        # Retrieve default distance and speed values from configuration
         self.defaultDistance = config["defaultDistance"]
+        self.defaultSpeed = config["defaultSpeed"]
+
+        # Apply default drone speed
+        self.set_speed(self.defaultSpeed)
+
+        # Define possible drone movement directions
         self.DIRECTIONS = ("up", "down", "left", "right", "forward", "back")
 
         try:
@@ -190,12 +205,14 @@ class Drone:
         default_factor = 100
 
         factor = imperial_to_metric if self.is_imperial else default_factor
-        distance = int(round(distance * factor))
+        converted_distance = int(round(distance * factor))
 
-        command = f"{direction} {distance}"
+        command = f"{direction} {converted_distance}"
         response = self.send_command(command)
 
-        logging.info(f"Moving drone to {direction} by {distance}")
+        unit = "feet" if self.is_imperial else "cm"
+        logging.info(f"Moving drone {direction} by {distance} {unit}")
+
         return response
 
     def move_in_direction(self, direction, distance=None):
@@ -216,6 +233,26 @@ class Drone:
             distance = self.defaultDistance
         return self.move(direction, distance)
 
+    def set_speed(self, speed):
+        """
+        Set the speed of the drone.
+
+        Args:
+            speed (int, float, str): The speed to set for the drone.
+            The function will attempt to convert non-integer inputs to integer.
+
+        Returns:
+            str: Response from the drone.
+        """
+        try:
+            speed = int(speed)
+        except ValueError:
+            logging.error(f"Invalid speed value: {speed}")
+            raise
+
+        logging.info(f"Setting drone speed to {speed} cm/s")
+        return self.send_command(f"speed {speed}")
+
 
 if __name__ == "__main__":
     myDrone = Drone("config.json")
@@ -223,11 +260,18 @@ if __name__ == "__main__":
         myDrone.takeoff()
         time.sleep(10)
 
+        myDrone.set_speed(10)
+        time.sleep(1)
+
         # DIRECTIONS = ("up", "down", "left", "right", "forward", "back")
         myDrone.move_in_direction("forward", 0.5)
         time.sleep(5)
         myDrone.move_in_direction("right", 0.5)
         time.sleep(5)
+
+        myDrone.set_speed(100)
+        time.sleep(1)
+
         myDrone.move_in_direction("left", 0.5)
         time.sleep(5)
         myDrone.move_in_direction("back", 0.5)
