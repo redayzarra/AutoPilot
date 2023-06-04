@@ -336,6 +336,35 @@ class Drone:
         else:
             logging.warning("Drone is already in patrolling mode.")
 
+    def stop_patrol(self):
+        """
+        Function to stop the patrol actions if currently in process.
+        """
+        if self.patrolling:
+            self.patrolling = False
+            self.patrol_event.set()
+
+            if self.patrol_thread is not None and self.patrol_thread.is_alive():
+                try:
+                    logging.info("Attempting to stop the patrol action.")
+                    self.patrol_thread.join(
+                        timeout=90
+                    )  # waits for 90 seconds before proceeding
+                    if self.patrol_thread.is_alive():
+                        logging.warning(
+                            "Patrol action could not be stopped within the expected time. Please check if the semaphore is being correctly released and if the thread is responding to stop events."
+                        )
+                    else:
+                        logging.info("Patrol action has been stopped successfully.")
+                except RuntimeError as e:
+                    logging.error(
+                        f"Error encountered while stopping the patrol action: {e}"
+                    )
+            else:
+                logging.warning("No patrol action is currently active.")
+        else:
+            logging.info("No patrol action to stop as it is not currently active.")
+
     def run_patrol(self, semaphore, stop_event):
         """
         Function to execute a sequence of patrol commands using a semaphore for synchronization.
@@ -343,7 +372,6 @@ class Drone:
         :param semaphore: threading.Semaphore, semaphore object to control the concurrent execution.
         :param stop_event: threading.Event, stop event to stop the patrol actions.
         """
-
         if semaphore.acquire(blocking=False):
             logging.info("run_patrol action acquired the semaphore.")
             status = 0
