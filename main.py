@@ -101,7 +101,7 @@ class Drone:
 
     def initialize_patrol(self):
         """Initialize patrolling related attributes."""
-        self.patrol = None
+        self.patrol_event = threading.Event()
         self.patrolling = False
         self.patrol_semaphore = threading.Semaphore(1)
         self.patrol_thread = None
@@ -320,6 +320,21 @@ class Drone:
             )
 
         return self.send_command(f"flip {direction}")
+
+    def patrol(self):
+        """
+        Start the drone's patrol mode.
+        """
+        if not self.patrolling:
+            self.patrol_event.clear()
+            self.patrol_thread = threading.Thread(
+                target=self.run_patrol, args=(self.patrol_semaphore, self.patrol_event)
+            )
+            self.patrol_thread.start()
+            self.patrolling = True
+            logging.info("Drone has started patrolling.")
+        else:
+            logging.warning("Drone is already in patrolling mode.")
 
 
 if __name__ == "__main__":
