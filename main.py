@@ -76,9 +76,10 @@ class Drone:
         # Start the response handling thread
         self.thread.start()
 
-        # Retrieve default distance and speed values from configuration
+        # Retrieve default distance, speed, and degree values from configuration
         self.defaultDistance = config["defaultDistance"]
         self.defaultSpeed = config["defaultSpeed"]
+        self.defaultDegree = config["defaultDegree"]
 
         # Apply default drone speed
         self.set_speed(self.defaultSpeed)
@@ -253,14 +254,41 @@ class Drone:
         logging.info(f"Setting drone speed to {speed} cm/s")
         return self.send_command(f"speed {speed}")
 
+    def rotate(self, direction, degree=None):
+        """
+        Rotates the drone clockwise or counter-clockwise by a specified degree.
+
+        Args:
+            direction (str): The direction of rotation, should be 'cw' (clockwise) or 'ccw' (counter clockwise).
+            degree (float): The degree to rotate. Must be between 0 and 360.
+
+        Returns:
+            str: Response from the drone.
+        """
+        if direction not in ["cw", "ccw"]:
+            raise ValueError("Direction must be either 'cw' or 'ccw'.")
+
+        degree = self.defaultDegree if degree is None else degree
+
+        try:
+            degree = float(degree)
+            if not 0 <= degree <= 360:
+                raise ValueError("Degree must be between 0 and 360.")
+        except ValueError:
+            logging.error(f"Invalid degree value provided: {degree}")
+            raise
+
+        return self.send_command(f"{direction} {degree}")
+
 
 if __name__ == "__main__":
     myDrone = Drone("config.json")
+
     try:
         myDrone.takeoff()
         time.sleep(10)
 
-        myDrone.set_speed(10)
+        myDrone.rotate("cw", 90)
         time.sleep(1)
 
         # DIRECTIONS = ("up", "down", "left", "right", "forward", "back")
@@ -269,7 +297,7 @@ if __name__ == "__main__":
         myDrone.move_in_direction("right", 0.5)
         time.sleep(5)
 
-        myDrone.set_speed(100)
+        myDrone.rotate("ccw", 90)
         time.sleep(1)
 
         myDrone.move_in_direction("left", 0.5)
@@ -282,7 +310,9 @@ if __name__ == "__main__":
         time.sleep(5)
 
         myDrone.land()
+
     except Exception as e:
         logging.error(f"An error occurred: {e}")
+
     finally:
         myDrone.stop()
