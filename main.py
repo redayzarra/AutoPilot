@@ -1,4 +1,4 @@
-from enum import Enum
+import contextlib
 import json
 import logging
 import os
@@ -6,6 +6,7 @@ import socket
 import sys
 import threading
 import time
+from enum import Enum
 
 from logger import initialize_logging
 
@@ -60,21 +61,7 @@ class Drone:
         self.droneAddress = (self.droneIP, self.dronePort)
 
         # Initialize socket, response, and thread variables
-        self.socket = None
-        self.response = None
-        self.thread = None
-
-        # Initialize threading stop event
-        self.stop_event = threading.Event()
-
-        # Initialize drone socket connection
-        self.initialize_socket()
-
-        # Prepare thread for handling drone responses, but don't start it yet
-        self.thread = threading.Thread(target=self.receive, args=(self.stop_event,))
-
-        # Start the response handling thread
-        self.thread.start()
+        self.initialize_communication()
 
         # Retrieve default distance, speed, and degree values from configuration
         self.defaultDistance = config["defaultDistance"]
@@ -87,6 +74,23 @@ class Drone:
         # Define possible drone movement directions
         self.DIRECTIONS = ("up", "down", "left", "right", "forward", "back")
 
+        self.configure_units(config)
+
+        # Initialize patrolling related attributes
+        self.initialize_patrol()
+
+    def initialize_communication(self):
+        """Initialize drone communication by creating a socket and starting a thread to handle responses."""
+        self.socket = None
+        self.response = None
+        self.thread = None
+        self.stop_event = threading.Event()
+        self.initialize_socket()
+        self.thread = threading.Thread(target=self.receive, args=(self.stop_event,))
+        self.thread.start()
+
+    def configure_units(self, config):
+        """Configure the unit system based on the config."""
         try:
             self.is_imperial = bool(config.get("imperial", 0))
         except ValueError:
@@ -94,6 +98,13 @@ class Drone:
                 "Invalid value for imperial in config. Expected 0 or 1, setting default to False."
             )
             self.is_imperial = False
+
+    def initialize_patrol(self):
+        """Initialize patrolling related attributes."""
+        self.patrol = None
+        self.patrolling = False
+        self.patrol_semaphore = threading.Semaphore(1)
+        self.patrol_thread = None
 
     def receive(self, stop_event):
         """
@@ -337,9 +348,9 @@ if __name__ == "__main__":
 
         myDrone.move_in_direction("back", 0.5)
         time.sleep(5)
-        
+
         myDrone.flip("forward")
-        
+
         myDrone.move_in_direction("up", 0.5)
         time.sleep(5)
         myDrone.move_in_direction("down", 0.5)
