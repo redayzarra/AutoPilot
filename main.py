@@ -280,6 +280,36 @@ class Drone:
 
         return self.send_command(f"{direction} {degree}")
 
+    def flip(self, direction: str) -> str:
+        """
+        Flips the drone in the specified direction.
+
+        Args:
+            direction (str): The direction to flip. It should be 'left', 'right', 'forward', 'backward',
+                            or their shorthand notations 'l', 'r', 'f', 'b'.
+
+        Returns:
+            str: Response from the drone.
+        """
+
+        direction_mapping = {"left": "l", "right": "r", "forward": "f", "backward": "b"}
+
+        if not isinstance(direction, str):
+            logging.error("Invalid type for direction. Expected string.")
+            raise TypeError("Direction must be a string.")
+
+        direction = direction_mapping.get(direction, direction)
+
+        if direction not in direction_mapping.values():
+            logging.error(
+                f"Invalid direction '{direction}'. Must be one of {list(direction_mapping.keys())}."
+            )
+            raise ValueError(
+                "Direction must be either 'left', 'right', 'forward', or 'backward' or their shorthand notations 'l', 'r', 'f', 'b'."
+            )
+
+        return self.send_command(f"flip {direction}")
+
 
 if __name__ == "__main__":
     myDrone = Drone("config.json")
@@ -302,8 +332,14 @@ if __name__ == "__main__":
 
         myDrone.move_in_direction("left", 0.5)
         time.sleep(5)
+
+        myDrone.flip("l")
+
         myDrone.move_in_direction("back", 0.5)
         time.sleep(5)
+        
+        myDrone.flip("forward")
+        
         myDrone.move_in_direction("up", 0.5)
         time.sleep(5)
         myDrone.move_in_direction("down", 0.5)
