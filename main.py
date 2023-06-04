@@ -336,6 +336,43 @@ class Drone:
         else:
             logging.warning("Drone is already in patrolling mode.")
 
+    def run_patrol(self, semaphore, stop_event):
+        """
+        Function to execute a sequence of patrol commands using a semaphore for synchronization.
+
+        :param semaphore: threading.Semaphore, semaphore object to control the concurrent execution.
+        :param stop_event: threading.Event, stop event to stop the patrol actions.
+        """
+
+        if semaphore.acquire(blocking=False):
+            logging.info("run_patrol action acquired the semaphore.")
+            status = 0
+            try:
+                while not stop_event.is_set():
+                    status = (status % 4) + 1
+                    if status == 1:
+                        self.move_in_direction("up")
+                        logging.info("Patrol Action: Moving up.")
+                    elif status == 2:
+                        self.rotate("cw", 90)
+                        logging.info("Patrol Action: Rotating clockwise by 90 degrees.")
+                    elif status == 3:
+                        self.move_in_direction("down")
+                        logging.info("Patrol Action: Moving down.")
+                    elif status == 4:
+                        self.rotate("cw", 90)  # Repeat the same rotation
+                        logging.info("Patrol Action: Rotating clockwise by 90 degrees.")
+                    time.sleep(5)
+            except Exception as e:
+                logging.error(
+                    f"Error encountered while executing patrol action {status}. Error: {e}"
+                )
+            finally:
+                semaphore.release()
+                logging.info("Semaphore released after run_patrol action.")
+        else:
+            logging.warning("Failed to acquire semaphore for run_patrol action.")
+
 
 if __name__ == "__main__":
     myDrone = Drone("config.json")
