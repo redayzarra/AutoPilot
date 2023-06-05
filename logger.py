@@ -3,9 +3,9 @@ import os
 from datetime import datetime
 
 
-def initialize_logging(log_level=logging.INFO, log_folder="logs"):
-    # Create a logs directory if it doesn't already exist
-    log_path = os.path.join(".", log_folder)
+def initialize_logging(log_level=logging.INFO, log_folder="logs", subfolder="subLogs"):
+    # Create a logs directory and a subdirectory if they don't already exist
+    log_path = os.path.join(".", log_folder, subfolder)
     os.makedirs(log_path, exist_ok=True)
     print(f"Directory '{log_path}' created or already exists.")
 
