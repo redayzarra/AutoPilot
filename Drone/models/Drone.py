@@ -8,7 +8,7 @@ from enum import Enum
 from logger import initialize_logging
 
 # Initialize logging
-initialize_logging()
+initialize_logging(subfolder="DroneLogs")
 
 
 # Defining enum for directions
