@@ -9,34 +9,41 @@ from tools.config import create_app
 app = create_app()
 
 # Enable CORS
-cors = CORS(app, resources={r"/drone/*": {"origins": "*"}})
+CORS(app, resources={r"/drone/*": {"origins": "*"}})
 
 # The logging has already been set up
 app.logger.info("Server started.")
 
+
 # Initialize drone using config
-config_path = os.path.join(os.path.dirname(__file__), "..", "..", "config.json")
-myDrone = Drone(config_path)
+def initialize_drone():
+    config_path = os.path.join(os.path.dirname(__file__), "..", "..", "config.json")
+    return Drone(config_path)
 
 
-@app.after_request
-def add_headers(response):
-    response.headers.add("Access-Control-Allow-Origin", "*")
-    response.headers.add("Access-Control-Allow-Headers", "Content-Type,Authorization")
-    response.headers.add("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE")
-    return response
+myDrone = initialize_drone()
 
 
 @app.route("/drone/takeoff", methods=["POST"])
 def takeoff():
-    response = myDrone.takeoff()
-    return jsonify({"response": response})
+    try:
+        response = myDrone.takeoff()
+        app.logger.info(f"Drone takeoff: {response}")
+        return jsonify({"status": "success", "response": response}), 200
+    except Exception as e:
+        app.logger.error(f"Error during drone takeoff: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 
 @app.route("/drone/land", methods=["POST"])
 def land():
-    response = myDrone.land()
-    return jsonify({"response": response})
+    try:
+        response = myDrone.land()
+        app.logger.info(f"Drone land: {response}")
+        return jsonify({"status": "success", "response": response}), 200
+    except Exception as e:
+        app.logger.error(f"Error during drone landing: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 
 @app.route("/drone/move", methods=["POST"])
