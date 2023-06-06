@@ -101,14 +101,20 @@ def flip():
 
 @app.route("/drone/patrol", methods=["POST"])
 def patrol():
-    myDrone.patrol()
-    return jsonify({"response": "Drone started patrolling"})
+    try:
+        myDrone.patrol()
+        return jsonify({"response": "Drone started patrolling"}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 @app.route("/drone/stop_patrol", methods=["POST"])
 def stop_patrol():
-    myDrone.stop_patrol()
-    return jsonify({"response": "Drone stopped patrolling"})
+    try:
+        myDrone.stop_patrol()
+        return jsonify({"response": "Drone stopped patrolling"}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 @app.route("/drone/stop", methods=["POST"])
