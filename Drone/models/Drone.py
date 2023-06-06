@@ -5,7 +5,7 @@ import threading
 import time
 from enum import Enum
 
-from logger import initialize_logging
+from tools.logger import initialize_logging
 
 # Initialize logging
 initialize_logging(subfolder="DroneLogs")

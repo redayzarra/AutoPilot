@@ -1,4 +1,4 @@
-from logger import initialize_logging
+from tools.logger import initialize_logging
 from tools.config import create_app
 
 app = create_app()
