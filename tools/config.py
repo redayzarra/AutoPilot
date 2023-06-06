@@ -19,6 +19,6 @@ def create_app():
     )
 
     # Set up logging
-    logger.initialize_logging(log_folder=app.config["LOG_FOLDER"])
+    logger.initialize_logging(log_folder=app.config["LOG_FOLDER"], subfolder="")
 
     return app
