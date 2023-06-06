@@ -1,0 +1,10 @@
+2023-06-06 14:56:56,017 - INFO: Server started.
+2023-06-06 14:56:56,026 - INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.68.118:5000
+2023-06-06 14:56:56,027 - INFO: [33mPress CTRL+C to quit[0m
+2023-06-06 14:57:49,517 - INFO: 127.0.0.1 - - [06/Jun/2023 14:57:49] "GET / HTTP/1.1" 200 -
+2023-06-06 14:57:50,089 - INFO: 127.0.0.1 - - [06/Jun/2023 14:57:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-06-06 14:57:55,043 - INFO: 192.168.68.118 - - [06/Jun/2023 14:57:55] "GET / HTTP/1.1" 200 -
+2023-06-06 14:57:55,567 - INFO: 192.168.68.118 - - [06/Jun/2023 14:57:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
