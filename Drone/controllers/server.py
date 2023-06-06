@@ -49,19 +49,37 @@ def land():
 @app.route("/drone/move", methods=["POST"])
 def move():
     data = request.get_json()
+    if not data:
+        return jsonify({"error": "Missing data in request"}), 400
     direction = data.get("direction")
     distance = data.get("distance")
-    response = myDrone.move_in_direction(direction, distance)
-    return jsonify({"response": response})
+    if not direction or not distance:
+        return jsonify({"error": "Missing 'direction' or 'distance' in request"}), 400
+
+    try:
+        response = myDrone.move_in_direction(direction, distance)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+    return jsonify({"response": response}), 200
 
 
 @app.route("/drone/rotate", methods=["POST"])
 def rotate():
     data = request.get_json()
+    if not data:
+        return jsonify({"error": "Missing data in request"}), 400
     direction = data.get("direction")
     degree = data.get("degree")
-    response = myDrone.rotate(direction, degree)
-    return jsonify({"response": response})
+    if not direction or not degree:
+        return jsonify({"error": "Missing 'direction' or 'degree' in request"}), 400
+
+    try:
+        response = myDrone.rotate(direction, degree)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+    return jsonify({"response": response}), 200
 
 
 @app.route("/drone/flip", methods=["POST"])
