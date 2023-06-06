@@ -1,21 +1,30 @@
 import os
 
-from flask import Flask, jsonify, request
+from flask import jsonify, request
 from flask_cors import CORS
+from models.Drone import Drone
 
 from tools.config import create_app
 
-from ..models.Drone import Drone
-
 app = create_app()
-CORS(app)  # Enable CORS
+
+# Enable CORS
+cors = CORS(app, resources={r"/drone/*": {"origins": "*"}})
 
 # The logging has already been set up
 app.logger.info("Server started.")
 
 # Initialize drone using config
-config_path = os.path.join("..", "..", "config.json")
+config_path = os.path.join(os.path.dirname(__file__), "..", "..", "config.json")
 myDrone = Drone(config_path)
+
+
+@app.after_request
+def add_headers(response):
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers.add("Access-Control-Allow-Headers", "Content-Type,Authorization")
+    response.headers.add("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE")
+    return response
 
 
 @app.route("/drone/takeoff", methods=["POST"])
