@@ -15,10 +15,10 @@ def create_app():
         DEBUG=False,
         WEB_ADDRESS="0.0.0.0",
         WEB_PORT=5000,
-        LOG_FOLDER=os.path.join(PROJECT_ROOT, "WebLogs"),
+        LOG_FOLDER=os.path.join(PROJECT_ROOT, "..", "logs", "WebLogs"),
     )
 
     # Set up logging
-    logger.initialize_logging(subfolder=app.config["LOG_FOLDER"])
+    logger.initialize_logging(log_folder=app.config["LOG_FOLDER"])
 
     return app
