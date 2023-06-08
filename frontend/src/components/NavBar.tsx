@@ -1,14 +1,21 @@
-import { HStack, Image, Text } from "@chakra-ui/react";
+import { Box, HStack, Image, Text } from "@chakra-ui/react";
 import logo from "../assets/MyLogo.png";
 
 const NavBar = () => {
+  const number = 3;
+
   return (
-    <HStack>
-      <Image src={logo} boxSize="60px" marginX={2} marginY={-2} />
-      <Text fontSize="md" as="b">
-        Serial Number:
-      </Text>
-      <Text>Number</Text>
+    <HStack justifyContent="space-between" spacing={5} px={2}>
+      <Box paddingRight={2}>
+        <Text fontSize="md" fontWeight="bold" display="inline">
+          Drone: {"   "}
+        </Text>
+        <Text fontSize="md" display="inline">
+          {number}
+        </Text>
+      </Box>
+
+      <Image src={logo} boxSize="60px" marginY={-2} />
     </HStack>
   );
 };
