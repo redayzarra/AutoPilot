@@ -1,11 +1,7 @@
-import Message from "./components/Message";
+import Test from "./components/Test";
 
 function App() {
-  return (
-    <div>
-      <Message />
-    </div>
-  );
+  return <Test />;
 }
 
 export default App;
