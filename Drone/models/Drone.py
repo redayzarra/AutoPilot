@@ -189,6 +189,15 @@ class Drone:
         """Command the drone to land."""
         return self.send_command("land")
 
+    def query_drone(self, query: str) -> str:
+        """
+        Query the drone for specific information.
+
+        :param query: str, The query command to send to the drone. It can be "sn?", "battery?", "speed?", "time?".
+        :return: str, The drone's response to the query. If the drone doesn't respond, return None.
+        """
+        return self.send_command(query)
+
     def move(self, direction, distance):
         """
         Move the drone to a specific direction by a specific distance.
