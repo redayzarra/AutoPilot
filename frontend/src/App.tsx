@@ -1,4 +1,5 @@
 import { Grid, GridItem } from "@chakra-ui/react";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
                       "flip camera height"`}
     >
       <GridItem area="nav" bg="coral">
-        NavBar
+        <NavBar />
       </GridItem>
       <GridItem area="flip" bg="darkgreen">
         Flips
