@@ -11,9 +11,9 @@ const FlipButton = ({ label, colorScheme, ...props }: FlipButtonProps) => {
       borderRadius="50%"
       width="50px"
       height="50px"
-      colorScheme={colorScheme}
+      bg={`${colorScheme}.500`}
       border="2px"
-      borderColor={`${colorScheme}.500`}
+      borderColor={`${colorScheme}.600`}
       {...props}
     >
       {label}

@@ -20,7 +20,7 @@ function HeightSlider() {
       width="85px"
       borderRadius="lg"
       border="2px"
-      borderColor="gray.200"
+      borderColor="whiteAlpha.300"
       p="20px"
       marginLeft={5}
     >
