@@ -7,7 +7,7 @@ function App() {
       templateAreas={`"nav nav nav" 
                       "flip camera height"`}
     >
-      <GridItem area="nav" bg="coral">
+      <GridItem area="nav" bg="black">
         <NavBar />
       </GridItem>
       <GridItem area="flip" bg="darkgreen">

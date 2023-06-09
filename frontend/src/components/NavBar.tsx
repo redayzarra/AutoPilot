@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <HStack justifyContent="space-between" spacing={5} px={2}>
       <SerialNumber />
-      <Image src={logo} boxSize="60px" marginY={-2} />
+      <Image src={logo} boxSize="75px" marginY={-5} />
 
       <Box>
         <Battery />
