@@ -1,7 +1,7 @@
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 
 const Battery = () => {
-  const currentBattery = 100;
+  const currentBattery = 65;
   let color;
 
   if (currentBattery > 50) {
@@ -13,8 +13,10 @@ const Battery = () => {
   }
 
   return (
-    <CircularProgress value={currentBattery} color={color} size="60px" marginTop={2}>
-      <CircularProgressLabel>{currentBattery}%</CircularProgressLabel>
+    <CircularProgress value={currentBattery} color={color} size="60px">
+      <CircularProgressLabel fontWeight="bold">
+        {currentBattery}%
+      </CircularProgressLabel>
     </CircularProgress>
   );
 };

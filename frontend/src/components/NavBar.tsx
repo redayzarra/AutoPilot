@@ -5,7 +5,7 @@ import Battery from "./Battery";
 
 const NavBar = () => {
   return (
-    <HStack justifyContent="space-between" spacing={5} px={2}>
+    <HStack justifyContent="space-between" spacing={5} marginX={2} marginY={2}>
       <SerialNumber />
       <Image src={logo} boxSize="75px" marginY={-5} />
 
