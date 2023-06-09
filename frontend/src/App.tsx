@@ -1,6 +1,7 @@
-import { Grid, GridItem, Box } from "@chakra-ui/react";
-import NavBar from "./components/NavBar";
+import { Box, Grid, GridItem } from "@chakra-ui/react";
 import Flips from "./components/Flips";
+import HeightSlider from "./components/HeightSlider";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -12,22 +13,25 @@ function App() {
       <GridItem area="nav" bg="blackAlpha.700">
         <NavBar />
       </GridItem>
+
       <GridItem
         area="flip"
-        bg="darkgreen"
         display="flex"
         justifyContent="center"
         alignItems="center"
+        bg="blackAlpha.700"
       >
         <Box>
           <Flips />
         </Box>
       </GridItem>
+
       <GridItem area="camera" bg="gold">
         Camera
       </GridItem>
-      <GridItem area="height" bg="green">
-        Height
+
+      <GridItem area="height" bg="blackAlpha.700">
+        <HeightSlider />
       </GridItem>
     </Grid>
   );
