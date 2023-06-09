@@ -5,10 +5,10 @@ const SerialNumber = () => {
   
   return (
     <Box paddingRight={2}>
-      <Text fontSize="md" fontWeight="bold" display="inline">
+      <Text fontSize="lg" fontWeight="bold" display="inline">
         Drone: {"   "}
       </Text>
-      <Text fontSize="md" display="inline">
+      <Text fontSize="lg" display="inline">
         {number}
       </Text>
     </Box>
