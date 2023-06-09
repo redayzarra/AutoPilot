@@ -6,7 +6,7 @@ import SerialNumber from "./SerialNumber";
 
 const NavBar = () => {
   return (
-    <Box marginX={2} marginY={2}>
+    <Box marginX={5} marginY={2} marginBottom={5}>
       <HStack justifyContent="space-between">
         <HStack marginRight={7}>
           <SerialNumber />
