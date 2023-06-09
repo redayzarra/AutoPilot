@@ -10,7 +10,7 @@ function App() {
                       "flip camera height"`}
       gridTemplateColumns="1fr 3fr 1fr"
     >
-      <GridItem area="nav" bg="blackAlpha.700">
+      <GridItem area="nav" bg="gray.800">
         <NavBar />
       </GridItem>
 
@@ -19,7 +19,7 @@ function App() {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        bg="blackAlpha.700"
+        bg="gray.800"
       >
         <Box>
           <Flips />
@@ -30,7 +30,7 @@ function App() {
         Camera
       </GridItem>
 
-      <GridItem area="height" bg="blackAlpha.700">
+      <GridItem area="height" bg="gray.800">
         <HeightSlider />
       </GridItem>
     </Grid>
