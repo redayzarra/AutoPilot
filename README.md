@@ -1,4 +1,4 @@
-# Drone Control System
+# Drone Control System for Tello EDU
 
 Welcome to the **Tello EDU Drone Control System**! This project is designed to elevate the interaction with the [Tello EDU Drone](https://www.ryzerobotics.com/tello-edu) to a whole new level by offering a comprehensive, web-based platform to manage and control drone operations. The Tello EDU Drone has a well-structured [SDK](https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf) that provides an intuitive way to command the drone. My drone system allows you to control the drone from a locally-hosted website, instead of the Tello Drone app. 
 
@@ -8,8 +8,6 @@ Outside of web integration, I have extended the drone's capabilities to the real
 
 ## Prerequisites
 
-#### **ATTENTION:** Do not bother using the Tello EDU app, even if you got the Tello EDU drone. Before you start using the drone, you need to authorize your drone. This can be done through the [Tello App](https://apps.apple.com/us/app/tello/id1330559633). 
-
 ### Libraries
 
 Before you begin, ensure you have met the following requirements:
@@ -17,6 +15,8 @@ Before you begin, ensure you have met the following requirements:
 - You have installed Flask 1.0+
 - You have installed Node.js and npm
 - You have installed the latest version of React
+
+#### ⚠️ **ATTENTION:** Do not bother using the Tello EDU app, even if you got the Tello EDU drone. Before you start using the drone, you need to authorize your drone. This can be done through the [Tello App](https://apps.apple.com/us/app/tello/id1330559633). 
 
 ## Setup and Installation
 
@@ -65,7 +65,7 @@ The frontend application is accessible at http://localhost:3000.
 
 ## API
 
-The backend exposes the following REST endpoints:
+The backend supports the following REST endpoints:
 
 * `POST /drone/takeoff`: Takes off the drone.
 * `POST /drone/land`: Lands the drone.
@@ -80,3 +80,7 @@ The backend exposes the following REST endpoints:
 ## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT license. Please see the [LICENSE](https://github.com/redayzarra/) file for details.
