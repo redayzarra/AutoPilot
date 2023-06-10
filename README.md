@@ -7,6 +7,7 @@
 
 AutoPilot is my solution for controlling the Tello EDU Drone through a locally-hosted web interface. This system utilizes a robust Flask backend server and a user-friendly React frontend for seamless control of drone operations. Simple arrow key presses initiate commands like takeoff, landing, rotation, and even patrolling. Advanced features, such as facial recognition capabilities powered by OpenCV, expand drone functionalities by enabling real-time face tracking observable on the live video stream.
 
+## Overview
 
 Welcome to the **AutoPilot**! This project is designed to elevate the interaction with the [Tello EDU Drone](https://www.ryzerobotics.com/tello-edu) to a whole new level by offering a comprehensive, web-based platform to manage and control drone operations. The Tello EDU Drone has a well-structured [SDK](https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf) that provides an intuitive way to command the drone. My drone system allows you to control the drone from a locally-hosted website, instead of the Tello Drone app. 
 
