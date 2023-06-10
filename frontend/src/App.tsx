@@ -13,7 +13,7 @@ function App() {
                       "flip main height"`}
       gridTemplateColumns="1fr 3fr 1fr"
     >
-      <GridItem area="nav" bg="gray.800">
+      <GridItem area="nav" bg="gray.800" marginBottom={2}>
         <NavBar />
       </GridItem>
 
