@@ -1,7 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 
 const SerialNumber = () => {
-  const number = 3; // Obtain SN once from Drone
+  const number = 253563981; // Obtain SN once from Drone
   
   return (
     <Box paddingRight={2}>
