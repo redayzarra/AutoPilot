@@ -76,16 +76,18 @@ python test.py
 
 ### Backend
 
-To run the backend server, navigate to the backend directory and run:
+To run the backend server, navigate to the "Drone" directory or run:
 ```bash
+cd DroneControlSystem/Drone/controllers
 python server.py
 ```
 The backend server is accessible at http://localhost:5000.
 
 ### Frontend
 
-To run the frontend application, navigate to the frontend directory and run:
+To run the frontend application, navigate to the frontend directory or run:
 ```bash
+cd frontend
 npm run dev
 ```
 The frontend application is accessible at http://localhost:3000.
