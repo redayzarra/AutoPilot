@@ -1,11 +1,11 @@
-import { VStack, HStack } from "@chakra-ui/react";
-import ArrowKey from "./ArrowKey";
+import { HStack, VStack } from "@chakra-ui/react";
 import {
   BiDownArrowAlt,
   BiLeftArrowAlt,
   BiRightArrowAlt,
   BiUpArrowAlt,
 } from "react-icons/bi";
+import ArrowKey from "./ArrowKey";
 
 const ArrowControls = () => {
   return (
