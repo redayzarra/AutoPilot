@@ -8,6 +8,10 @@ Outside of web integration, I have extended the drone's capabilities to the real
 
 ## Prerequisites
 
+#### **ATTENTION:** Do not bother using the Tello EDU app, even if you got the Tello EDU drone. Before you start using the drone, you need to authorize your drone. This can be done through the [Tello App](https://apps.apple.com/us/app/tello/id1330559633). 
+
+### Libraries
+
 Before you begin, ensure you have met the following requirements:
 - You have installed Python 3.6+
 - You have installed Flask 1.0+
