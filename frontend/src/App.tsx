@@ -4,6 +4,8 @@ import HeightSlider from "./components/HeightSlider";
 import NavBar from "./components/NavBar";
 import Camera from "./components/Camera";
 import TakeOff from "./components/TakeOff";
+import Land from "./components/Land";
+import StopButton from "./components/StopButton";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
       <GridItem area="main" bg="gray.800">
         <Camera />
         <TakeOff />
+        <StopButton />
+        <Land />
       </GridItem>
 
       <GridItem area="height" bg="gray.800">

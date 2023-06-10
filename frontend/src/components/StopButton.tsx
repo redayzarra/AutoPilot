@@ -1,18 +1,18 @@
 import { Button } from "@chakra-ui/react";
-import { MdFlightTakeoff } from "react-icons/md";
+import { GoStop } from "react-icons/go";
 
-const TakeOff = () => {
+const StopButton = () => {
   return (
     <Button
-      leftIcon={<MdFlightTakeoff />}
+      leftIcon={<GoStop />}
       colorScheme="gray"
       variant="outline"
       marginTop={5}
       size="lg"
     >
-      Takeoff
+      Stop
     </Button>
   );
 };
 
-export default TakeOff;
+export default StopButton;
