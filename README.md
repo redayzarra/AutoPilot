@@ -1,6 +1,9 @@
-# AutoPilot - Drone Control System for Tello EDU
+<div align="center">
+ 
+  <img src="https://github.com/redayzarra/AutoPilot/assets/113388793/a22ba189-41be-4926-836a-466e47016bb7" alt="PocketTrader_GUI">
 
-## Overview
+</div>
+
 
 AutoPilot is my solution for controlling the Tello EDU Drone through a locally-hosted web interface. This system utilizes a robust Flask backend server and a user-friendly React frontend for seamless control of drone operations. Simple arrow key presses initiate commands like takeoff, landing, rotation, and even patrolling. Advanced features, such as facial recognition capabilities powered by OpenCV, expand drone functionalities by enabling real-time face tracking observable on the live video stream.
 
