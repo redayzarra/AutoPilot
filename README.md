@@ -1,6 +1,10 @@
 # Drone Control System
 
-The Drone Control System is a Flask backend application that communicates with a drone to perform different operations such as takeoff, landing, moving, rotating, flipping, and patrolling. The system also includes a React frontend for user interaction.
+Welcome to the **Tello EDU Drone Control System**! This project is designed to elevate the interaction with the [Tello EDU Drone](https://www.ryzerobotics.com/tello-edu) to a whole new level by offering a comprehensive, web-based platform to manage and control drone operations. The Tello EDU Drone has a well-structured [SDK](https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf) that provides an intuitive way to command the drone. My drone system allows you to control the drone from a locally-hosted website, instead of the Tello Drone app. 
+
+The project integrates a robust Flask backend server, which facilitates direct interaction with the drone, performing various commands like taking off, landing, moving, rotating, flipping, and even patrolling. To make these operations user-friendly and accessible, I've developed an interactive React frontend. The frontend is specifically designed with a focus on user experience – you can **control your drone with simple arrow keys (with live video stream) for a more enjoyable experience**. It provides real-time command issuance and response collection with fluid controls, ensuring that operating the drone feels as natural and intuitive as possible.
+
+Outside of web integration, I have extended the drone's capabilities to the realm of facial recognition. Leveraging OpenCV, the Tello EDU drone is now equipped with face tracking abilities. As you navigate the drone, you can observe the tracking in action on the live video stream, straight from the built-in camera to the React website. This feature opens up a world of possibilities for innovative drone applications – I plan to make a hand tracking Drone.
 
 ## Prerequisites
 
