@@ -21,8 +21,9 @@ function App() {
         area="flip"
         display="flex"
         justifyContent="center"
-        alignItems="center"
+        alignItems="flex-start"
         bg="gray.800"
+        marginTop="135px"
       >
         <Box>
           <Flips />
