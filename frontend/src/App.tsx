@@ -1,4 +1,5 @@
 import { Box, Grid, GridItem } from "@chakra-ui/react";
+import ArrowControls from "./components/ArrowControls";
 import Camera from "./components/Camera";
 import FlightButtons from "./components/FlightButtons";
 import Flips from "./components/Flips";
@@ -31,6 +32,7 @@ function App() {
       <GridItem area="main" bg="gray.800">
         <Camera />
         <FlightButtons />
+        <ArrowControls />
       </GridItem>
 
       <GridItem area="height" bg="gray.800">
