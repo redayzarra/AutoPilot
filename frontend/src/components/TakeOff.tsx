@@ -5,8 +5,10 @@ const TakeOff = () => {
   return (
     <Button
       leftIcon={<BsFillRocketTakeoffFill />}
-      colorScheme="pink"
-      variant="solid"
+      colorScheme="gray"
+      variant="outline"
+      marginTop={5}
+      size='lg'
     >
       Takeoff
     </Button>

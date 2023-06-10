@@ -3,12 +3,13 @@ import Flips from "./components/Flips";
 import HeightSlider from "./components/HeightSlider";
 import NavBar from "./components/NavBar";
 import Camera from "./components/Camera";
+import TakeOff from "./components/TakeOff";
 
 function App() {
   return (
     <Grid
       templateAreas={`"nav nav nav" 
-                      "flip camera height"`}
+                      "flip main height"`}
       gridTemplateColumns="1fr 3fr 1fr"
     >
       <GridItem area="nav" bg="gray.800">
@@ -27,8 +28,9 @@ function App() {
         </Box>
       </GridItem>
 
-      <GridItem area="camera" bg="gray.800">
+      <GridItem area="main" bg="gray.800">
         <Camera />
+        <TakeOff />
       </GridItem>
 
       <GridItem area="height" bg="gray.800">
