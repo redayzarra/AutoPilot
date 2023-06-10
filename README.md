@@ -14,4 +14,61 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/DroneControlSystem.git
+git clone https://github.com/redayzarra/DroneControlSystem.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd DroneControlSystem
+```
+
+3. Install Python Dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Navigate to the frontend directory:
+```bash
+cd frontend
+```
+
+5. Install JavaScript dependencies:
+```bash
+npm install
+```
+
+## Usage 
+
+### Backend
+
+To run the backend server, navigate to the backend directory and run:
+```bash
+python server.py
+```
+The backend server is accessible at http://localhost:5000.
+
+### Frontend
+
+To run the frontend application, navigate to the frontend directory and run:
+```bash
+npm run dev
+```
+The frontend application is accessible at http://localhost:3000.
+
+## API
+
+The backend exposes the following REST endpoints:
+
+* `POST /drone/takeoff`: Takes off the drone.
+* `POST /drone/land`: Lands the drone.
+* `POST /drone/move`: Moves the drone in a specific direction. Requires direction and distance in the request body.
+* `POST /drone/rotate`: Rotates the drone in a specific direction. Requires direction and degree in the request body.
+* `POST /drone/flip`: Flips the drone in a specific direction. Requires direction in the request body.
+* `GET /drone/query/{query}`: Retrieves the drone's data based on the query parameter.
+* `POST /drone/patrol`: Starts drone patrolling.
+* `POST /drone/stop_patrol`: Stops drone patrolling.
+* `POST /drone/stop`: Stops the drone.
+
+## Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
