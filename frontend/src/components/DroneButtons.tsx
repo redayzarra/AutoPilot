@@ -11,7 +11,6 @@ const DroneButton = ({ text, leftIcon, ...props }: DroneButtonProps) => {
       leftIcon={leftIcon}
       colorScheme="gray"
       variant="outline"
-      marginTop={5}
       size="lg"
       {...props}
     >

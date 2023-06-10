@@ -5,6 +5,7 @@ import FlightButtons from "./components/FlightButtons";
 import Flips from "./components/Flips";
 import HeightSlider from "./components/HeightSlider";
 import NavBar from "./components/NavBar";
+import StopButton from "./components/StopButton";
 
 function App() {
   return (
@@ -32,9 +33,10 @@ function App() {
 
       <GridItem area="main" bg="gray.800">
         <Camera />
-        <HStack>
+        <HStack justifyContent="space-between">
           <FlightButtons />
           <ArrowControls />
+          <StopButton />
         </HStack>
       </GridItem>
 
