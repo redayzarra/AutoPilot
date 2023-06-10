@@ -45,6 +45,33 @@ cd frontend
 npm install
 ```
 
+## Mobile Drone Test
+
+1. Turn the drone on using the side button. Ensure that the drone is charged
+2. Turn Airplane mode on
+3. Connect to the Tello Drone Wi-Fi network. No password should be required
+4. Open the Tello App
+5. Fly your drone!
+
+## PC Drone Test
+
+1. Turn the drone on using the side button. Ensure that the drone is charged
+2. Connect to the Tello Drone Wi-Fi network. No password should be required
+3. Navigate to the project directory and run:
+```bash
+python test.py
+```
+4. Ensure your drone:
+
+* Took off
+* Flipped forward
+* Rotate right by 90 degrees
+* Moved up
+* Moved down
+* Landed
+  
+6. Fly your drone!
+
 ## Usage 
 
 ### Backend
