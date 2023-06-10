@@ -2,6 +2,7 @@ import { Box, Grid, GridItem } from "@chakra-ui/react";
 import Flips from "./components/Flips";
 import HeightSlider from "./components/HeightSlider";
 import NavBar from "./components/NavBar";
+import Camera from "./components/Camera";
 
 function App() {
   return (
@@ -26,8 +27,8 @@ function App() {
         </Box>
       </GridItem>
 
-      <GridItem area="camera" bg="gold">
-        Camera
+      <GridItem area="camera" bg="gray.800">
+        <Camera />
       </GridItem>
 
       <GridItem area="height" bg="gray.800">
