@@ -1,11 +1,9 @@
 import { Box, Grid, GridItem } from "@chakra-ui/react";
+import Camera from "./components/Camera";
+import FlightButtons from "./components/FlightButtons";
 import Flips from "./components/Flips";
 import HeightSlider from "./components/HeightSlider";
 import NavBar from "./components/NavBar";
-import Camera from "./components/Camera";
-import TakeOff from "./components/TakeOff";
-import Land from "./components/Land";
-import StopButton from "./components/StopButton";
 
 function App() {
   return (
@@ -32,9 +30,7 @@ function App() {
 
       <GridItem area="main" bg="gray.800">
         <Camera />
-        <TakeOff />
-        <StopButton />
-        <Land />
+        <FlightButtons />
       </GridItem>
 
       <GridItem area="height" bg="gray.800">
