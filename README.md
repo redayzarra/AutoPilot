@@ -69,8 +69,6 @@ python test.py
 * Moved up
 * Moved down
 * Landed
-  
-6. Fly your drone!
 
 ## Usage 
 
@@ -112,4 +110,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ## License
 
-This project is licensed under the MIT license. Please see the [LICENSE](https://github.com/redayzarra/) file for details.
+This project is licensed under the MIT license. Please see the [LICENSE](https://github.com/redayzarra/DroneControlSystem/blob/master/LICENSE) file for details.
