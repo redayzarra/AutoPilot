@@ -45,7 +45,7 @@ function HeightSlider() {
           <SliderMark value={minVal - 3} ml="12px" fontWeight="bold">
             {minVal}
           </SliderMark>
-          <SliderMark value={-5} ml="12px" fontWeight="bold">
+          <SliderMark value={-6} ml="12px" fontWeight="bold">
             0
           </SliderMark>
           <SliderMark value={maxVal - 7} ml="12px" fontWeight="bold">
