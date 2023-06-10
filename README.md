@@ -83,7 +83,7 @@ The backend server is accessible at http://localhost:5000.
 
 ### Frontend
 
-To run the frontend application, navigate to the frontend directory or run:
+To run the frontend React application, navigate to the frontend directory or run:
 ```bash
 cd frontend
 npm run dev
