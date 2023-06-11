@@ -97,7 +97,7 @@ To run the frontend React application, navigate to the frontend directory or run
 cd frontend
 npm run dev
 ```
-The frontend application is accessible at http://localhost:3000.
+The frontend application is accessible at [http://localhost:5173/](http://localhost:5173/).
 
 ## API
 
