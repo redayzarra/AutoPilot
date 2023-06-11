@@ -47,7 +47,7 @@ function App() {
         </GridItem>
       </Grid>
 
-      <HStack justifyContent="center" marginTop="300px" marginLeft="45px">
+      <HStack justifyContent="center" marginTop="320px">
         <Footer />
       </HStack>
     </>

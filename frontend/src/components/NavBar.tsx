@@ -12,7 +12,7 @@ const NavBar = () => {
           <HStack marginRight={7}>
             <SerialNumber />
           </HStack>
-          <Image src={logo} marginY="-150px" width="250px" marginLeft="60px"/>
+          <Image src={logo} marginY="-150px" width="250px" marginLeft="50px"/>
           <HStack spacing={5}>
             <FlightTime />
             <Battery />

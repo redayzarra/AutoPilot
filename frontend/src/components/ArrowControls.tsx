@@ -9,7 +9,7 @@ import ArrowKey from "./ArrowKey";
 
 const ArrowControls = () => {
   return (
-    <VStack align="center">
+    <VStack align="center" marginRight="50px">
       <ArrowKey icon={BiUpArrowAlt} />
       <HStack>
         <ArrowKey icon={BiLeftArrowAlt} />
