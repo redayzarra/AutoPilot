@@ -1,7 +1,25 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 
 const Battery = () => {
-  const currentBattery = 65;
+  const [currentBattery, setCurrentBattery] = useState(0);
+
+  useEffect(() => {
+    const getBatteryLevel = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:5000/drone/query/battery?"
+        );
+        setCurrentBattery(response.data.response);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    getBatteryLevel();
+  }, []);
+
   let color;
 
   if (currentBattery > 50) {
