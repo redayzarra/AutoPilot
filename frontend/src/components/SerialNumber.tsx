@@ -9,7 +9,7 @@ interface DroneNumber {
 
 const SerialNumber = () => {
   const [serialNumber, setSerialNumber] = useState<string | null>(null);
-  const [error, setError] = useState<any>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     axios
