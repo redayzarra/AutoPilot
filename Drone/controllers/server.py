@@ -2,7 +2,7 @@ import os
 
 from flask import jsonify, request
 from flask_cors import CORS
-from models.Drone import Drone
+from ..models.Drone import Drone
 
 from tools.config import create_app
 
