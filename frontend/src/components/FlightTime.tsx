@@ -1,6 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 
-const SerialNumber = () => {
+const FlightTime = () => {
   const number = "03:23"; // Obtain flight time from Drone
   
   return (
@@ -15,4 +15,4 @@ const SerialNumber = () => {
   );
 };
 
-export default SerialNumber;
+export default FlightTime;
