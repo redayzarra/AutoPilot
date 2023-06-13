@@ -9,7 +9,7 @@ const Battery = () => {
     const getBatteryLevel = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/drone/query/battery?"
+          "http://localhost:5000/drone/query/battery"
         );
         setCurrentBattery(response.data.response);
       } catch (error) {

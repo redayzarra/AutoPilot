@@ -13,7 +13,7 @@ const SerialNumber = () => {
 
   useEffect(() => {
     axios
-      .get<DroneNumber>("http://localhost:5000/drone/query/sn?")
+      .get<DroneNumber>("http://localhost:5000/drone/query/sn")
       .then((res) => {
         setSerialNumber(res.data.response);
         setError(null);
