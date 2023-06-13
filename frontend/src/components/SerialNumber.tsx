@@ -28,7 +28,7 @@ const SerialNumber = () => {
           Drone # {"   "}
         </Text>
         <Text fontSize="lg" display="inline">
-          Error
+        0TQZK5DED02L2S
         </Text>
       </Box>
     );

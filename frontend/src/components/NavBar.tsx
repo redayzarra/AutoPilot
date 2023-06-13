@@ -12,14 +12,14 @@ const NavBar = () => {
           <HStack marginRight={7}>
             <SerialNumber />
           </HStack>
-          <Image src={logo} marginY="-150px" width="250px" marginLeft="50px"/>
+          <Image src={logo} marginY="-150px" width="250px" />
           <HStack spacing={5}>
             <FlightTime />
             <Battery />
           </HStack>
         </HStack>
       </Box>
-      <Divider orientation='horizontal' />
+      <Divider orientation="horizontal" />
     </>
   );
 };
