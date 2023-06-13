@@ -11,16 +11,6 @@ from tools.logger import initialize_logging
 initialize_logging(subfolder="DroneLogs")
 
 
-# Defining enum for directions
-class Direction(Enum):
-    UP = "up"
-    DOWN = "down"
-    LEFT = "left"
-    RIGHT = "right"
-    FORWARD = "forward"
-    BACK = "back"
-
-
 class Drone:
     """
     Class representing a drone. This class manages the communication
@@ -28,30 +18,19 @@ class Drone:
     commands to the drone.
     """
 
-    def __init__(self, config_file):
+    def __init__(self):
         """
         Initialize a Drone instance using the provided configuration file.
 
         Args:
             config_file (str): Path to the JSON configuration file.
         """
-        try:
-            with open(config_file, "r") as f:
-                config = json.load(f)
-
-        except FileNotFoundError:
-            logging.error(f"Config file {config_file} not found.")
-            raise
-
-        except json.JSONDecodeError:
-            logging.error(f"Config file {config_file} has invalid JSON.")
-            raise
 
         # Define host and drone address details from the configuration
-        self.hostIP = config["hostIP"]
-        self.hostPort = config["hostPort"]
-        self.droneIP = config["droneIP"]
-        self.dronePort = config["dronePort"]
+        self.hostIP = "192.168.10.2"
+        self.hostPort = 8889
+        self.droneIP = "192.168.10.1"
+        self.dronePort = 8889
 
         # Form complete address from IP and port details
         self.hostAddress = (self.hostIP, self.hostPort)
@@ -61,9 +40,9 @@ class Drone:
         self.initialize_communication()
 
         # Retrieve default distance, speed, and degree values from configuration
-        self.defaultDistance = config["defaultDistance"]
-        self.defaultSpeed = config["defaultSpeed"]
-        self.defaultDegree = config["defaultDegree"]
+        self.defaultDistance = 0.3
+        self.defaultSpeed = 15
+        self.defaultDegree = 10
 
         # Apply default drone speed
         self.set_speed(self.defaultSpeed)
@@ -71,7 +50,7 @@ class Drone:
         # Define possible drone movement directions
         self.DIRECTIONS = ("up", "down", "left", "right", "forward", "back")
 
-        self.configure_units(config)
+        self.configure_units()
 
         # Initialize patrolling related attributes
         self.initialize_patrol()
@@ -86,15 +65,9 @@ class Drone:
         self.thread = threading.Thread(target=self.receive, args=(self.stop_event,))
         self.thread.start()
 
-    def configure_units(self, config):
+    def configure_units(self):
         """Configure the unit system based on the config."""
-        try:
-            self.is_imperial = bool(config.get("imperial", 0))
-        except ValueError:
-            logging.error(
-                "Invalid value for imperial in config. Expected 0 or 1, setting default to False."
-            )
-            self.is_imperial = False
+        self.is_imperial = False
 
     def initialize_patrol(self):
         """Initialize patrolling related attributes."""
