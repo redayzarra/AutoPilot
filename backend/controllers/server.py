@@ -102,8 +102,8 @@ def flip():
 @app.route("/drone/query/<query>", methods=["GET"])
 def drone_query(query):
     try:
-        response = myDrone.query_drone(query)
-        app.logger.info(f"Drone query '{query}' response: {response}")
+        response = myDrone.query_drone(f"{query}?")
+        app.logger.info(f"Drone query '{query}?' response: {response}")
         return jsonify({"status": "success", "response": response}), 200
     except Exception as e:
         app.logger.error(f"Error during drone query: {e}")
