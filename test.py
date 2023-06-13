@@ -8,7 +8,7 @@ from enum import Enum
 from tools.logger import initialize_logging
 
 # Initialize logging
-initialize_logging(subfolder="DroneLogs")
+initialize_logging(subfolder="TestLogs")
 
 
 class Drone:
@@ -421,8 +421,8 @@ if __name__ == "__main__":
 
         myDrone.takeoff()
         time.sleep(5)
-        myDrone.move_in_direction("up", 0.5)
-        time.sleep(5)
+        myDrone.move_in_direction("up", 1)
+        time.sleep(20)
         myDrone.land()
         time.sleep()
 
