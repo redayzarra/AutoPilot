@@ -1,17 +1,17 @@
-import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
-import apiClient, {CanceledError, AxiosError} from "../services/api-client";
+import {
+  CircularProgress,
+  CircularProgressLabel
+} from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import { AxiosError, CanceledError } from "../services/api-client";
+import DroneService from "../services/drone-service";
 
 const Battery = () => {
   const [currentBattery, setCurrentBattery] = useState(0);
 
   useEffect(() => {
-    const controller = new AbortController();
-
-    apiClient
-      .get("/query/battery", {
-        signal: controller.signal,
-      })
+    const { request, cancel } = DroneService.getBattery();
+    request
       .then((response) => {
         setCurrentBattery(response.data.response);
       })
@@ -23,8 +23,7 @@ const Battery = () => {
         }
       });
 
-    return () => controller.abort();
-
+    return () => cancel();
   }, []);
 
   let color;
