@@ -1,5 +1,5 @@
 import { Box, Text } from "@chakra-ui/react";
-import axios, { AxiosError, CanceledError } from "axios";
+import apiClient, { CanceledError, AxiosError } from "../services/api-client";
 import { useEffect, useState } from "react";
 
 const SerialNumber = () => {
@@ -9,8 +9,8 @@ const SerialNumber = () => {
   useEffect(() => {
     const controller = new AbortController();
 
-    axios
-      .get("http://localhost:5000/drone/query/sn", {
+    apiClient
+      .get("/query/sn", {
         signal: controller.signal,
       })
       .then((response) => {
