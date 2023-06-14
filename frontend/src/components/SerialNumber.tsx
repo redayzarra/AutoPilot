@@ -1,18 +1,15 @@
 import { Box, Text } from "@chakra-ui/react";
-import apiClient, { CanceledError, AxiosError } from "../services/api-client";
 import { useEffect, useState } from "react";
+import { AxiosError, CanceledError } from "../services/api-client";
+import DroneService from "../services/drone-service";
 
 const SerialNumber = () => {
   const [serialNumber, setSerialNumber] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const controller = new AbortController();
-
-    apiClient
-      .get("/query/sn", {
-        signal: controller.signal,
-      })
+    const { request, cancel } = DroneService.getSerialNumber();
+    request
       .then((response) => {
         setSerialNumber(response.data.response);
         setError(null);
@@ -25,7 +22,7 @@ const SerialNumber = () => {
         }
       });
 
-    return () => controller.abort();
+    return () => cancel();
   }, []);
 
   if (error) {
