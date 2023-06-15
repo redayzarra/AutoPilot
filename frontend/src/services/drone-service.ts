@@ -30,6 +30,12 @@ class DroneService {
     const request = apiClient.post("/land", { signal: controller.signal });
     return { request, cancel: () => controller.abort() };
   }
+
+  stop() {
+    const controller = new AbortController();
+    const request = apiClient.post("/stop", { signal: controller.signal });
+    return { request, cancel: () => controller.abort() };
+  }
 }
 
 export default new DroneService();

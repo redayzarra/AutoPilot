@@ -1,15 +1,24 @@
-import axios from "axios";
-import DroneButton from "./DroneButtons";
 import { GoStop } from "react-icons/go";
+import { AxiosError, CanceledError } from "../services/api-client";
+import DroneService from "../services/drone-service";
+import DroneButton from "./DroneButtons";
 
 const StopButton = () => {
-  const handleStop = async () => {
-    try {
-      const response = await axios.post("http://localhost:5000/drone/stop");
-      console.log(response.data);
-    } catch (error) {
-      console.error(error);
-    }
+  const handleStop = () => {
+    const { request, cancel } = DroneService.land();
+    request
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        if (error instanceof CanceledError) {
+          console.error("Stop: Request canceled", error.message);
+        } else if (error instanceof AxiosError) {
+          console.error("Stop: Axios error", error.message);
+        }
+      });
+
+    return () => cancel();
   };
 
   return (

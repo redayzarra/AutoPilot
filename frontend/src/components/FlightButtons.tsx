@@ -1,8 +1,8 @@
-import apiClient, { AxiosError, CanceledError } from "../services/api-client";
 import { VStack } from "@chakra-ui/react";
 import { MdFlightLand, MdFlightTakeoff } from "react-icons/md";
-import DroneButton from "./DroneButtons";
+import { AxiosError, CanceledError } from "../services/api-client";
 import DroneService from "../services/drone-service";
+import DroneButton from "./DroneButtons";
 
 const FlightButtons = () => {
   const handleTakeoff = () => {
