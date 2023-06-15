@@ -4,22 +4,26 @@ import { MdFlightLand, MdFlightTakeoff } from "react-icons/md";
 import DroneButton from "./DroneButtons";
 
 const FlightButtons = () => {
-  const handleTakeoff = async () => {
-    try {
-      const response = await axios.post("http://localhost:5000/drone/takeoff");
-      console.log(response.data);
-    } catch (error) {
-      console.error(error);
-    }
+  const handleTakeoff = () => {
+    axios
+      .post("http://localhost:5000/drone/takeoff")
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
-  const handleLand = async () => {
-    try {
-      const response = await axios.post("http://localhost:5000/drone/land");
-      console.log(response.data);
-    } catch (error) {
-      console.error(error);
-    }
+  const handleLand = () => {
+    axios
+      .post("http://localhost:5000/drone/land")
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
