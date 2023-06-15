@@ -2,13 +2,12 @@ import apiClient, { AxiosError, CanceledError } from "../services/api-client";
 import { VStack } from "@chakra-ui/react";
 import { MdFlightLand, MdFlightTakeoff } from "react-icons/md";
 import DroneButton from "./DroneButtons";
+import DroneService from "../services/drone-service";
 
 const FlightButtons = () => {
   const handleTakeoff = () => {
-    const controller = new AbortController();
-
-    apiClient
-      .post("/takeoff", { signal: controller.signal })
+    const { request, cancel } = DroneService.takeOff();
+    request
       .then((response) => {
         console.log(response.data);
       })
@@ -20,14 +19,12 @@ const FlightButtons = () => {
         }
       });
 
-    return () => controller.abort();
+    return () => cancel();
   };
 
   const handleLand = () => {
-    const controller = new AbortController();
-
-    apiClient
-      .post("/land", { signal: controller.signal })
+    const { request, cancel } = DroneService.land();
+    request
       .then((response) => {
         console.log(response.data);
       })
@@ -39,7 +36,7 @@ const FlightButtons = () => {
         }
       });
 
-    return () => controller.abort();
+    return () => cancel();
   };
 
   return (
