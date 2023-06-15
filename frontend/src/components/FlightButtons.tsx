@@ -1,29 +1,45 @@
-import axios from "axios";
+import apiClient, { AxiosError, CanceledError } from "../services/api-client";
 import { VStack } from "@chakra-ui/react";
 import { MdFlightLand, MdFlightTakeoff } from "react-icons/md";
 import DroneButton from "./DroneButtons";
 
 const FlightButtons = () => {
   const handleTakeoff = () => {
-    axios
-      .post("http://localhost:5000/drone/takeoff")
+    const controller = new AbortController();
+
+    apiClient
+      .post("/takeoff", { signal: controller.signal })
       .then((response) => {
         console.log(response.data);
       })
       .catch((error) => {
-        console.error(error);
+        if (error instanceof CanceledError) {
+          console.error("Takeoff: Request canceled", error.message);
+        } else if (error instanceof AxiosError) {
+          console.error("Takeoff: Axios error", error.message);
+        }
       });
+
+    return () => controller.abort();
   };
 
   const handleLand = () => {
-    axios
-      .post("http://localhost:5000/drone/land")
+    const controller = new AbortController();
+
+    apiClient
+      .post("/land", { signal: controller.signal })
       .then((response) => {
         console.log(response.data);
       })
       .catch((error) => {
-        console.error(error);
+        if (error instanceof CanceledError) {
+          console.error("Land: Request canceled", error.message);
+        } else if (error instanceof AxiosError) {
+          console.error("Land: Axios error", error.message);
+        }
       });
+
+    return () => controller.abort();
   };
 
   return (
