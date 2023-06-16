@@ -7,12 +7,19 @@ import SerialNumber from "./SerialNumber";
 const NavBar = () => {
   return (
     <>
-      <Box marginX={5} marginY={2} marginBottom={2}>
+      <Box position="relative" marginX={5} marginY={2} marginBottom={2}>
         <HStack justifyContent="space-between">
           <HStack marginRight={7}>
             <SerialNumber />
           </HStack>
-          <Image src={logo} marginY="-150px" width="250px" />
+          <Image
+            src={logo}
+            width="250px"
+            position="absolute"
+            left="50%"
+            top="50%"
+            transform="translate(-50%, -50%)"
+          />
           <HStack spacing={5}>
             <FlightTime />
             <Battery />
