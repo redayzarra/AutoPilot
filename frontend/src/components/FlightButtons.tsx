@@ -3,13 +3,17 @@ import { MdFlightLand, MdFlightTakeoff } from "react-icons/md";
 import { AxiosError, CanceledError } from "../services/api-client";
 import DroneService from "../services/drone-service";
 import DroneButton from "./DroneButtons";
+import useDroneStore from "../services/store";
 
 const FlightButtons = () => {
+  const setDroneState = useDroneStore((state) => state.setDroneState);
+
   const handleTakeoff = () => {
     const { request, cancel } = DroneService.takeOff();
     request
       .then((response) => {
         console.log(response.data);
+        setDroneState("flying");
       })
       .catch((error) => {
         if (error instanceof CanceledError) {
@@ -27,6 +31,7 @@ const FlightButtons = () => {
     request
       .then((response) => {
         console.log(response.data);
+        setDroneState("landed");
       })
       .catch((error) => {
         if (error instanceof CanceledError) {

@@ -27,7 +27,7 @@ function App() {
           alignItems="flex-start"
           bg="gray.800"
           marginTop="135px"
-          marginRight={2}
+          marginX={1}
         >
           <Box>
             <Flips />
