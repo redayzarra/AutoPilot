@@ -3,6 +3,7 @@ import apiClient from "./api-client";
 export type FlipDirection = "F" | "L" | "R" | "B";
 export type MoveDirection = "forward" | "back";
 export type RotateDirection = "cw" | "ccw";
+export type MoveVertical = "up" | "down";
 
 class DroneService {
   getBattery() {
@@ -51,10 +52,10 @@ class DroneService {
     return { request, cancel: () => controller.abort() };
   }
 
-  move(direction: MoveDirection) {
+  move(direction: MoveDirection | MoveVertical) {
     const controller = new AbortController();
     const request = apiClient.post(
-      "/drone/move",
+      "/move",
       { direction },
       { signal: controller.signal }
     );
@@ -64,7 +65,7 @@ class DroneService {
   rotate(direction: RotateDirection) {
     const controller = new AbortController();
     const request = apiClient.post(
-      "/drone/rotate",
+      "/rotate",
       { direction },
       { signal: controller.signal }
     );

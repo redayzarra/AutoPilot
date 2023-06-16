@@ -10,7 +10,7 @@ import DroneService, {
   MoveDirection,
   RotateDirection,
 } from "../services/drone-service";
-import { AxiosError, CanceledError } from "axios";
+import { AxiosError, CanceledError } from "../services/api-client";
 
 const ArrowControls = () => {
   const moveDrone = (direction: MoveDirection) => {
