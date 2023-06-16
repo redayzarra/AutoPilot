@@ -1,0 +1,34 @@
+2023-06-16 12:37:50,683 - INFO: Server started.
+2023-06-16 12:37:50,688 - INFO: Action: Sending command - Command: command
+2023-06-16 12:37:51,590 - ERROR: No response from drone for command: command
+2023-06-16 12:37:51,591 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-16 12:37:52,591 - INFO: Action: Sending command - Command: streamon
+2023-06-16 12:37:53,494 - ERROR: No response from drone for command: streamon
+2023-06-16 12:37:53,496 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-16 12:37:53,499 - INFO: Setting drone speed to 100 cm/s
+2023-06-16 12:37:53,499 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:37:53,501 - INFO: Action: Sending command - Command: speed 100
+2023-06-16 12:37:53,503 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:37:53,513 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:37:53,524 - INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.2:5000
+2023-06-16 12:37:53,525 - INFO: [33mPress CTRL+C to quit[0m
+2023-06-16 12:38:03,347 - INFO: Action: Sending command - Command: battery?
+2023-06-16 12:38:03,348 - INFO: Drone query 'battery?' response: ok
+2023-06-16 12:38:03,349 - INFO: 127.0.0.1 - - [16/Jun/2023 12:38:03] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-16 12:38:03,355 - INFO: Action: Receiving response - Response: b'58\r\n'
+2023-06-16 12:38:03,607 - INFO: Action: Sending command - Command: battery?
+2023-06-16 12:38:03,608 - INFO: Drone query 'battery?' response: 58
+
+2023-06-16 12:38:03,609 - INFO: 127.0.0.1 - - [16/Jun/2023 12:38:03] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-16 12:38:06,047 - INFO: Action: Sending command - Command: sn?
+2023-06-16 12:38:06,047 - INFO: Drone query 'sn?' response: 58
+
+2023-06-16 12:38:06,048 - INFO: 127.0.0.1 - - [16/Jun/2023 12:38:06] "GET /drone/query/sn HTTP/1.1" 200 -
+2023-06-16 12:38:12,415 - INFO: 127.0.0.1 - - [16/Jun/2023 12:38:12] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:38:12,674 - INFO: Action: Sending command - Command: takeoff
+2023-06-16 12:38:12,675 - INFO: Drone takeoff: 58
+
+2023-06-16 12:38:12,676 - INFO: 127.0.0.1 - - [16/Jun/2023 12:38:12] "POST /drone/takeoff HTTP/1.1" 200 -

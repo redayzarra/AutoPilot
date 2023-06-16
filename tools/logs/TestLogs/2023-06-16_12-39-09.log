@@ -1,0 +1,53 @@
+2023-06-16 12:39:09,462 - INFO: Server started.
+2023-06-16 12:39:09,463 - INFO: Action: Sending command - Command: command
+2023-06-16 12:39:10,366 - ERROR: No response from drone for command: command
+2023-06-16 12:39:10,366 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-16 12:39:11,367 - INFO: Action: Sending command - Command: streamon
+2023-06-16 12:39:12,271 - ERROR: No response from drone for command: streamon
+2023-06-16 12:39:12,271 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-16 12:39:12,272 - INFO: Setting drone speed to 100 cm/s
+2023-06-16 12:39:12,272 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:39:12,273 - INFO: Action: Sending command - Command: speed 100
+2023-06-16 12:39:12,273 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:39:12,285 - INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.2:5000
+2023-06-16 12:39:12,286 - INFO: [33mPress CTRL+C to quit[0m
+2023-06-16 12:39:12,301 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:39:18,771 - INFO: Action: Sending command - Command: battery?
+2023-06-16 12:39:18,772 - INFO: Drone query 'battery?' response: ok
+2023-06-16 12:39:18,773 - INFO: 127.0.0.1 - - [16/Jun/2023 12:39:18] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-16 12:39:18,891 - INFO: Action: Receiving response - Response: b'43\r\n'
+2023-06-16 12:39:20,016 - INFO: Action: Sending command - Command: battery?
+2023-06-16 12:39:20,017 - INFO: Drone query 'battery?' response: 43
+
+2023-06-16 12:39:20,018 - INFO: 127.0.0.1 - - [16/Jun/2023 12:39:20] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-16 12:39:20,094 - INFO: Action: Receiving response - Response: b'43\r\n'
+2023-06-16 12:39:20,333 - INFO: Action: Sending command - Command: battery?
+2023-06-16 12:39:20,334 - INFO: Drone query 'battery?' response: 43
+
+2023-06-16 12:39:20,335 - INFO: 127.0.0.1 - - [16/Jun/2023 12:39:20] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-16 12:39:20,379 - INFO: Action: Receiving response - Response: b'43\r\n'
+2023-06-16 12:39:23,018 - INFO: Action: Sending command - Command: sn?
+2023-06-16 12:39:23,018 - INFO: Drone query 'sn?' response: 43
+
+2023-06-16 12:39:23,019 - INFO: 127.0.0.1 - - [16/Jun/2023 12:39:23] "GET /drone/query/sn HTTP/1.1" 200 -
+2023-06-16 12:39:23,035 - INFO: Action: Receiving response - Response: b'0TQZK5DED02L2S'
+2023-06-16 12:39:26,705 - INFO: 127.0.0.1 - - [16/Jun/2023 12:39:26] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:39:26,953 - INFO: Action: Sending command - Command: takeoff
+2023-06-16 12:39:26,953 - INFO: Drone takeoff: 0TQZK5DED02L2S
+2023-06-16 12:39:26,954 - INFO: 127.0.0.1 - - [16/Jun/2023 12:39:26] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:39:27,017 - INFO: Action: Receiving response - Response: b'error'
+2023-06-16 12:39:37,922 - INFO: 127.0.0.1 - - [16/Jun/2023 12:39:37] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:39:38,230 - INFO: Action: Sending command - Command: takeoff
+2023-06-16 12:39:38,232 - INFO: Drone takeoff: error
+2023-06-16 12:39:38,235 - INFO: 127.0.0.1 - - [16/Jun/2023 12:39:38] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:39:45,851 - INFO: Action: Sending command - Command: battery?
+2023-06-16 12:39:45,852 - ERROR: Failed to send command: battery? - Error: [WinError 10049] The requested address is not valid in its context
+2023-06-16 12:39:45,853 - ERROR: Error during drone query: [WinError 10049] The requested address is not valid in its context
+2023-06-16 12:39:45,853 - INFO: 127.0.0.1 - - [16/Jun/2023 12:39:45] "[35m[1mGET /drone/query/battery HTTP/1.1[0m" 500 -
+2023-06-16 12:39:48,939 - INFO: Action: Sending command - Command: sn?
+2023-06-16 12:39:48,940 - ERROR: Failed to send command: sn? - Error: [WinError 10049] The requested address is not valid in its context
+2023-06-16 12:39:48,940 - ERROR: Error during drone query: [WinError 10049] The requested address is not valid in its context
+2023-06-16 12:39:48,941 - INFO: 127.0.0.1 - - [16/Jun/2023 12:39:48] "[35m[1mGET /drone/query/sn HTTP/1.1[0m" 500 -

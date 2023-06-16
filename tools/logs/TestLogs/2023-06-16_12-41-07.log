@@ -1,0 +1,53 @@
+2023-06-16 12:41:07,957 - INFO: Server started.
+2023-06-16 12:41:07,958 - INFO: Action: Sending command - Command: command
+2023-06-16 12:41:08,860 - ERROR: No response from drone for command: command
+2023-06-16 12:41:08,860 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-16 12:41:09,861 - INFO: Action: Sending command - Command: streamon
+2023-06-16 12:41:10,763 - ERROR: No response from drone for command: streamon
+2023-06-16 12:41:10,763 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-16 12:41:10,764 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:41:10,765 - INFO: Setting drone speed to 100 cm/s
+2023-06-16 12:41:10,765 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:41:10,765 - INFO: Action: Sending command - Command: speed 100
+2023-06-16 12:41:10,776 - INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.2:5000
+2023-06-16 12:41:10,778 - INFO: [33mPress CTRL+C to quit[0m
+2023-06-16 12:41:10,778 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:41:14,355 - INFO: Action: Sending command - Command: battery?
+2023-06-16 12:41:14,356 - INFO: Drone query 'battery?' response: ok
+2023-06-16 12:41:14,357 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:14] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-16 12:41:14,399 - INFO: Action: Receiving response - Response: b'42\r\n'
+2023-06-16 12:41:17,050 - INFO: Action: Sending command - Command: sn?
+2023-06-16 12:41:17,050 - INFO: Drone query 'sn?' response: 42
+
+2023-06-16 12:41:17,051 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:17] "GET /drone/query/sn HTTP/1.1" 200 -
+2023-06-16 12:41:17,104 - INFO: Action: Receiving response - Response: b'0TQZK5DED02L2S'
+2023-06-16 12:41:17,985 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:17] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:41:18,251 - INFO: Action: Sending command - Command: takeoff
+2023-06-16 12:41:18,253 - INFO: Drone takeoff: 0TQZK5DED02L2S
+2023-06-16 12:41:18,255 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:18] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:41:18,283 - INFO: Action: Receiving response - Response: b'error'
+2023-06-16 12:41:20,355 - INFO: Action: Sending command - Command: takeoff
+2023-06-16 12:41:20,356 - INFO: Drone takeoff: error
+2023-06-16 12:41:20,356 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:20] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:41:20,370 - INFO: Action: Receiving response - Response: b'error'
+2023-06-16 12:41:23,918 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:23] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:41:24,183 - INFO: Action: Sending command - Command: takeoff
+2023-06-16 12:41:24,183 - INFO: Drone takeoff: error
+2023-06-16 12:41:24,184 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:24] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:41:24,197 - INFO: Action: Receiving response - Response: b'error'
+2023-06-16 12:41:24,326 - INFO: Action: Sending command - Command: takeoff
+2023-06-16 12:41:24,327 - INFO: Drone takeoff: error
+2023-06-16 12:41:24,328 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:24] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:41:24,351 - INFO: Action: Receiving response - Response: b'error'
+2023-06-16 12:41:25,553 - INFO: Action: Sending command - Command: takeoff
+2023-06-16 12:41:25,555 - INFO: Drone takeoff: error
+2023-06-16 12:41:25,558 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:25] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:41:25,577 - INFO: Action: Receiving response - Response: b'error'
+2023-06-16 12:41:32,184 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:32] "OPTIONS /drone/stop HTTP/1.1" 200 -
+2023-06-16 12:41:32,493 - INFO: Action: Sending command - Command: emergency
+2023-06-16 12:41:32,496 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:32] "POST /drone/stop HTTP/1.1" 200 -
+2023-06-16 12:41:36,101 - INFO: Action: Sending command - Command: emergency
+2023-06-16 12:41:36,102 - INFO: 127.0.0.1 - - [16/Jun/2023 12:41:36] "POST /drone/stop HTTP/1.1" 200 -

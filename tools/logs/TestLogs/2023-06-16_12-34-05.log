@@ -1,0 +1,482 @@
+2023-06-16 12:34:05,318 - INFO: Server started.
+2023-06-16 12:34:05,318 - INFO: Action: Sending command - Command: command
+2023-06-16 12:34:06,221 - ERROR: No response from drone for command: command
+2023-06-16 12:34:06,221 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-16 12:34:07,222 - INFO: Action: Sending command - Command: streamon
+2023-06-16 12:34:08,124 - ERROR: No response from drone for command: streamon
+2023-06-16 12:34:08,125 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-16 12:34:08,126 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:08,126 - INFO: Setting drone speed to 100 cm/s
+2023-06-16 12:34:08,128 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:08,129 - INFO: Action: Sending command - Command: speed 100
+2023-06-16 12:34:08,143 - INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.2:5000
+2023-06-16 12:34:08,144 - INFO: [33mPress CTRL+C to quit[0m
+2023-06-16 12:34:08,165 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:19,067 - INFO: Action: Sending command - Command: battery?
+2023-06-16 12:34:19,068 - INFO: Drone query 'battery?' response: ok
+2023-06-16 12:34:19,069 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:19] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-16 12:34:19,105 - INFO: Action: Receiving response - Response: b'61\r\n'
+2023-06-16 12:34:21,760 - INFO: Action: Sending command - Command: sn?
+2023-06-16 12:34:21,761 - INFO: Drone query 'sn?' response: 61
+
+2023-06-16 12:34:21,762 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:21] "GET /drone/query/sn HTTP/1.1" 200 -
+2023-06-16 12:34:21,768 - INFO: Action: Receiving response - Response: b'0TQZK5DED02L2S'
+2023-06-16 12:34:25,419 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:25] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:34:25,682 - INFO: Action: Sending command - Command: takeoff
+2023-06-16 12:34:25,682 - INFO: Drone takeoff: 0TQZK5DED02L2S
+2023-06-16 12:34:25,683 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:25] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:34:28,569 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:28] "OPTIONS /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:34:28,882 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:34:28,882 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:28] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:34:29,661 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:34:29,662 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:29] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:34:29,675 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:29,727 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:30,961 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:34:30,961 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:30] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:34:31,768 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:34,961 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:34] "OPTIONS /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:34:35,270 - INFO: Action: Sending command - Command: cw 15.0
+2023-06-16 12:34:35,270 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:35] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:34:35,728 - INFO: Action: Sending command - Command: cw 15.0
+2023-06-16 12:34:35,729 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:35] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:34:36,053 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:36,761 - INFO: Action: Sending command - Command: cw 15.0
+2023-06-16 12:34:36,761 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:36] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:34:37,026 - INFO: Action: Sending command - Command: cw 15.0
+2023-06-16 12:34:37,027 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:37] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:34:37,636 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:38,805 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:38] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:39,112 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:39,112 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:39,113 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:39] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:41,039 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:41,040 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:41,041 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:41] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:41,765 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:43,115 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:43,117 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:43,119 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:43] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:45,311 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:45] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:45,629 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:45,631 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:45,632 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:45] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:45,851 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:46,535 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:46,535 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:46,536 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:46] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:48,922 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:48,923 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:48,924 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:48] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:49,120 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:49,349 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:49,350 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:49,351 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:49] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:49,966 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:49,968 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:49,970 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:49] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:50,210 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:50,210 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:50,211 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:50] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:50,507 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:50] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:50,801 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:50,801 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:50,802 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:50] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:50,816 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:50,817 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:50,818 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:50] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:51,052 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:51,052 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:51,053 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:51] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:51,257 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:51,258 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:51,259 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:51] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:51,428 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:51,428 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:51,429 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:51] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:51,597 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:51,597 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:51,598 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:51] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:51,769 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:51,769 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:51,770 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:51] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:51,770 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:51,959 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:51,960 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:51,960 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:51] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:52,129 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:52,129 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:52,130 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:52] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:52,318 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:52,320 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:52,322 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:52] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:52,504 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:52,505 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:52,505 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:52] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:52,702 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:52,703 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:52,704 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:52] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:52,878 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:52,878 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:52,879 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:52] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:53,051 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:53,053 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:53,056 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:53] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:53,236 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:53,236 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:53,237 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:53] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:53,452 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:53,452 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:53,453 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:53] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:53,636 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:53,637 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:53,638 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:53] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:53,838 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:53,838 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:53,838 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:53] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:54,040 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:54,040 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:54,041 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:54] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:54,118 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:34:54,255 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:54,256 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:54,256 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:54] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:54,460 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:54,460 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:54,461 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:54] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:54,646 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:54,646 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:54,647 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:54] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:54,834 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:54,837 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:54,838 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:54] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:55,020 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:55,020 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:55,021 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:55] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:55,223 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:34:55,225 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:34:55,228 - INFO: 127.0.0.1 - - [16/Jun/2023 12:34:55] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:34:56,785 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:01,172 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:01] "OPTIONS /drone/flip HTTP/1.1" 200 -
+2023-06-16 12:35:01,479 - INFO: Action: Sending command - Command: flip f
+2023-06-16 12:35:01,479 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:01] "POST /drone/flip HTTP/1.1" 200 -
+2023-06-16 12:35:05,049 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:10,048 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:10] "OPTIONS /drone/flip HTTP/1.1" 200 -
+2023-06-16 12:35:10,361 - INFO: Action: Sending command - Command: flip f
+2023-06-16 12:35:10,362 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:10] "POST /drone/flip HTTP/1.1" 200 -
+2023-06-16 12:35:13,953 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:18,310 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:18] "OPTIONS /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:18,619 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:18,619 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:18] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:19,071 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:19,071 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:19] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:19,266 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:19,583 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:19,584 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:19] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:19,851 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:19,852 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:19] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:19,892 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:19,893 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:19] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:20,344 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:20,345 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:20] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:20,490 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:21,492 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:21,493 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:21] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:21,739 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:21,740 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:21] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:21,755 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:21,755 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:21] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:21,927 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:21,929 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:21] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:22,192 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:22,192 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:22] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:22,223 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:22,363 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:22,364 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:22] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:22,627 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:22,628 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:22] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:22,877 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:22,880 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:22] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:23,061 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:23,062 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:23] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:23,143 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:23,261 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:23,262 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:23] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:23,448 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:23] "OPTIONS /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:23,662 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:23,663 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:23] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:23,757 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:23,757 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:23] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:23,850 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:23,851 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:23] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:24,026 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:24,029 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:24] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:24,211 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:24,211 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:24] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:24,215 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:24,384 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:24,384 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:24] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:24,569 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:24,569 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:24] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:24,769 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:24,769 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:24] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:24,956 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:24,957 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:24] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:25,161 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:25,161 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:25] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:25,353 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:25,356 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:25] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:25,542 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:25,545 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:25] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:25,729 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:25,729 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:25] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:25,919 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:25,922 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:25] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:26,302 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:27,021 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:27,022 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:27] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:27,782 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:28,086 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:28,086 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:28] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:28,334 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:28,334 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:28] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:29,325 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:29,649 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:29] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:29,962 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:29,963 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:29,966 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:29] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:31,369 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:31,987 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:31] "OPTIONS /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:32,292 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:32,293 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:32] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:32,905 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:32,906 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:32,906 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:32] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:33,221 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:33,982 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:33,982 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:33,983 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:33] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:34,245 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:34,245 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:34,246 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:34] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:34,707 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:34] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:35,024 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:35,024 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:35,025 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:35] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:35,260 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:35,262 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:35,265 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:35] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:35,272 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:35,275 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:35,276 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:35] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:35,480 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:35,482 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:35,485 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:35] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:35,709 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:35,710 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:35,711 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:35] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:35,824 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:35,911 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:35,911 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:35,912 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:35] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:36,161 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:36,161 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:36,161 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:36] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:36,346 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:36,346 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:36,347 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:36] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:36,550 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:36,552 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:36,555 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:36] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:36,767 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:36,767 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:36,768 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:36] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:36,985 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:36,986 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:36,986 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:36] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:37,186 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:37,186 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:37,187 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:37] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:37,415 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:37,416 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:37,416 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:37] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:37,632 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:37,632 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:37,633 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:37] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:37,664 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:37,820 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:37,820 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:37,821 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:37] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:38,025 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:38,028 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:38,030 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:38] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:38,210 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:38,210 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:38,211 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:38] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:38,429 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:38,429 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:38,430 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:38] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:38,662 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:38,663 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:38,664 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:38] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:39,557 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:39] "OPTIONS /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:39,602 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:39,862 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:39,862 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:39] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:40,557 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:40] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:40,574 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:40,873 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:40,875 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:40,878 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:40] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:41,055 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:41,055 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:41,056 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:41] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:41,134 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:41,134 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:41,135 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:41] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:41,259 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:41,260 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:41,260 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:41] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:41,475 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:41,476 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:41,477 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:41] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:41,706 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:41,706 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:41,707 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:41] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:41,937 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:41,938 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:41,939 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:41] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:42,151 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:42,151 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:42,152 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:42] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:42,357 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:42,400 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:42,400 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:42,401 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:42] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:42,617 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:42,617 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:42,618 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:42] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:42,852 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:42,852 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:42,853 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:42] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:43,037 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:43,037 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:43,038 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:43] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:43,238 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:43,238 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:43,239 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:43] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:43,890 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:43,899 - INFO: Action: Sending command - Command: ccw 15.0
+2023-06-16 12:35:43,900 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:43] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-16 12:35:44,655 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:44,807 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:44,807 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:44,808 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:44] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:45,028 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:45,030 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:45,033 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:45] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:45,073 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:45,073 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:45,074 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:45] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:45,245 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:35:45,245 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:35:45,246 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:45] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:35:46,230 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:46] "OPTIONS /drone/stop HTTP/1.1" 200 -
+2023-06-16 12:35:46,239 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:35:46,538 - INFO: Action: Sending command - Command: emergency
+2023-06-16 12:35:46,541 - INFO: 127.0.0.1 - - [16/Jun/2023 12:35:46] "POST /drone/stop HTTP/1.1" 200 -
+2023-06-16 12:36:14,317 - INFO: Action: Sending command - Command: battery?
+2023-06-16 12:36:14,318 - INFO: Drone query 'battery?' response: ok
+2023-06-16 12:36:14,319 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:14] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-16 12:36:14,358 - INFO: Action: Receiving response - Response: b'60\r\n'
+2023-06-16 12:36:14,631 - INFO: Action: Sending command - Command: battery?
+2023-06-16 12:36:14,631 - INFO: Drone query 'battery?' response: 60
+
+2023-06-16 12:36:14,632 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:14] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-16 12:36:14,666 - INFO: Action: Receiving response - Response: b'60\r\n'
+2023-06-16 12:36:16,809 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:16] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:36:17,112 - INFO: Action: Sending command - Command: takeoff
+2023-06-16 12:36:17,113 - INFO: Drone takeoff: 60
+
+2023-06-16 12:36:17,113 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:17] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-16 12:36:17,371 - INFO: Action: Sending command - Command: sn?
+2023-06-16 12:36:17,372 - INFO: Drone query 'sn?' response: 60
+
+2023-06-16 12:36:17,372 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:17] "GET /drone/query/sn HTTP/1.1" 200 -
+2023-06-16 12:36:17,421 - INFO: Action: Receiving response - Response: b'0TQZK5DED02L2S'
+2023-06-16 12:36:20,230 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:20] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:20,537 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:20,537 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:20,538 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:20] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:21,100 - INFO: Action: Receiving response - Response: b'error Not joystick'
+2023-06-16 12:36:23,009 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:23,010 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:23,011 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:23] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:23,607 - INFO: Action: Receiving response - Response: b'error Not joystick'
+2023-06-16 12:36:24,135 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:24,136 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:24,136 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:24] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:24,357 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:24,360 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:24,362 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:24] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:24,404 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:24,406 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:24,408 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:24] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:24,541 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:24,542 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:24,543 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:24] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:24,677 - INFO: Action: Receiving response - Response: b'error Not joystick'
+2023-06-16 12:36:24,744 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:24,746 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:24,749 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:24] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:24,993 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:24,993 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:24,994 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:24] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:25,211 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:25,212 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:25,213 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:25] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:25,287 - INFO: Action: Receiving response - Response: b'error Not joystick'
+2023-06-16 12:36:25,400 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:25] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:25,587 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:25,588 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:25,589 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:25] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:25,712 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:25,713 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:25,713 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:25] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:25,762 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:25,764 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:25,767 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:25] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:25,948 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:25,950 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:25,951 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:36:25,953 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:25] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:26,120 - INFO: Action: Sending command - Command: forward 20
+2023-06-16 12:36:26,121 - INFO: Moving drone forward by 20 cm
+2023-06-16 12:36:26,122 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:26] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:27,431 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:36:28,416 - INFO: Action: Sending command - Command: back 20
+2023-06-16 12:36:28,417 - INFO: Moving drone back by 20 cm
+2023-06-16 12:36:28,417 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:28] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:28,896 - INFO: Action: Sending command - Command: back 20
+2023-06-16 12:36:28,896 - INFO: Moving drone back by 20 cm
+2023-06-16 12:36:28,897 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:28] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:29,668 - INFO: Action: Sending command - Command: back 20
+2023-06-16 12:36:29,668 - INFO: Moving drone back by 20 cm
+2023-06-16 12:36:29,669 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:29] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:30,086 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:36:30,176 - INFO: Action: Sending command - Command: back 20
+2023-06-16 12:36:30,178 - INFO: Moving drone back by 20 cm
+2023-06-16 12:36:30,181 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:30] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:30,356 - INFO: Action: Sending command - Command: back 20
+2023-06-16 12:36:30,357 - INFO: Moving drone back by 20 cm
+2023-06-16 12:36:30,357 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:30] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:30,438 - INFO: Action: Sending command - Command: back 20
+2023-06-16 12:36:30,438 - INFO: Moving drone back by 20 cm
+2023-06-16 12:36:30,439 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:30] "POST /drone/move HTTP/1.1" 200 -
+2023-06-16 12:36:31,870 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-16 12:36:32,210 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:32] "OPTIONS /drone/stop HTTP/1.1" 200 -
+2023-06-16 12:36:32,522 - INFO: Action: Sending command - Command: emergency
+2023-06-16 12:36:32,525 - INFO: 127.0.0.1 - - [16/Jun/2023 12:36:32] "POST /drone/stop HTTP/1.1" 200 -
