@@ -200,26 +200,15 @@ class Drone:
             str: Response from the drone.
         """
         try:
-            distance = float(distance)
+            distance = int(distance)
         except ValueError:
             logging.error(f"Invalid distance provided: {distance}")
             raise
 
-        # Metric conversion factor for imperial to metric distance.
-        # 1 foot equals 30.48 centimeters.
-        imperial_to_metric = 30.48
-
-        # Default factor for metric system (100 cm = 1 m)
-        default_factor = 100
-
-        factor = imperial_to_metric if self.is_imperial else default_factor
-        converted_distance = int(round(distance * factor))
-
-        command = f"{direction} {converted_distance}"
+        command = f"{direction} {distance}"
         response = self.send_command(command)
 
-        unit = "feet" if self.is_imperial else "cm"
-        logging.info(f"Moving drone {direction} by {distance} {unit}")
+        logging.info(f"Moving drone {direction} by {distance} cm")
 
         return response
 
