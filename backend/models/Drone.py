@@ -123,7 +123,7 @@ class Drone:
             logging.info(f"Action: Initiating Drone at {self.droneIP}")
 
             time.sleep(1)
-            
+
             self.send_command("streamon")
             logging.info(f"Action: Turning Stream On at {self.droneIP}")
         except socket.error as e:
@@ -307,6 +307,10 @@ class Drone:
             )
 
         return self.send_command(f"flip {direction}")
+
+    def emergency(self):
+        """Command the drone to stop all motors, drone will fall."""
+        return self.send_command("emergency")
 
     def patrol(self):
         """

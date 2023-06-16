@@ -52,12 +52,11 @@ def move():
     if not data:
         return jsonify({"error": "Missing data in request"}), 400
     direction = data.get("direction")
-    distance = data.get("distance")
-    if not direction or not distance:
-        return jsonify({"error": "Missing 'direction' or 'distance' in request"}), 400
+    if not direction:
+        return jsonify({"error": "Missing 'direction' in request"}), 400
 
     try:
-        response = myDrone.move_in_direction(direction, distance)
+        response = myDrone.move_in_direction(direction)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -131,7 +130,7 @@ def stop_patrol():
 @app.route("/drone/stop", methods=["POST"])
 def stop():
     try:
-        myDrone.stop()
+        myDrone.emergency()
         return jsonify({"response": "Drone stopped"}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
