@@ -122,6 +122,8 @@ class Drone:
             self.send_command("command")
             logging.info(f"Action: Initiating Drone at {self.droneIP}")
 
+            time.sleep(1)
+            
             self.send_command("streamon")
             logging.info(f"Action: Turning Stream On at {self.droneIP}")
         except socket.error as e:
