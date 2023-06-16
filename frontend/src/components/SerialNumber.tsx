@@ -8,21 +8,29 @@ const SerialNumber = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const { request, cancel } = DroneService.getSerialNumber();
-    request
-      .then((response) => {
-        setSerialNumber(response.data.response);
-        setError(null);
-      })
-      .catch((error) => {
-        if (error instanceof CanceledError) {
-          console.error("Request canceled", error.message);
-        } else if (error instanceof AxiosError) {
-          setError(error.message);
-        }
-      });
+    const delay = 2000; // delay in milliseconds
 
-    return () => cancel();
+    const timeoutId = setTimeout(() => {
+      const { request, cancel } = DroneService.getSerialNumber();
+      request
+        .then((response) => {
+          setSerialNumber(response.data.response);
+          setError(null);
+        })
+        .catch((error) => {
+          if (error instanceof CanceledError) {
+            console.error("Request canceled", error.message);
+          } else if (error instanceof AxiosError) {
+            setError(error.message);
+          }
+        });
+      return () => {
+        cancel();
+      };
+    }, delay);
+
+    // Clear timeout
+    return () => clearTimeout(timeoutId);
   }, []);
 
   if (error) {
