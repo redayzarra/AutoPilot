@@ -1,6 +1,8 @@
 import apiClient from "./api-client";
 
-export type Direction = "F" | "L" | "R" | "B";
+export type FlipDirection = "F" | "L" | "R" | "B";
+export type MoveDirection = "forward" | "back";
+export type RotateDirection = "cw" | "ccw";
 
 class DroneService {
   getBattery() {
@@ -39,10 +41,30 @@ class DroneService {
     return { request, cancel: () => controller.abort() };
   }
 
-  flip(direction: Direction) {
+  flip(direction: FlipDirection) {
     const controller = new AbortController();
     const request = apiClient.post(
       "/flip",
+      { direction },
+      { signal: controller.signal }
+    );
+    return { request, cancel: () => controller.abort() };
+  }
+
+  move(direction: MoveDirection) {
+    const controller = new AbortController();
+    const request = apiClient.post(
+      "/drone/move",
+      { direction },
+      { signal: controller.signal }
+    );
+    return { request, cancel: () => controller.abort() };
+  }
+
+  rotate(direction: RotateDirection) {
+    const controller = new AbortController();
+    const request = apiClient.post(
+      "/drone/rotate",
       { direction },
       { signal: controller.signal }
     );

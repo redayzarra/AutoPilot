@@ -1,10 +1,10 @@
 import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import { AxiosError, CanceledError } from "../services/api-client";
-import DroneService, { Direction } from "../services/drone-service";
+import DroneService, { FlipDirection } from "../services/drone-service";
 import FlipButton from "./FlipButton";
 
 // Flip drone function
-const flipDrone = (direction: Direction) => {
+const flipDrone = (direction: FlipDirection) => {
   const { request, cancel } = DroneService.flip(direction); // Use flip method from DroneService
   request
     .then((response) => {

@@ -1,11 +1,11 @@
 import { Button, Icon } from "@chakra-ui/react";
-import { IconType } from "react-icons";
 
 interface ArrowKeyProps {
-  icon: IconType;
+  icon: any;
+  onClick: () => void;
 }
 
-const ArrowKey = ({ icon }: ArrowKeyProps) => {
+const ArrowKey = ({ icon, onClick }: ArrowKeyProps) => {
   return (
     <Button
       colorScheme="gray"
@@ -13,6 +13,7 @@ const ArrowKey = ({ icon }: ArrowKeyProps) => {
       display="flex"
       alignItems="center"
       justifyContent="center"
+      onClick={onClick}
     >
       <Icon as={icon} />
     </Button>
