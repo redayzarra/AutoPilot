@@ -8,7 +8,7 @@ const SerialNumber = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const delay = 2000; // delay in milliseconds
+    const delay = 3000; // delay in milliseconds
 
     const timeoutId = setTimeout(() => {
       const { request, cancel } = DroneService.getSerialNumber();
