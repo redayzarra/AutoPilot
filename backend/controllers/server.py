@@ -69,17 +69,16 @@ def rotate():
     if not data:
         return jsonify({"error": "Missing data in request"}), 400
     direction = data.get("direction")
-    degree = data.get("degree")
-    if not direction or not degree:
-        return jsonify({"error": "Missing 'direction' or 'degree' in request"}), 400
+    if not direction:
+        return jsonify({"error": "Missing 'direction' in request"}), 400
 
     try:
-        response = myDrone.rotate(direction, degree)
+        # Use defaultDegree from the Drone class instance for rotation
+        response = myDrone.rotate(direction)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
     return jsonify({"response": response}), 200
-
 
 @app.route("/drone/flip", methods=["POST"])
 def flip():
