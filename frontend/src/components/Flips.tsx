@@ -33,14 +33,14 @@ const Flips = () => {
           <FlipButton
             label="F"
             colorScheme="yellow"
-            onClick={() => flipDrone("F")}
+            onClick={() => flipDrone("f")}
           />
         </HStack>
         <HStack spacing={3}>
           <FlipButton
             label="L"
             colorScheme="blue"
-            onClick={() => flipDrone("L")}
+            onClick={() => flipDrone("l")}
           />
           <Text fontSize="lg" fontWeight="bold">
             Flips!
@@ -48,14 +48,14 @@ const Flips = () => {
           <FlipButton
             label="R"
             colorScheme="red"
-            onClick={() => flipDrone("R")}
+            onClick={() => flipDrone("r")}
           />
         </HStack>
         <HStack justifyContent="center">
           <FlipButton
             label="B"
             colorScheme="green"
-            onClick={() => flipDrone("B")}
+            onClick={() => flipDrone("b")}
           />
         </HStack>
       </VStack>

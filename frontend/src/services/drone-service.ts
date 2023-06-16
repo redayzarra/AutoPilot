@@ -1,6 +1,6 @@
 import apiClient from "./api-client";
 
-export type FlipDirection = "F" | "L" | "R" | "B";
+export type FlipDirection = "f" | "l" | "r" | "b";
 export type MoveDirection = "forward" | "back";
 export type RotateDirection = "cw" | "ccw";
 export type MoveVertical = "up" | "down";
