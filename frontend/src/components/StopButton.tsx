@@ -5,7 +5,7 @@ import DroneButton from "./DroneButtons";
 
 const StopButton = () => {
   const handleStop = () => {
-    const { request, cancel } = DroneService.land();
+    const { request, cancel } = DroneService.stop();
     request
       .then((response) => {
         console.log(response.data);
