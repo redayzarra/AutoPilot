@@ -1,4 +1,4 @@
-import { VStack } from "@chakra-ui/react";
+import { VStack, Text } from "@chakra-ui/react";
 import { BiDownArrowAlt, BiUpArrowAlt } from "react-icons/bi";
 import DroneService, { MoveVertical } from "../services/drone-service"; // import DroneService
 import ArrowKey from "./ArrowKey";
@@ -22,10 +22,15 @@ const HeightControls = () => {
   };
 
   return (
-    <VStack align="center" marginRight="50px">
-      <ArrowKey icon={BiUpArrowAlt} onClick={() => moveDrone("up")} />
-      <ArrowKey icon={BiDownArrowAlt} onClick={() => moveDrone("down")} />
-    </VStack>
+    <>
+      <VStack>
+        <Text fontWeight="bold">Height</Text>
+        <VStack align="center">
+          <ArrowKey icon={BiUpArrowAlt} onClick={() => moveDrone("up")} />
+          <ArrowKey icon={BiDownArrowAlt} onClick={() => moveDrone("down")} />
+        </VStack>
+      </VStack>
+    </>
   );
 };
 

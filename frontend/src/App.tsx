@@ -3,10 +3,10 @@ import ArrowControls from "./components/ArrowControls";
 import Camera from "./components/Camera";
 import FlightButtons from "./components/FlightButtons";
 import Flips from "./components/Flips";
-import HeightSlider from "./components/HeightSlider";
+import Footer from "./components/Footer";
+import HeightControls from "./components/HeightControls";
 import NavBar from "./components/NavBar";
 import StopButton from "./components/StopButton";
-import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Grid
         templateAreas={`"nav nav nav" 
                       "flip main height"`}
-        gridTemplateColumns="1fr 3fr 1fr"
+        gridTemplateColumns="1fr 4fr 0.5fr"
       >
         <GridItem area="nav" bg="gray.800" marginBottom={2}>
           <NavBar />
@@ -42,8 +42,17 @@ function App() {
           </HStack>
         </GridItem>
 
-        <GridItem area="height" bg="gray.800">
-          <HeightSlider />
+        <GridItem
+          area="height"
+          display="flex"
+          alignItems="flex-start"
+          bg="gray.800"
+          marginLeft={5}
+          marginTop="135px"
+        >
+          <Box>
+            <HeightControls />
+          </Box>
         </GridItem>
       </Grid>
 
