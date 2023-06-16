@@ -14,7 +14,7 @@ function App() {
       <Grid
         templateAreas={`"nav nav nav" 
                       "flip main height"`}
-        gridTemplateColumns="1fr 4fr 0.5fr"
+        gridTemplateColumns="0.5fr 3fr 0.5fr"
       >
         <GridItem area="nav" bg="gray.800" marginBottom={2}>
           <NavBar />
@@ -27,6 +27,7 @@ function App() {
           alignItems="flex-start"
           bg="gray.800"
           marginTop="135px"
+          marginRight={2}
         >
           <Box>
             <Flips />
@@ -56,7 +57,7 @@ function App() {
         </GridItem>
       </Grid>
 
-      <HStack justifyContent="center" marginTop="320px">
+      <HStack justifyContent="center" marginTop="300px" marginBottom={2}>
         <Footer />
       </HStack>
     </>
