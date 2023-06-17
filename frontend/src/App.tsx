@@ -26,7 +26,7 @@ function App() {
           justifyContent="center"
           alignItems="flex-start"
           bg="gray.800"
-          marginTop="135px"
+          marginTop="300px"
           marginX={1}
         >
           <Box>
@@ -49,7 +49,7 @@ function App() {
           alignItems="flex-start"
           bg="gray.800"
           marginLeft={5}
-          marginTop="135px"
+          marginTop="300px"
         >
           <Box>
             <HeightControls />
