@@ -459,7 +459,7 @@ class Drone:
                     # logging.info(f"Received video frame of size {size} from {address}.")
                 except socket.timeout as e:
                     logging.warning(f"Socket timeout: {e}", exc_info=True)
-                    time.sleep(0.5)
+                    time.sleep(0.1)
                     continue
                 except socket.error as e:
                     logging.error(f"Socket error: {e}", exc_info=True)

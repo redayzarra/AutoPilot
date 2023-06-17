@@ -3,7 +3,6 @@ import ArrowControls from "./components/ArrowControls";
 import Camera from "./components/Camera";
 import FlightButtons from "./components/FlightButtons";
 import Flips from "./components/Flips";
-import Footer from "./components/Footer";
 import HeightControls from "./components/HeightControls";
 import NavBar from "./components/NavBar";
 import StopButton from "./components/StopButton";
@@ -57,9 +56,6 @@ function App() {
         </GridItem>
       </Grid>
 
-      <HStack justifyContent="center" marginTop="300px" marginBottom={2}>
-        <Footer />
-      </HStack>
     </>
   );
 }

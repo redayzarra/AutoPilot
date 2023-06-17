@@ -4,7 +4,7 @@
     "droneIP": "192.168.10.1",
     "dronePort": 8889,
     "defaultDistance": 50,
-    "defaultSpeed": 100,
+    "defaultSpeed": 75,
     "defaultDegree": 45,
     "frameWidth": 960,
     "frameHeight": 720,
