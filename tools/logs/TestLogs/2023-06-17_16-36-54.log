@@ -1,0 +1,1386 @@
+2023-06-17 16:36:54,414 - INFO: Server started.
+2023-06-17 16:36:54,415 - INFO: Action: Sending command - Command: command
+2023-06-17 16:36:55,318 - ERROR: No response from drone for command: command
+2023-06-17 16:36:55,319 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-17 16:36:56,322 - INFO: Action: Sending command - Command: streamon
+2023-06-17 16:36:57,226 - ERROR: No response from drone for command: streamon
+2023-06-17 16:36:57,228 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-17 16:36:57,230 - INFO: Action: Receiving response - Response: b'\xcc\x18\x01\xb9\x88V\x00#\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00,\x00\x00\xd5\x0e\x00\x06\x00\x00\x00\x00\x00#>'
+2023-06-17 16:36:57,234 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:36:57,234 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:36:57,236 - INFO: Starting video streaming.
+2023-06-17 16:36:57,236 - INFO: Setting drone speed to 100 cm/s
+2023-06-17 16:36:57,237 - INFO: Action: Sending command - Command: speed 100
+2023-06-17 16:36:57,241 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,241 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,242 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,248 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:36:57,250 - INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.2:5000
+2023-06-17 16:36:57,251 - INFO: [33mPress CTRL+C to quit[0m
+2023-06-17 16:36:57,273 - INFO: Received video frame of size 775 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,273 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,273 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,274 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,276 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,277 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,277 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,277 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,278 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,278 - INFO: Received video frame of size 881 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,298 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,298 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,299 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,300 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,320 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,320 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,320 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,321 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,321 - INFO: Received video frame of size 784 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,321 - INFO: Received video frame of size 13 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,322 - INFO: Received video frame of size 8 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,322 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,322 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,323 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,323 - INFO: Received video frame of size 176 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,365 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,367 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,367 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,368 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,370 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,371 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,371 - INFO: Received video frame of size 656 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,398 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,399 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,399 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,399 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,402 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,403 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,403 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,404 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,425 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,426 - INFO: Received video frame of size 649 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,432 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,432 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,433 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,434 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,452 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,454 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,454 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,454 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,455 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,455 - INFO: Received video frame of size 583 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,467 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,468 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,468 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,469 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,471 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,471 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,471 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,472 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,472 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,472 - INFO: Received video frame of size 618 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,497 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,500 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,500 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,501 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,502 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,502 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,503 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,503 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,504 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,504 - INFO: Received video frame of size 716 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,533 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,533 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,533 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,534 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,536 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,536 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,543 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,545 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,545 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,545 - INFO: Received video frame of size 760 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,575 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,576 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,576 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,577 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,579 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,579 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,580 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,580 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,580 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,581 - INFO: Received video frame of size 574 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,599 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,601 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,601 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,602 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,602 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,604 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,604 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,605 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,605 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,605 - INFO: Received video frame of size 502 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,631 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,634 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,636 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,637 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,639 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,640 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,641 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,641 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,641 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,641 - INFO: Received video frame of size 644 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,665 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,665 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,666 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,666 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,667 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,667 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,668 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,668 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,669 - INFO: Received video frame of size 1119 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,697 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,706 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,708 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,729 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,730 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,731 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,732 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,732 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,733 - INFO: Received video frame of size 1054 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,733 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,734 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,734 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,735 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,735 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,735 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,736 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,737 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,737 - INFO: Received video frame of size 1156 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,765 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,769 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,770 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,772 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,774 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,774 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,776 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,776 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,776 - INFO: Received video frame of size 694 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,799 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,799 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,799 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,800 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,801 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,801 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,801 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,802 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,802 - INFO: Received video frame of size 887 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,831 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,832 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,832 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,833 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,836 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,837 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,838 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,839 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,839 - INFO: Received video frame of size 842 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,883 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,885 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,887 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,889 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,890 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,892 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,894 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,896 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,897 - INFO: Received video frame of size 797 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,899 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,901 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,902 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,903 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,904 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,905 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,905 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,905 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,906 - INFO: Received video frame of size 786 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,933 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,934 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,934 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,936 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,938 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,939 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,939 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,939 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,940 - INFO: Received video frame of size 855 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,964 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,985 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,987 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,989 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,990 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,992 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,993 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,994 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:57,995 - INFO: Received video frame of size 813 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,020 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,042 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,045 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,046 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,047 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,049 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,050 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,074 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,091 - INFO: Received video frame of size 863 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,093 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,094 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,095 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,096 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,096 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,096 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,097 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,097 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,098 - INFO: Received video frame of size 806 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,098 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,098 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,099 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,099 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,099 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,116 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,117 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,120 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,121 - INFO: Received video frame of size 786 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,121 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,146 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,146 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,147 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,147 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,148 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,148 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,149 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,149 - INFO: Received video frame of size 818 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,156 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,156 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,157 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,158 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,159 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,159 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,159 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,159 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,160 - INFO: Received video frame of size 840 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,163 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,165 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,166 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,166 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,167 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,167 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,167 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,170 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,170 - INFO: Received video frame of size 770 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,204 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,205 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,205 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,206 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,206 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,224 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,243 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,243 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,244 - INFO: Received video frame of size 849 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,244 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,245 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,246 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,246 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,246 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,247 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,248 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,248 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,248 - INFO: Received video frame of size 807 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,268 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,269 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,271 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,274 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,276 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,278 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,280 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,281 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,283 - INFO: Received video frame of size 848 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,298 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,301 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,304 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,306 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,322 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,323 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,324 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,325 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,327 - INFO: Received video frame of size 882 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,328 - INFO: Received video frame of size 13 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,329 - INFO: Received video frame of size 8 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,329 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,329 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,330 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,330 - INFO: Received video frame of size 77 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,363 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,363 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,363 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,364 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,364 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,365 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,365 - INFO: Received video frame of size 675 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,398 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,399 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,399 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,400 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,400 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,404 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,406 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,407 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,407 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,407 - INFO: Received video frame of size 754 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,431 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,433 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,434 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,434 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,435 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,436 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,436 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,438 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,439 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,439 - INFO: Received video frame of size 706 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,466 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,466 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,467 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,467 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,468 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,469 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,469 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,469 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,470 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,470 - INFO: Received video frame of size 616 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,500 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,501 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,501 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,501 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,503 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,503 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,503 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,504 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,505 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,505 - INFO: Received video frame of size 603 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,533 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,535 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,536 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,536 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,538 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,538 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,539 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,541 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,545 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,545 - INFO: Received video frame of size 623 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,565 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,566 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,566 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,569 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,569 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,569 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,569 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,570 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,570 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,571 - INFO: Received video frame of size 610 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,598 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,603 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,604 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,604 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,605 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,606 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,606 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,607 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,607 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,607 - INFO: Received video frame of size 722 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,631 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,632 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,632 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,641 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,642 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,642 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,642 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,643 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,644 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,647 - INFO: Received video frame of size 774 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,668 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,669 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,669 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,669 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,673 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,673 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,674 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,674 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,674 - INFO: Received video frame of size 1018 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,702 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,702 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,702 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,703 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,704 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,704 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,705 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,731 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,732 - INFO: Received video frame of size 1070 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,734 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,734 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,735 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,735 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,736 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,736 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,737 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,753 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,755 - INFO: Received video frame of size 945 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,772 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,774 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,775 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,775 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,775 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,782 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,782 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,782 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,783 - INFO: Received video frame of size 828 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,797 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,799 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,802 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,802 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,802 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,803 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,804 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,804 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,805 - INFO: Received video frame of size 752 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,831 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,832 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,832 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,834 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,834 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,835 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,835 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,835 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,836 - INFO: Received video frame of size 713 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,863 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,865 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,865 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,884 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,894 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,894 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,895 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,895 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,896 - INFO: Received video frame of size 859 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,902 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,902 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,902 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,903 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,904 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,904 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,906 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,906 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,906 - INFO: Received video frame of size 782 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,931 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,932 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,934 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,934 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,934 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,936 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,937 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,937 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,937 - INFO: Received video frame of size 852 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,963 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,964 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,966 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,967 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,967 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,968 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,968 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:58,991 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,003 - INFO: Received video frame of size 899 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,008 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,031 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,061 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,070 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,099 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,116 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,122 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,138 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,156 - INFO: Received video frame of size 932 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,159 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,160 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,163 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,163 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,163 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,164 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,164 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,165 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,167 - INFO: Received video frame of size 874 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,167 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,167 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,168 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,169 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,169 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,170 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,170 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,172 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,172 - INFO: Received video frame of size 887 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,172 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,173 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,174 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,188 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,188 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,189 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,189 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,190 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,193 - INFO: Received video frame of size 743 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,193 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,193 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,194 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,195 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,195 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,196 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,196 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,215 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,215 - INFO: Received video frame of size 673 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,218 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,218 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,219 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,221 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,222 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,222 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,224 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,225 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,225 - INFO: Received video frame of size 919 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,225 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,234 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,234 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,235 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,235 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,237 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,237 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,237 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,237 - INFO: Received video frame of size 737 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,238 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,239 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,239 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,239 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,240 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,243 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,243 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,244 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,244 - INFO: Received video frame of size 849 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,268 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,268 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,269 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,269 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,269 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,270 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,270 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,271 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,271 - INFO: Received video frame of size 883 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,298 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,299 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,299 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,300 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,300 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,300 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,304 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,316 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,316 - INFO: Received video frame of size 765 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,317 - INFO: Received video frame of size 13 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,317 - INFO: Received video frame of size 8 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,324 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,325 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,325 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,326 - INFO: Received video frame of size 40 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,360 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,362 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,362 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,365 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,367 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,368 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,368 - INFO: Received video frame of size 914 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,410 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,410 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,411 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,411 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,412 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,412 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,418 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,424 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,424 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,425 - INFO: Received video frame of size 658 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,456 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,473 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,475 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,478 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,480 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,480 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,481 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,502 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,531 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,543 - INFO: Received video frame of size 693 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,544 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,544 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,544 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,545 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,546 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,546 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,548 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,548 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,548 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,549 - INFO: Received video frame of size 554 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,550 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,550 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,551 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,551 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,553 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,553 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,553 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,554 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,554 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,554 - INFO: Received video frame of size 552 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,555 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,556 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,574 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,576 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,577 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,577 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,577 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,579 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,579 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,579 - INFO: Received video frame of size 535 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,580 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,583 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,583 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,602 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,603 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,603 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,603 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,604 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,604 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,605 - INFO: Received video frame of size 491 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,606 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,606 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,607 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,624 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,626 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,627 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,627 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,627 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,628 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,628 - INFO: Received video frame of size 741 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,635 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,635 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,635 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,643 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,648 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,648 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,648 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,650 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,650 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,650 - INFO: Received video frame of size 658 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,665 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,666 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,666 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,666 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,668 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,668 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,673 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,673 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,674 - INFO: Received video frame of size 1204 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,698 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,699 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,699 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,699 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,701 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,701 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,701 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,702 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,703 - INFO: Received video frame of size 847 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,732 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,732 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,732 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,733 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,733 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,733 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,735 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,736 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,736 - INFO: Received video frame of size 1397 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,765 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,765 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,766 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,766 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,767 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,768 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,768 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,769 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,770 - INFO: Received video frame of size 866 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,799 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,799 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,799 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,801 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,801 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,801 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,803 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,803 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,803 - INFO: Received video frame of size 894 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,832 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,832 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,833 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,833 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,835 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,835 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,835 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,835 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,836 - INFO: Received video frame of size 407 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,866 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,866 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,866 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,868 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,868 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,868 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,869 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,869 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,869 - INFO: Received video frame of size 1012 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,897 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,908 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,908 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,909 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,909 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,909 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,910 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,910 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,910 - INFO: Received video frame of size 833 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,933 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,935 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,935 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,936 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,936 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,937 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,937 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,938 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,939 - INFO: Received video frame of size 630 from ('192.168.10.1', 62512).
+2023-06-17 16:36:59,963 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,014 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,015 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,016 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,016 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,017 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,018 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,018 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,019 - INFO: Received video frame of size 963 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,019 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,019 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,020 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,020 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,020 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,021 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,021 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,021 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,022 - INFO: Received video frame of size 902 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,034 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,034 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,034 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,035 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,035 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,038 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,038 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,039 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,039 - INFO: Received video frame of size 802 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,066 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,066 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,067 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,067 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,068 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,068 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,085 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,086 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,086 - INFO: Received video frame of size 734 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,100 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,102 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,104 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,106 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,107 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,109 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,110 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,112 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,113 - INFO: Received video frame of size 769 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,132 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,133 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,133 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,134 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,135 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,135 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,135 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,136 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,136 - INFO: Received video frame of size 715 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,166 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,166 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,167 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,168 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,168 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,168 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,169 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,169 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,183 - INFO: Received video frame of size 1009 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,207 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,207 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,208 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,209 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,209 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,209 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,210 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,210 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,212 - INFO: Received video frame of size 827 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,232 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,234 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,236 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,238 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,240 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,241 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,242 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,242 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,243 - INFO: Received video frame of size 893 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,263 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,265 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,268 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,268 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,269 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,269 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,271 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,288 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,288 - INFO: Received video frame of size 864 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,298 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,298 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,299 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,323 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,342 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,342 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,342 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,343 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,346 - INFO: Received video frame of size 758 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,346 - INFO: Received video frame of size 13 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,347 - INFO: Received video frame of size 8 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,348 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,349 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,350 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,350 - INFO: Received video frame of size 119 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,363 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,363 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,363 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,364 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,365 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,366 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,366 - INFO: Received video frame of size 996 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,398 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,398 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,398 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,401 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,401 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,402 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,420 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,422 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,442 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,442 - INFO: Received video frame of size 685 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,443 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,446 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,446 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,447 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,448 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,449 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,449 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,449 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,453 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,453 - INFO: Received video frame of size 800 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,465 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,465 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,465 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,466 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,468 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,468 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,469 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,470 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,470 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,470 - INFO: Received video frame of size 584 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,497 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,500 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,501 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,504 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,504 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,504 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,524 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,524 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,525 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,525 - INFO: Received video frame of size 598 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,532 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,533 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,533 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,534 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,543 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,543 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,543 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,544 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,544 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,544 - INFO: Received video frame of size 492 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,563 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,566 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,567 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,567 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,568 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,572 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,573 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,573 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,574 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,574 - INFO: Received video frame of size 701 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,599 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,599 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,600 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,600 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,601 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,601 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,602 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,602 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,602 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,603 - INFO: Received video frame of size 712 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,635 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,635 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,636 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,640 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,642 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,643 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,643 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,643 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,645 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,645 - INFO: Received video frame of size 740 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,665 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,667 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,667 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,668 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,668 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,670 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,670 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,670 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,670 - INFO: Received video frame of size 1045 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,697 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,698 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,701 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,702 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,702 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,704 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,704 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,705 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,705 - INFO: Received video frame of size 724 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,731 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,732 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,732 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,733 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,733 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,743 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,743 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,744 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,744 - INFO: Received video frame of size 991 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,768 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,768 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,769 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,769 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,770 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,770 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,770 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,770 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,771 - INFO: Received video frame of size 876 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,800 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,800 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,800 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,802 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,802 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,803 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,803 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,803 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,803 - INFO: Received video frame of size 886 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,831 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,831 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,832 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,832 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,833 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,834 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,834 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,834 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,834 - INFO: Received video frame of size 522 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,863 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,895 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,916 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,928 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,930 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,931 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,933 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,935 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,936 - INFO: Received video frame of size 913 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,937 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,939 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,940 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,941 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,942 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,943 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,943 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,944 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,944 - INFO: Received video frame of size 821 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,944 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,944 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,945 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,945 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,945 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,946 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,946 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,949 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,949 - INFO: Received video frame of size 776 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,964 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,965 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:00,966 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,002 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,020 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,026 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,030 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,031 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,031 - INFO: Received video frame of size 949 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,031 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,032 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,033 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,033 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,033 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,035 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,035 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,035 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,035 - INFO: Received video frame of size 962 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,038 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,038 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,038 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,046 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,046 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,052 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,053 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,055 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,057 - INFO: Received video frame of size 606 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,063 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,064 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,065 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,068 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,068 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,068 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,069 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,095 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,108 - INFO: Received video frame of size 795 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,108 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,114 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,115 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,115 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,115 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,117 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,117 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,117 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,118 - INFO: Received video frame of size 824 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,131 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,132 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,132 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,133 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,133 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,134 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,137 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,137 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,137 - INFO: Received video frame of size 807 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,166 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,167 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,167 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,168 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,168 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,169 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,169 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,169 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,170 - INFO: Received video frame of size 968 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,199 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,199 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,200 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,200 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,201 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,201 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,201 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,203 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,208 - INFO: Received video frame of size 813 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,232 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,233 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,233 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,234 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,234 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,234 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,235 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,235 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,235 - INFO: Received video frame of size 818 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,263 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,266 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,266 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,267 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,269 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,270 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,270 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,270 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,271 - INFO: Received video frame of size 763 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,298 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,301 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,302 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,302 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,303 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,303 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,304 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,304 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,304 - INFO: Received video frame of size 880 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,306 - INFO: Received video frame of size 13 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,308 - INFO: Received video frame of size 8 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,320 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,321 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,321 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,321 - INFO: Received video frame of size 139 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,361 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,362 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,363 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,364 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,364 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,367 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,367 - INFO: Received video frame of size 1103 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,396 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,413 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,418 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,419 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,444 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,444 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,444 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,445 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,446 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,446 - INFO: Received video frame of size 710 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,446 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,448 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,448 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,449 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,449 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,450 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,463 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,464 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,464 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,464 - INFO: Received video frame of size 715 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,466 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,466 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,467 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,467 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,469 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,469 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,469 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,470 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,470 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,470 - INFO: Received video frame of size 589 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,525 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,526 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,526 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,529 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,541 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,546 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,547 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,547 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,549 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,549 - INFO: Received video frame of size 639 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,550 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,550 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,551 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,551 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,558 - INFO: Received video frame of size 1460 from ('192.168.10.1', 62512).
+2023-06-17 16:37:01,558 - ERROR: Error encountered while sending video frame: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 470, in receiveVideo
+    pipe_in.flush()
+OSError: [Errno 22] Invalid argument
+2023-06-17 16:37:12,073 - INFO: Action: Sending command - Command: battery?
+2023-06-17 16:37:12,074 - ERROR: Exception on /drone/camera [GET]
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reday\Documents\Drone-Project\backend\controllers\server.py", line 156, in camera
+    video_generator(myDrone), mimetype="multipart/x-mixed-replace; boundary=frame"
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: video_generator() takes 0 positional arguments but 1 was given
+2023-06-17 16:37:12,075 - INFO: Drone query 'battery?' response: ok
+2023-06-17 16:37:12,090 - INFO: 127.0.0.1 - - [17/Jun/2023 16:37:12] "[35m[1mGET /drone/camera HTTP/1.1[0m" 500 -
+2023-06-17 16:37:12,091 - INFO: 127.0.0.1 - - [17/Jun/2023 16:37:12] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-17 16:37:12,144 - INFO: Action: Receiving response - Response: b'43\r\n'
+2023-06-17 16:37:13,224 - INFO: Action: Sending command - Command: battery?
+2023-06-17 16:37:13,225 - INFO: Drone query 'battery?' response: 43
+
+2023-06-17 16:37:13,226 - INFO: 127.0.0.1 - - [17/Jun/2023 16:37:13] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-17 16:37:13,227 - ERROR: Exception on /drone/camera [GET]
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reday\Documents\Drone-Project\backend\controllers\server.py", line 156, in camera
+    video_generator(myDrone), mimetype="multipart/x-mixed-replace; boundary=frame"
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: video_generator() takes 0 positional arguments but 1 was given
+2023-06-17 16:37:13,228 - INFO: Action: Sending command - Command: battery?
+2023-06-17 16:37:13,234 - INFO: 127.0.0.1 - - [17/Jun/2023 16:37:13] "[35m[1mGET /drone/camera HTTP/1.1[0m" 500 -
+2023-06-17 16:37:13,234 - INFO: Drone query 'battery?' response: 43
+
+2023-06-17 16:37:13,235 - INFO: 127.0.0.1 - - [17/Jun/2023 16:37:13] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-17 16:37:13,250 - INFO: Action: Receiving response - Response: b'43\r\n'
+2023-06-17 16:37:13,250 - INFO: Action: Receiving response - Response: b'43\r\n'
+2023-06-17 16:37:16,688 - INFO: Action: Sending command - Command: battery?
+2023-06-17 16:37:16,689 - INFO: Drone query 'battery?' response: 43
+
+2023-06-17 16:37:16,690 - INFO: 127.0.0.1 - - [17/Jun/2023 16:37:16] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-17 16:37:16,692 - ERROR: Exception on /drone/camera [GET]
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reday\Documents\Drone-Project\backend\controllers\server.py", line 156, in camera
+    video_generator(myDrone), mimetype="multipart/x-mixed-replace; boundary=frame"
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: video_generator() takes 0 positional arguments but 1 was given
+2023-06-17 16:37:16,697 - INFO: 127.0.0.1 - - [17/Jun/2023 16:37:16] "[35m[1mGET /drone/camera HTTP/1.1[0m" 500 -
+2023-06-17 16:37:16,762 - INFO: Action: Receiving response - Response: b'43\r\n'
+2023-06-17 16:37:19,393 - INFO: Action: Sending command - Command: sn?
+2023-06-17 16:37:19,394 - INFO: Drone query 'sn?' response: 43
+
+2023-06-17 16:37:19,395 - INFO: 127.0.0.1 - - [17/Jun/2023 16:37:19] "GET /drone/query/sn HTTP/1.1" 200 -
+2023-06-17 16:37:19,442 - INFO: Action: Receiving response - Response: b'0TQZK5DED02L2S'
+2023-06-17 16:38:10,885 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:10] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-17 16:38:11,132 - INFO: Action: Sending command - Command: takeoff
+2023-06-17 16:38:11,133 - INFO: Drone takeoff: 0TQZK5DED02L2S
+2023-06-17 16:38:11,133 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:11] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-17 16:38:14,691 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:15,611 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:15] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-17 16:38:15,915 - INFO: Action: Sending command - Command: back 50
+2023-06-17 16:38:15,916 - INFO: Moving drone back by 50 cm
+2023-06-17 16:38:15,916 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:15] "POST /drone/move HTTP/1.1" 200 -
+2023-06-17 16:38:17,545 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:17,807 - INFO: Action: Sending command - Command: back 50
+2023-06-17 16:38:17,808 - INFO: Moving drone back by 50 cm
+2023-06-17 16:38:17,809 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:17] "POST /drone/move HTTP/1.1" 200 -
+2023-06-17 16:38:19,841 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:20,431 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:20] "OPTIONS /drone/rotate HTTP/1.1" 200 -
+2023-06-17 16:38:20,679 - INFO: Action: Sending command - Command: ccw 45.0
+2023-06-17 16:38:20,682 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:20] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-17 16:38:21,473 - INFO: Action: Sending command - Command: cw 45.0
+2023-06-17 16:38:21,474 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:21] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-17 16:38:21,992 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:23,442 - INFO: Action: Sending command - Command: cw 45.0
+2023-06-17 16:38:23,445 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:23] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-17 16:38:24,898 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:25,109 - INFO: Action: Sending command - Command: cw 45.0
+2023-06-17 16:38:25,111 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:25] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-17 16:38:26,391 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:26,770 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:26] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-17 16:38:27,033 - INFO: Action: Sending command - Command: forward 50
+2023-06-17 16:38:27,035 - INFO: Moving drone forward by 50 cm
+2023-06-17 16:38:27,037 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:27] "POST /drone/move HTTP/1.1" 200 -
+2023-06-17 16:38:28,743 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:28] "OPTIONS /drone/rotate HTTP/1.1" 200 -
+2023-06-17 16:38:29,054 - INFO: Action: Sending command - Command: cw 45.0
+2023-06-17 16:38:29,057 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:29] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-17 16:38:29,625 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:30,721 - INFO: Action: Sending command - Command: cw 45.0
+2023-06-17 16:38:30,722 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:30] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-17 16:38:31,931 - INFO: Action: Sending command - Command: forward 50
+2023-06-17 16:38:31,932 - INFO: Moving drone forward by 50 cm
+2023-06-17 16:38:31,933 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:31] "POST /drone/move HTTP/1.1" 200 -
+2023-06-17 16:38:32,158 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:32,779 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:32] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-17 16:38:33,096 - INFO: Action: Sending command - Command: forward 50
+2023-06-17 16:38:33,098 - INFO: Moving drone forward by 50 cm
+2023-06-17 16:38:33,100 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:33] "POST /drone/move HTTP/1.1" 200 -
+2023-06-17 16:38:34,490 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:34] "OPTIONS /drone/rotate HTTP/1.1" 200 -
+2023-06-17 16:38:34,800 - INFO: Action: Sending command - Command: ccw 45.0
+2023-06-17 16:38:34,803 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:34] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-17 16:38:35,608 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:36,776 - INFO: Action: Sending command - Command: ccw 45.0
+2023-06-17 16:38:36,777 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:36] "POST /drone/rotate HTTP/1.1" 200 -
+2023-06-17 16:38:38,001 - INFO: Action: Sending command - Command: forward 50
+2023-06-17 16:38:38,003 - INFO: Moving drone forward by 50 cm
+2023-06-17 16:38:38,006 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:38] "POST /drone/move HTTP/1.1" 200 -
+2023-06-17 16:38:38,109 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:38,540 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:38] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-17 16:38:38,853 - INFO: Action: Sending command - Command: forward 50
+2023-06-17 16:38:38,854 - INFO: Moving drone forward by 50 cm
+2023-06-17 16:38:38,857 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:38] "POST /drone/move HTTP/1.1" 200 -
+2023-06-17 16:38:40,666 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:42,468 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:42] "OPTIONS /drone/land HTTP/1.1" 200 -
+2023-06-17 16:38:42,775 - INFO: Action: Sending command - Command: land
+2023-06-17 16:38:42,777 - INFO: Drone land: ok
+2023-06-17 16:38:42,778 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:42] "POST /drone/land HTTP/1.1" 200 -
+2023-06-17 16:38:47,731 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 16:38:54,359 - INFO: Action: Sending command - Command: battery?
+2023-06-17 16:38:54,359 - INFO: Drone query 'battery?' response: ok
+2023-06-17 16:38:54,360 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:54] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-17 16:38:54,368 - INFO: Action: Receiving response - Response: b'42\r\n'
+2023-06-17 16:38:54,674 - INFO: Action: Sending command - Command: battery?
+2023-06-17 16:38:54,675 - ERROR: Exception on /drone/camera [GET]
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reday\Documents\Drone-Project\backend\controllers\server.py", line 156, in camera
+    video_generator(myDrone), mimetype="multipart/x-mixed-replace; boundary=frame"
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: video_generator() takes 0 positional arguments but 1 was given
+2023-06-17 16:38:54,675 - INFO: Drone query 'battery?' response: 42
+
+2023-06-17 16:38:54,680 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:54] "[35m[1mGET /drone/camera HTTP/1.1[0m" 500 -
+2023-06-17 16:38:54,680 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:54] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-17 16:38:54,736 - INFO: Action: Receiving response - Response: b'42\r\n'
+2023-06-17 16:38:57,375 - INFO: Action: Sending command - Command: sn?
+2023-06-17 16:38:57,376 - INFO: Drone query 'sn?' response: 42
+
+2023-06-17 16:38:57,377 - INFO: 127.0.0.1 - - [17/Jun/2023 16:38:57] "GET /drone/query/sn HTTP/1.1" 200 -
+2023-06-17 16:38:57,379 - INFO: Action: Receiving response - Response: b'0TQZK5DED02L2S'

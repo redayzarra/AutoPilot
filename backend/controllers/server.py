@@ -153,7 +153,7 @@ def camera():
         return jsonify({"error": "The drone failed to initialize."}), 500
 
     return Response(
-        video_generator(myDrone), mimetype="multipart/x-mixed-replace; boundary=frame"
+        video_generator(), mimetype="multipart/x-mixed-replace; boundary=frame"
     )
 
 

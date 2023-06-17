@@ -1,0 +1,7 @@
+2023-06-17 16:28:03,405 - INFO: Server started.
+2023-06-17 16:28:03,471 - ERROR: Failed to close the socket connection: 'Drone' object has no attribute 'stop_event'
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 182, in stop
+    self.stop_event.set()
+    ^^^^^^^^^^^^^^^
+AttributeError: 'Drone' object has no attribute 'stop_event'

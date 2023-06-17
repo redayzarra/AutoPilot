@@ -1,0 +1,7 @@
+2023-06-17 16:34:40,115 - INFO: Server started.
+2023-06-17 16:34:40,126 - ERROR: Failed to close the socket connection: 'NoneType' object has no attribute 'is_alive'
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 187, in stop
+    if not self.thread.is_alive():
+           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'is_alive'

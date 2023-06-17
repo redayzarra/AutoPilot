@@ -43,9 +43,6 @@ class Drone:
             logging.error(f"Config file {config_file} has invalid JSON.")
             raise
 
-        self.setup_video_parameters(config)
-        self.initialize_video_capture(config)
-
         # Define host and drone address details from the configuration
         self.hostIP = config["hostIP"]
         self.hostPort = config["hostPort"]
@@ -58,6 +55,10 @@ class Drone:
 
         # Initialize socket, response, and thread variables
         self.initialize_communication()
+
+        # Initialize video capture
+        self.setup_video_parameters(config)
+        self.initialize_video_capture(config)
 
         # Retrieve default distance, speed, and degree values from configuration
         self.defaultDistance = config["defaultDistance"]
@@ -157,7 +158,7 @@ class Drone:
     def initialize_video_capture(self, config):
         """Initialize video capture."""
         CMD_FFMPEG = (
-            f"ffmpeg -hwaccel auto -hwaccel_device opencl -i pipe:0"
+            f"ffmpeg -hwaccel auto -hwaccel_device opencl -i pipe:0 "
             f"-pix_fmt bgr24 -s {self.frameWidth}x{self.frameHeight} -f rawvideo pipe:1"
         )
 
@@ -455,7 +456,7 @@ class Drone:
             while not stop_event.is_set():
                 try:
                     size, address = sockVideo.recvfrom_into(data)
-                    logging.info(f"Received video frame of size {size} from {address}.")
+                    # logging.info(f"Received video frame of size {size} from {address}.")
                 except socket.timeout as e:
                     logging.warning(f"Socket timeout: {e}", exc_info=True)
                     time.sleep(0.5)
