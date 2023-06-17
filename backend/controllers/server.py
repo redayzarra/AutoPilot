@@ -1,9 +1,9 @@
 import os
 
-from flask import jsonify, request
+from flask import Response, jsonify, request
 from flask_cors import CORS
-from backend.models.Drone import Drone
 
+from backend.models.Drone import Drone
 from tools.config import create_app
 
 app = create_app()
@@ -80,6 +80,7 @@ def rotate():
 
     return jsonify({"response": response}), 200
 
+
 @app.route("/drone/flip", methods=["POST"])
 def flip():
     data = request.get_json()
@@ -135,9 +136,31 @@ def stop():
         return jsonify({"error": str(e)}), 500
 
 
+def video_generator():
+    """
+    A generator to continuously get video frames from the drone.
+    """
+    for jpeg in myDrone.jpeg_generator():
+        yield (b"--frame\r\n" b"Content-Type: image/jpeg\r\n\r\n" + jpeg + b"\r\n\r\n")
+
+
+@app.route("/drone/camera")
+def camera():
+    """
+    Route to serve the video feed from the drone's camera.
+    """
+    if myDrone is None:
+        return jsonify({"error": "The drone failed to initialize."}), 500
+
+    return Response(
+        video_generator(myDrone), mimetype="multipart/x-mixed-replace; boundary=frame"
+    )
+
+
 if __name__ == "__main__":
     try:
         app.run(host="0.0.0.0", port=5000)
     except Exception as e:
-        myDrone.stop()
-        app.logger.error(f"An error occurred: {e}")
+        if myDrone:
+            myDrone.stop()
+        app.logger.error(f"An error occurred: {str(e)}")
