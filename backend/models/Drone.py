@@ -9,7 +9,7 @@ import time
 from enum import Enum
 
 import cv2 as cv
-import numpy
+import numpy as np
 
 from tools.logger import initialize_logging
 
@@ -42,7 +42,7 @@ class Drone:
         except json.JSONDecodeError:
             logging.error(f"Config file {config_file} has invalid JSON.")
             raise
-        
+
         self.setup_video_parameters(config)
         self.initialize_video_capture(config)
 
@@ -164,6 +164,9 @@ class Drone:
         self.process = subprocess.Popen(
             CMD_FFMPEG.split(" "), stdin=subprocess.PIPE, stdout=subprocess.PIPE
         )
+
+        self.processStdin = self.process.stdin
+        self.processStdout = self.process.stdout
 
         self.videoPort = config["videoPort"]
 
@@ -470,3 +473,48 @@ class Drone:
                         exc_info=True,
                     )
                     break
+
+    def video_generator(self):
+        """
+        A generator function that continuously reads frames from the drone video stream and yields them for further processing.
+
+        Yields:
+            numpy.ndarray: A single frame of video as a multi-dimensional NumPy array.
+        """
+        while True:
+            try:
+                frame = self.processStdout.read(self.frameSize)
+                if not frame:
+                    logging.error("Empty frame received.")
+                    continue
+
+                frame = np.frombuffer(frame, dtype=np.uint8).reshape(
+                    self.frameHeight, self.frameWidth, 3
+                )
+                yield frame
+            except Exception as e:
+                logging.error(
+                    f"Error encountered while reading video frame: {e}", exc_info=True
+                )
+
+    def jpeg_generator(self):
+        """
+        A generator function that continuously reads frames from the video_generator method, encodes them as JPEG, and yields them.
+
+        Yields:
+            bytes: A single frame of video as a binary JPEG string.
+        """
+        for frame in self.video_generator():
+            try:
+                ret, jpeg = cv.imencode(".jpg", frame)
+                if not ret:
+                    logging.error("Failed to encode frame to jpeg.")
+                    continue
+
+                jpeg_binary = jpeg.tobytes()
+                yield jpeg_binary
+            except Exception as e:
+                logging.error(
+                    f"Error encountered while encoding frame to jpeg: {e}",
+                    exc_info=True,
+                )
