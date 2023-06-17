@@ -5,7 +5,8 @@ const Camera = () => {
 
   return (
     <Box
-      height="410px"
+      bg="black"
+      height="750px"
       display="flex"
       justifyContent="center"
       alignItems="center"
@@ -13,7 +14,7 @@ const Camera = () => {
       <img 
         src={videoSrc} 
         alt="Drone Camera Feed" 
-        style={{ width: "100%", height: "auto" }} 
+        style={{ height: "100%", width: "auto" }} 
       />
     </Box>
   );
