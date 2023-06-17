@@ -1,0 +1,3 @@
+2023-06-17 11:30:19,314 - INFO: Server started.
+2023-06-17 11:30:19,315 - ERROR: Socket error occurred: [WinError 10049] The requested address is not valid in its context
+2023-06-17 11:30:19,324 - ERROR: Failed to close the socket connection: 'NoneType' object has no attribute 'is_alive'

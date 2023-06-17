@@ -1,0 +1,71 @@
+2023-06-17 11:28:58,516 - INFO: Server started.
+2023-06-17 11:28:58,517 - INFO: Action: Sending command - Command: command
+2023-06-17 11:28:59,418 - ERROR: No response from drone for command: command
+2023-06-17 11:28:59,418 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-17 11:29:00,419 - INFO: Action: Sending command - Command: streamon
+2023-06-17 11:29:01,321 - ERROR: No response from drone for command: streamon
+2023-06-17 11:29:01,321 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-17 11:29:01,322 - INFO: Setting drone speed to 100 cm/s
+2023-06-17 11:29:01,322 - INFO: Action: Receiving response - Response: b'\xcc\x18\x01\xb9\x88V\x00\x81\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x00\x00\xb5\x10\x00\x06\x00\x00\x00\x00\x00\x8dn'
+2023-06-17 11:29:01,323 - INFO: Action: Sending command - Command: speed 100
+2023-06-17 11:29:01,324 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:29:01,328 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:29:01,340 - INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.2:5000
+2023-06-17 11:29:01,341 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:29:01,342 - INFO: [33mPress CTRL+C to quit[0m
+2023-06-17 11:29:12,023 - INFO: Action: Sending command - Command: battery?
+2023-06-17 11:29:12,024 - INFO: Drone query 'battery?' response: ok
+2023-06-17 11:29:12,025 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:12] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-17 11:29:12,067 - INFO: Action: Receiving response - Response: b'100\r\n'
+2023-06-17 11:29:12,287 - INFO: Action: Sending command - Command: battery?
+2023-06-17 11:29:12,288 - INFO: Drone query 'battery?' response: 100
+
+2023-06-17 11:29:12,289 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:12] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-17 11:29:12,315 - INFO: Action: Receiving response - Response: b'100\r\n'
+2023-06-17 11:29:14,718 - INFO: Action: Sending command - Command: sn?
+2023-06-17 11:29:14,718 - INFO: Drone query 'sn?' response: 100
+
+2023-06-17 11:29:14,719 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:14] "GET /drone/query/sn HTTP/1.1" 200 -
+2023-06-17 11:29:14,764 - INFO: Action: Receiving response - Response: b'0TQZK5DED02L2S'
+2023-06-17 11:29:24,209 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:24] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-17 11:29:24,469 - INFO: Action: Sending command - Command: takeoff
+2023-06-17 11:29:24,469 - INFO: Drone takeoff: 0TQZK5DED02L2S
+2023-06-17 11:29:24,470 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:24] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-17 11:29:33,212 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:29:35,147 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:35] "OPTIONS /drone/flip HTTP/1.1" 200 -
+2023-06-17 11:29:35,411 - INFO: Action: Sending command - Command: flip f
+2023-06-17 11:29:35,411 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:35] "POST /drone/flip HTTP/1.1" 200 -
+2023-06-17 11:29:38,983 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:29:39,010 - INFO: Action: Sending command - Command: flip b
+2023-06-17 11:29:39,011 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:39] "POST /drone/flip HTTP/1.1" 200 -
+2023-06-17 11:29:44,168 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:44] "OPTIONS /drone/flip HTTP/1.1" 200 -
+2023-06-17 11:29:49,651 - INFO: Action: Sending command - Command: flip b
+2023-06-17 11:29:49,651 - INFO: Action: Sending command - Command: flip r
+2023-06-17 11:29:49,652 - INFO: Action: Sending command - Command: flip b
+2023-06-17 11:29:49,653 - INFO: Action: Sending command - Command: flip r
+2023-06-17 11:29:49,654 - INFO: Action: Sending command - Command: flip r
+2023-06-17 11:29:49,655 - ERROR: Failed to send command: flip b - Error: [WinError 10049] The requested address is not valid in its context
+2023-06-17 11:29:49,655 - ERROR: Failed to send command: flip r - Error: [WinError 10049] The requested address is not valid in its context
+2023-06-17 11:29:49,655 - ERROR: Failed to send command: flip b - Error: [WinError 10049] The requested address is not valid in its context
+2023-06-17 11:29:49,655 - ERROR: Failed to send command: flip r - Error: [WinError 10049] The requested address is not valid in its context
+2023-06-17 11:29:49,656 - ERROR: Failed to send command: flip r - Error: [WinError 10049] The requested address is not valid in its context
+2023-06-17 11:29:49,656 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:49] "[35m[1mPOST /drone/flip HTTP/1.1[0m" 500 -
+2023-06-17 11:29:49,657 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:49] "[35m[1mPOST /drone/flip HTTP/1.1[0m" 500 -
+2023-06-17 11:29:49,658 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:49] "[35m[1mPOST /drone/flip HTTP/1.1[0m" 500 -
+2023-06-17 11:29:49,658 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:49] "[35m[1mPOST /drone/flip HTTP/1.1[0m" 500 -
+2023-06-17 11:29:49,659 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:49] "[35m[1mPOST /drone/flip HTTP/1.1[0m" 500 -
+2023-06-17 11:29:52,650 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:52] "OPTIONS /drone/move HTTP/1.1" 200 -
+2023-06-17 11:29:52,909 - INFO: Action: Sending command - Command: up 50
+2023-06-17 11:29:52,909 - ERROR: Failed to send command: up 50 - Error: [WinError 10049] The requested address is not valid in its context
+2023-06-17 11:29:52,910 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:52] "[35m[1mPOST /drone/move HTTP/1.1[0m" 500 -
+2023-06-17 11:29:55,389 - INFO: Action: Sending command - Command: up 50
+2023-06-17 11:29:55,390 - ERROR: Failed to send command: up 50 - Error: [WinError 10049] The requested address is not valid in its context
+2023-06-17 11:29:55,391 - INFO: 127.0.0.1 - - [17/Jun/2023 11:29:55] "[35m[1mPOST /drone/move HTTP/1.1[0m" 500 -
+2023-06-17 11:30:09,649 - INFO: 127.0.0.1 - - [17/Jun/2023 11:30:09] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-17 11:30:09,915 - INFO: Action: Sending command - Command: takeoff
+2023-06-17 11:30:09,916 - ERROR: Failed to send command: takeoff - Error: [WinError 10049] The requested address is not valid in its context
+2023-06-17 11:30:09,916 - ERROR: Error during drone takeoff: [WinError 10049] The requested address is not valid in its context
+2023-06-17 11:30:09,917 - INFO: 127.0.0.1 - - [17/Jun/2023 11:30:09] "[35m[1mPOST /drone/takeoff HTTP/1.1[0m" 500 -

@@ -2,13 +2,14 @@ import { Button, Icon } from "@chakra-ui/react";
 
 interface ArrowKeyProps {
   icon: any;
+  active: boolean;
   onClick: () => void;
 }
 
-const ArrowKey = ({ icon, onClick }: ArrowKeyProps) => {
+const ArrowKey = ({ icon, active, onClick }: ArrowKeyProps) => {
   return (
     <Button
-      colorScheme="gray"
+      colorScheme={active ? "blue" : "gray"}
       variant="outline"
       display="flex"
       alignItems="center"

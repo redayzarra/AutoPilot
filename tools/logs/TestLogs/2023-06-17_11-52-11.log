@@ -1,0 +1,78 @@
+2023-06-17 11:52:11,993 - INFO: Server started.
+2023-06-17 11:52:11,993 - INFO: Action: Sending command - Command: command
+2023-06-17 11:52:12,896 - ERROR: No response from drone for command: command
+2023-06-17 11:52:12,896 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-17 11:52:13,898 - INFO: Action: Sending command - Command: streamon
+2023-06-17 11:52:14,802 - ERROR: No response from drone for command: streamon
+2023-06-17 11:52:14,804 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-17 11:52:14,808 - INFO: Setting drone speed to 100 cm/s
+2023-06-17 11:52:14,809 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:52:14,810 - INFO: Action: Sending command - Command: speed 100
+2023-06-17 11:52:14,811 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:52:14,823 - INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.2:5000
+2023-06-17 11:52:14,824 - INFO: [33mPress CTRL+C to quit[0m
+2023-06-17 11:52:14,828 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:52:17,702 - INFO: Action: Sending command - Command: battery?
+2023-06-17 11:52:17,702 - INFO: Drone query 'battery?' response: ok
+2023-06-17 11:52:17,703 - INFO: 127.0.0.1 - - [17/Jun/2023 11:52:17] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-17 11:52:17,739 - INFO: Action: Receiving response - Response: b'79\r\n'
+2023-06-17 11:52:20,403 - INFO: Action: Sending command - Command: sn?
+2023-06-17 11:52:20,404 - INFO: Drone query 'sn?' response: 79
+
+2023-06-17 11:52:20,405 - INFO: 127.0.0.1 - - [17/Jun/2023 11:52:20] "GET /drone/query/sn HTTP/1.1" 200 -
+2023-06-17 11:52:20,462 - INFO: Action: Receiving response - Response: b'0TQZK5DED02L2S'
+2023-06-17 11:52:22,423 - INFO: Action: Sending command - Command: battery?
+2023-06-17 11:52:22,424 - INFO: Drone query 'battery?' response: 0TQZK5DED02L2S
+2023-06-17 11:52:22,425 - INFO: 127.0.0.1 - - [17/Jun/2023 11:52:22] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-17 11:52:22,437 - INFO: Action: Receiving response - Response: b'79\r\n'
+2023-06-17 11:52:22,733 - INFO: Action: Sending command - Command: battery?
+2023-06-17 11:52:22,734 - INFO: Drone query 'battery?' response: 79
+
+2023-06-17 11:52:22,735 - INFO: 127.0.0.1 - - [17/Jun/2023 11:52:22] "GET /drone/query/battery HTTP/1.1" 200 -
+2023-06-17 11:52:22,747 - INFO: Action: Receiving response - Response: b'79\r\n'
+2023-06-17 11:52:25,425 - INFO: Action: Sending command - Command: sn?
+2023-06-17 11:52:25,426 - INFO: Drone query 'sn?' response: 79
+
+2023-06-17 11:52:25,426 - INFO: 127.0.0.1 - - [17/Jun/2023 11:52:25] "GET /drone/query/sn HTTP/1.1" 200 -
+2023-06-17 11:52:25,446 - INFO: Action: Receiving response - Response: b'0TQZK5DED02L2S'
+2023-06-17 11:52:29,430 - INFO: 127.0.0.1 - - [17/Jun/2023 11:52:29] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-17 11:52:29,696 - INFO: Action: Sending command - Command: takeoff
+2023-06-17 11:52:29,696 - INFO: Drone takeoff: 0TQZK5DED02L2S
+2023-06-17 11:52:29,697 - INFO: 127.0.0.1 - - [17/Jun/2023 11:52:29] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-17 11:52:35,651 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:52:50,451 - INFO: 127.0.0.1 - - [17/Jun/2023 11:52:50] "OPTIONS /drone/land HTTP/1.1" 200 -
+2023-06-17 11:52:50,768 - INFO: Action: Sending command - Command: land
+2023-06-17 11:52:50,768 - INFO: Drone land: ok
+2023-06-17 11:52:50,769 - INFO: 127.0.0.1 - - [17/Jun/2023 11:52:50] "POST /drone/land HTTP/1.1" 200 -
+2023-06-17 11:52:50,799 - INFO: Action: Receiving response - Response: b'error'
+2023-06-17 11:52:51,359 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:52:52,329 - INFO: 127.0.0.1 - - [17/Jun/2023 11:52:52] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-17 11:52:52,643 - INFO: Action: Sending command - Command: takeoff
+2023-06-17 11:52:52,645 - INFO: Drone takeoff: ok
+2023-06-17 11:52:52,648 - INFO: 127.0.0.1 - - [17/Jun/2023 11:52:52] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-17 11:52:58,755 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:53:14,925 - INFO: 127.0.0.1 - - [17/Jun/2023 11:53:14] "OPTIONS /drone/takeoff HTTP/1.1" 200 -
+2023-06-17 11:53:15,239 - INFO: Action: Sending command - Command: takeoff
+2023-06-17 11:53:15,241 - INFO: Drone takeoff: ok
+2023-06-17 11:53:15,244 - INFO: 127.0.0.1 - - [17/Jun/2023 11:53:15] "POST /drone/takeoff HTTP/1.1" 200 -
+2023-06-17 11:53:19,244 - INFO: 127.0.0.1 - - [17/Jun/2023 11:53:19] "OPTIONS /drone/flip HTTP/1.1" 200 -
+2023-06-17 11:53:19,559 - INFO: Action: Sending command - Command: flip f
+2023-06-17 11:53:19,560 - INFO: 127.0.0.1 - - [17/Jun/2023 11:53:19] "POST /drone/flip HTTP/1.1" 200 -
+2023-06-17 11:53:21,730 - INFO: Action: Sending command - Command: flip b
+2023-06-17 11:53:21,731 - INFO: 127.0.0.1 - - [17/Jun/2023 11:53:21] "POST /drone/flip HTTP/1.1" 200 -
+2023-06-17 11:53:21,765 - INFO: Action: Receiving response - Response: b'error'
+2023-06-17 11:53:23,142 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:53:23,825 - INFO: Action: Sending command - Command: flip b
+2023-06-17 11:53:23,828 - INFO: 127.0.0.1 - - [17/Jun/2023 11:53:23] "POST /drone/flip HTTP/1.1" 200 -
+2023-06-17 11:53:27,161 - INFO: 127.0.0.1 - - [17/Jun/2023 11:53:27] "OPTIONS /drone/flip HTTP/1.1" 200 -
+2023-06-17 11:53:27,378 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-17 11:53:27,472 - INFO: Action: Sending command - Command: flip b
+2023-06-17 11:53:27,473 - INFO: 127.0.0.1 - - [17/Jun/2023 11:53:27] "POST /drone/flip HTTP/1.1" 200 -
+2023-06-17 11:53:30,103 - INFO: 127.0.0.1 - - [17/Jun/2023 11:53:30] "OPTIONS /drone/land HTTP/1.1" 200 -
+2023-06-17 11:53:30,419 - INFO: Action: Sending command - Command: land
+2023-06-17 11:53:30,422 - INFO: Drone land: ok
+2023-06-17 11:53:30,424 - INFO: 127.0.0.1 - - [17/Jun/2023 11:53:30] "POST /drone/land HTTP/1.1" 200 -
+2023-06-17 11:53:33,005 - INFO: Action: Receiving response - Response: b'ok'
