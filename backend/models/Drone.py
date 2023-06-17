@@ -1,9 +1,15 @@
 import json
 import logging
+import os
+import signal
 import socket
+import subprocess
 import threading
 import time
 from enum import Enum
+
+import cv2 as cv
+import numpy
 
 from tools.logger import initialize_logging
 
@@ -36,6 +42,9 @@ class Drone:
         except json.JSONDecodeError:
             logging.error(f"Config file {config_file} has invalid JSON.")
             raise
+        
+        self.setup_video_parameters(config)
+        self.initialize_video_capture(config)
 
         # Define host and drone address details from the configuration
         self.hostIP = config["hostIP"]
@@ -134,6 +143,36 @@ class Drone:
         """Cleanup method called when the instance is being deleted."""
         self.stop()
 
+    def setup_video_parameters(self, config):
+        """Set up video parameters from the configuration."""
+        self.frameWidth = int(config["frameWidth"] / 3)
+        self.frameHeight = int(config["frameHeight"] / 3)
+
+        self.frameArea = self.frameWidth * self.frameHeight
+        self.frameSize = self.frameArea * 3
+
+        self.frameCenterX = int(self.frameWidth / 2)
+        self.frameCenterY = int(self.frameHeight / 2)
+
+    def initialize_video_capture(self, config):
+        """Initialize video capture."""
+        CMD_FFMPEG = (
+            f"ffmpeg -hwaccel auto -hwaccel_device opencl -i pipe:0"
+            f"-pix_fmt bgr24 -s {self.frameWidth}x{self.frameHeight} -f rawvideo pipe:1"
+        )
+
+        self.process = subprocess.Popen(
+            CMD_FFMPEG.split(" "), stdin=subprocess.PIPE, stdout=subprocess.PIPE
+        )
+
+        self.videoPort = config["videoPort"]
+
+        self.receiveVideoThread = threading.Thread(
+            target=self.receiveVideo,
+            args=(self.stop_event, self.process.stdin, self.hostIP, self.videoPort),
+        )
+        self.receiveVideoThread.start()
+
     def stop(self):
         """Close the socket connection to the drone."""
         try:
@@ -148,9 +187,11 @@ class Drone:
                 logging.warning("Could not stop the thread within the allocated time.")
 
             self.socket.close()
+            os.kill(self.process.pid, signal.CTRL_C_EVENT)
+
             logging.info(f"Socket connection to drone at {self.droneAddress} closed.")
         except Exception as e:
-            logging.error(f"Failed to close the socket connection: {e}")
+            logging.error(f"Failed to close the socket connection: {e}", exc_info=True)
 
     def send_command(self, command):
         """Send a command to the drone."""
@@ -391,3 +432,41 @@ class Drone:
                 logging.info("Semaphore released after run_patrol action.")
         else:
             logging.warning("Failed to acquire semaphore for run_patrol action.")
+
+    def receiveVideo(self, stop_event, pipe_in, host_ip, video_port):
+        """
+        Function to receive the video stream from the drone and pipe it to the video player.
+
+        :param stop_event: threading.Event, stop event to stop the video streaming.
+        :param pipe_in: multiprocessing.Pipe, pipe to send the video frames to the video player.
+        :param host_ip: str, IP address of the host.
+        :param video_port: int, port number to receive the video stream.
+        """
+        logging.info("Starting video streaming.")
+
+        with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sockVideo:
+            sockVideo.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            sockVideo.settimeout(0.5)
+            sockVideo.bind((host_ip, video_port))
+            data = bytearray(2048)
+            while not stop_event.is_set():
+                try:
+                    size, address = sockVideo.recvfrom_into(data)
+                    logging.info(f"Received video frame of size {size} from {address}.")
+                except socket.timeout as e:
+                    logging.warning(f"Socket timeout: {e}", exc_info=True)
+                    time.sleep(0.5)
+                    continue
+                except socket.error as e:
+                    logging.error(f"Socket error: {e}", exc_info=True)
+                    break
+
+                try:
+                    pipe_in.write(data[:size])
+                    pipe_in.flush()
+                except Exception as e:
+                    logging.error(
+                        f"Error encountered while sending video frame: {e}",
+                        exc_info=True,
+                    )
+                    break
