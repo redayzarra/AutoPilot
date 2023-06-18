@@ -1,8 +1,8 @@
 import { Box, Divider, HStack, Image } from "@chakra-ui/react";
 import logo from "../assets/DroneText.png";
 import Battery from "./Battery";
+import FaceDetection from "./FaceDetection";
 import FlightTime from "./FlightTime";
-import SerialNumber from "./SerialNumber";
 
 const NavBar = () => {
   return (
@@ -10,7 +10,7 @@ const NavBar = () => {
       <Box position="relative" marginX={5} marginY={2} marginBottom={2}>
         <HStack justifyContent="space-between">
           <HStack marginRight={7}>
-            <SerialNumber />
+            <FaceDetection />
           </HStack>
           <Image
             src={logo}
