@@ -1,0 +1,28 @@
+2023-06-18 14:20:58,499 - INFO: Action: Sending command - Command: command
+2023-06-18 14:20:59,401 - ERROR: No response from drone for command: command
+2023-06-18 14:20:59,402 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-18 14:20:59,402 - INFO: Action: Sending command - Command: streamon
+2023-06-18 14:21:00,305 - ERROR: No response from drone for command: streamon
+2023-06-18 14:21:00,306 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-18 14:21:00,309 - INFO: Setting drone speed to 100 cm/s
+2023-06-18 14:21:00,309 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:21:00,310 - INFO: Action: Sending command - Command: speed 100
+2023-06-18 14:21:00,313 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:21:00,314 - INFO: Action: Sending command - Command: takeoff
+2023-06-18 14:21:00,336 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:21:05,315 - INFO: Action: Sending command - Command: flip f
+2023-06-18 14:21:05,343 - INFO: Action: Receiving response - Response: b'error'
+2023-06-18 14:21:08,964 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:21:10,318 - INFO: Action: Sending command - Command: cw 90.0
+2023-06-18 14:21:11,319 - INFO: Action: Sending command - Command: up 0
+2023-06-18 14:21:11,320 - INFO: Moving drone up by 0 cm
+2023-06-18 14:21:11,365 - INFO: Action: Receiving response - Response: b'out of range'
+2023-06-18 14:21:12,443 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:21:16,321 - INFO: Action: Sending command - Command: down 0
+2023-06-18 14:21:16,322 - INFO: Moving drone down by 0 cm
+2023-06-18 14:21:16,352 - INFO: Action: Receiving response - Response: b'out of range'
+2023-06-18 14:21:21,324 - INFO: Action: Sending command - Command: land
+2023-06-18 14:21:24,329 - WARNING: Could not stop the thread within the allocated time.
+2023-06-18 14:21:24,330 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.
+2023-06-18 14:21:24,331 - ERROR: Action: Receiving response - Error: [WinError 10038] An operation was attempted on something that is not a socket
+2023-06-18 14:21:24,337 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.

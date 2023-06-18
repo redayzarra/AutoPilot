@@ -391,29 +391,22 @@ if __name__ == "__main__":
     myDrone = Drone("config.json")
 
     try:
-        # myDrone.takeoff()
-        # time.sleep(5)
-
-        # myDrone.flip("f")
-        # time.sleep(5)
-
-        # myDrone.rotate("cw", 90)
-        # time.sleep(1)
-
-        # # DIRECTIONS = ("up", "down", "left", "right", "forward", "back")
-        # myDrone.move_in_direction("up", 0.5)
-        # time.sleep(5)
-        # myDrone.move_in_direction("down", 0.5)
-        # time.sleep(5)
-
-        # myDrone.land()
-
         myDrone.takeoff()
+        time.sleep(3)
+
+        myDrone.flip("f")
         time.sleep(5)
-        myDrone.move_in_direction("up", 1)
-        time.sleep(20)
+
+        myDrone.rotate("cw", 90)
+        time.sleep(1)
+
+        # DIRECTIONS = ("up", "down", "left", "right", "forward", "back")
+        myDrone.move_in_direction("up", 20)
+        time.sleep(2)
+        myDrone.move_in_direction("down", 20)
+        time.sleep(2)
+
         myDrone.land()
-        time.sleep()
 
     except Exception as e:
         logging.error(f"An error occurred: {e}")

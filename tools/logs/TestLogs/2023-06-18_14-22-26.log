@@ -1,0 +1,27 @@
+2023-06-18 14:22:26,408 - INFO: Action: Sending command - Command: command
+2023-06-18 14:22:27,310 - ERROR: No response from drone for command: command
+2023-06-18 14:22:27,311 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-18 14:22:27,312 - INFO: Action: Sending command - Command: streamon
+2023-06-18 14:22:28,214 - ERROR: No response from drone for command: streamon
+2023-06-18 14:22:28,215 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-18 14:22:28,217 - INFO: Setting drone speed to 100 cm/s
+2023-06-18 14:22:28,217 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:22:28,218 - INFO: Action: Sending command - Command: speed 100
+2023-06-18 14:22:28,220 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:22:28,220 - INFO: Action: Sending command - Command: takeoff
+2023-06-18 14:22:28,242 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:22:29,111 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:22:31,221 - INFO: Action: Sending command - Command: flip f
+2023-06-18 14:22:31,248 - INFO: Action: Receiving response - Response: b'error'
+2023-06-18 14:22:34,828 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:22:36,223 - INFO: Action: Sending command - Command: cw 90.0
+2023-06-18 14:22:37,226 - INFO: Action: Sending command - Command: up 20
+2023-06-18 14:22:37,227 - INFO: Moving drone up by 20 cm
+2023-06-18 14:22:38,308 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:22:39,229 - INFO: Action: Sending command - Command: down 20
+2023-06-18 14:22:39,230 - INFO: Moving drone down by 20 cm
+2023-06-18 14:22:41,059 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:22:41,231 - INFO: Action: Sending command - Command: land
+2023-06-18 14:22:43,313 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 14:22:43,335 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.
+2023-06-18 14:22:43,343 - INFO: Socket connection to drone at ('192.168.10.1', 8889) closed.
