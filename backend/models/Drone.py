@@ -65,6 +65,9 @@ class Drone:
         self.defaultSpeed = config["defaultSpeed"]
         self.defaultDegree = config["defaultDegree"]
 
+        # Retrieve face detection model path from configuration
+        self.faceDetectFile = "./drone-project/backend/models/FaceDetection.xml"
+
         # Apply default drone speed
         self.set_speed(self.defaultSpeed)
 
@@ -128,6 +131,9 @@ class Drone:
         try:
             self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             self.socket.bind(self.hostAddress)
+
+            self.faceCascade = cv.CascadeClassifier(self.faceDetectFile)
+            self.enableFaceDetection = False
 
             self.send_command("command")
             logging.info(f"Action: Initiating Drone at {self.droneIP}")
@@ -498,15 +504,30 @@ class Drone:
                     f"Error encountered while reading video frame: {e}", exc_info=True
                 )
 
+    def turnOnFace(self):
+        self.enableFaceDetection = True
+
+    def turnOffFace(self):
+        self.enableFaceDetection = False
+
     def jpeg_generator(self):
         """
-        A generator function that continuously reads frames from the video_generator method, encodes them as JPEG, and yields them.
+        A generator function that continuously reads frames from the video_generator method,
+        applies face detection if enabled, encodes frames as JPEG, and yields them.
 
         Yields:
             bytes: A single frame of video as a binary JPEG string.
         """
         for frame in self.video_generator():
             try:
+                # Apply face detection if enabled
+                if self.enableFaceDetection:
+                    gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+                    faces = self.faceCascade.detectMultiScale(gray, 1.3, 5)
+                    for x, y, w, h in faces:
+                        cv.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 3)
+
+                # Encode frame as JPEG
                 ret, jpeg = cv.imencode(".jpg", frame)
                 if not ret:
                     logging.error("Failed to encode frame to jpeg.")
@@ -514,6 +535,7 @@ class Drone:
 
                 jpeg_binary = jpeg.tobytes()
                 yield jpeg_binary
+
             except Exception as e:
                 logging.error(
                     f"Error encountered while encoding frame to jpeg: {e}",

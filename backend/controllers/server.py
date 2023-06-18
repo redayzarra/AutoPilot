@@ -157,6 +157,24 @@ def camera():
     )
 
 
+@app.route("/drone/face_detection/enable", methods=["POST"])
+def enable_face_detection():
+    try:
+        myDrone.turnOnFace(True)
+        return jsonify({"response": "Face detection enabled"}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/drone/face_detection/disable", methods=["POST"])
+def disable_face_detection():
+    try:
+        myDrone.turnOffFace(False)
+        return jsonify({"response": "Face detection disabled"}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 if __name__ == "__main__":
     try:
         app.run(host="0.0.0.0", port=5000)
