@@ -529,7 +529,7 @@ class Drone:
                     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
                     faces = self.faceCascade.detectMultiScale(gray, 1.3, 5)
                     for x, y, w, h in faces:
-                        cv.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 3)
+                        cv.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
 
                 # Encode frame as JPEG
                 ret, jpeg = cv.imencode(".jpg", frame)
