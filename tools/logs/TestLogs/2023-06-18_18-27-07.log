@@ -1,0 +1,19 @@
+2023-06-18 18:27:07,225 - INFO: Server started.
+2023-06-18 18:27:07,247 - INFO: Action: Sending command - Command: command
+2023-06-18 18:27:08,150 - ERROR: No response from drone for command: command
+2023-06-18 18:27:08,150 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-18 18:27:09,151 - INFO: Action: Sending command - Command: streamon
+2023-06-18 18:27:10,053 - ERROR: No response from drone for command: streamon
+2023-06-18 18:27:10,054 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-18 18:27:10,057 - INFO: Action: Receiving response - Response: b'\xcc\x18\x01\xb9\x88V\x00l\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00O\x00\x00\xe7\x0f\x00\x06\x00\x00\x00\x00\x00\x938'
+2023-06-18 18:27:10,062 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 18:27:10,063 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 18:27:10,065 - INFO: Starting video streaming.
+2023-06-18 18:27:10,066 - INFO: Setting drone speed to 100 cm/s
+2023-06-18 18:27:10,066 - INFO: Action: Sending command - Command: speed 100
+2023-06-18 18:27:10,079 - INFO: Action: Receiving response - Response: b'ok'
+2023-06-18 18:28:16,328 - ERROR: Error encountered while sending video frame: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 480, in receiveVideo
+    pipe_in.flush()
+OSError: [Errno 22] Invalid argument

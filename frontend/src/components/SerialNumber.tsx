@@ -11,7 +11,7 @@ const SerialNumber = () => {
     const delay = 3000; // delay in milliseconds
 
     const timeoutId = setTimeout(() => {
-      const { request, cancel } = DroneService.getSerialNumber();
+      const { request, cancel } = DroneService.getBattery();
       request
         .then((response) => {
           setSerialNumber(response.data.response);
@@ -40,7 +40,7 @@ const SerialNumber = () => {
           Drone # {"   "}
         </Text>
         <Text fontSize="lg" display="inline">
-          0TQZK5DED02L2S
+          Fetching...
         </Text>
       </Box>
     );
