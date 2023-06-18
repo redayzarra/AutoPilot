@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useState } from 'react';
 
 const FaceDetection = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(true);
 
   const toggleFaceDetection = () => {
     const route = isChecked ? "/drone/face_detection/disable" : "/drone/face_detection/enable";
@@ -22,7 +22,7 @@ const FaceDetection = () => {
       <Text fontSize="lg" fontWeight="bold" display="inline">
         Facial Recognition: {"   "}
       </Text>
-      <Checkbox colorScheme="gray" size='lg' isChecked={isChecked} onChange={toggleFaceDetection} marginTop={1}/>
+      <Checkbox colorScheme="gray" size='lg' isChecked={isChecked} onChange={toggleFaceDetection} marginTop={1} defaultChecked></Checkbox>
     </Box>
   );
 };

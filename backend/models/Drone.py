@@ -133,7 +133,7 @@ class Drone:
             self.socket.bind(self.hostAddress)
 
             self.faceCascade = cv.CascadeClassifier(self.faceDetectFile)
-            self.enableFaceDetection = False
+            self.enableFaceDetection = True
 
             self.send_command("command")
             logging.info(f"Action: Initiating Drone at {self.droneIP}")
