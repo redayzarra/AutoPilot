@@ -450,7 +450,7 @@ class Drone:
 
         with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sockVideo:
             sockVideo.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            sockVideo.settimeout(0.5)
+            sockVideo.settimeout(0.2)
             sockVideo.bind((host_ip, video_port))
             data = bytearray(2048)
             while not stop_event.is_set():

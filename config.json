@@ -5,7 +5,7 @@
     "dronePort": 8889,
     "defaultDistance": 50,
     "defaultSpeed": 75,
-    "defaultDegree": 45,
+    "defaultDegree": 30,
     "frameWidth": 960,
     "frameHeight": 720,
     "videoPort": 11111
