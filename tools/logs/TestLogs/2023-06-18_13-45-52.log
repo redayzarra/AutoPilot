@@ -1,0 +1,397 @@
+2023-06-18 13:45:52,572 - INFO: Server started.
+2023-06-18 13:45:52,595 - ERROR: Failed to send command: command - Error: 'Drone' object has no attribute '_send_command_helper'
+2023-06-18 13:45:52,595 - INFO: Action: Initiating Drone at 192.168.10.1
+2023-06-18 13:45:53,597 - ERROR: Failed to send command: streamon - Error: 'Drone' object has no attribute '_send_command_helper'
+2023-06-18 13:45:53,597 - INFO: Action: Turning Stream On at 192.168.10.1
+2023-06-18 13:45:53,604 - INFO: Starting video streaming.
+2023-06-18 13:45:53,604 - INFO: Setting drone speed to 100 cm/s
+2023-06-18 13:45:53,605 - ERROR: Failed to send command: speed 100 - Error: 'Drone' object has no attribute '_send_command_helper'
+2023-06-18 13:45:53,619 - INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.10.2:5000
+2023-06-18 13:45:53,620 - INFO: [33mPress CTRL+C to quit[0m
+2023-06-18 13:45:53,810 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:54,123 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:54,435 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:54,745 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:55,052 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:55,365 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:55,673 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:55,985 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:56,294 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:56,606 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:56,917 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:57,232 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:57,547 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:57,850 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:58,167 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:58,485 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:58,795 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:59,104 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:59,426 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:45:59,734 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:00,045 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:00,355 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:00,677 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:00,989 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:01,298 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:01,608 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:01,920 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:02,228 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:02,537 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:02,847 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:03,155 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:03,467 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:03,781 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:04,091 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:04,400 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:04,711 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:05,019 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:05,341 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:05,652 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:05,963 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:06,274 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:06,584 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:06,893 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:07,202 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:07,515 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:07,831 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:08,142 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:08,452 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:08,764 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:09,078 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:09,395 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:09,712 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:10,025 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:10,337 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:10,646 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:10,955 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:11,265 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:11,578 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:11,893 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:12,204 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:12,513 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:12,828 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:13,142 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+2023-06-18 13:46:13,452 - WARNING: Socket timeout: timed out
+Traceback (most recent call last):
+  File "C:\Users\reday\Documents\Drone-Project\backend\models\Drone.py", line 495, in receiveVideo
+    size, address = sockVideo.recvfrom_into(data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out

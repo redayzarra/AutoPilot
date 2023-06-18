@@ -1,3 +1,4 @@
+import contextlib
 import inspect
 import json
 import logging
@@ -139,6 +140,9 @@ class Drone:
             self.faceCascade = cv.CascadeClassifier(self.faceDetectFile)
             self.enableFaceDetection = True
 
+            self.commandSempahore = threading.Semaphore(1)
+            self.commandThread = None
+
             self.send_command("command")
             logging.info(f"Action: Initiating Drone at {self.droneIP}")
 
@@ -207,26 +211,42 @@ class Drone:
         except Exception as e:
             logging.error(f"Failed to close the socket connection: {e}", exc_info=True)
 
-    def send_command(self, command):
+    def send_command(self, command, blocking=True):
+        self.commandThread = threading.Thread(
+            target=self._send_command,
+            args=(
+                command,
+                blocking,
+            ),
+        )
+        self.commandThread.start()
+
+    def _send_command(self, command, blocking=True):
         """Send a command to the drone."""
-        logging.info(f"Action: Sending command - Command: {command}")
+        is_acquire = self.commandSempahore.acquire(blocking=blocking)
+        if is_acquire:
+            with contextlib.ExitStack() as stack:
+                stack.callback(self.commandSempahore.release)
 
-        try:
-            self.socket.sendto(command.encode("utf-8"), self.droneAddress)
-        except Exception as e:
-            logging.error(f"Failed to send command: {command} - Error: {e}")
-            raise
+                logging.info(f"Action: Sending command - Command: {command}")
+                try:
+                    self.socket.sendto(command.encode("utf-8"), self.droneAddress)
+                except Exception as e:
+                    logging.error(f"Failed to send command: {command} - Error: {e}")
+                    raise
 
-        retry = 0
-        while self.response is None and retry < 3:
-            time.sleep(0.3)
-            retry += 1
+                retry = 0
+                while self.response is None and retry < 3:
+                    time.sleep(0.3)
+                    retry += 1
 
-        if self.response is None:
-            logging.error(f"No response from drone for command: {command}")
-            return None
+                if self.response is None:
+                    logging.error(f"No response from drone for command: {command}")
+                    return None
 
-        return self.response.decode("utf-8")
+                return self.response.decode("utf-8")
+        else:
+            logging.error(f"Failed to acquire the semaphore for command: {command}")
 
     def takeoff(self):
         """Command the drone to take off."""
@@ -526,10 +546,7 @@ class Drone:
             try:
                 # Apply face detection if enabled
                 if self.enableFaceDetection:
-                    gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-                    faces = self.faceCascade.detectMultiScale(gray, 1.3, 5)
-                    for x, y, w, h in faces:
-                        cv.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+                    frame = self.apply_face_detection(frame)
 
                 # Encode frame as JPEG
                 ret, jpeg = cv.imencode(".jpg", frame)
@@ -545,3 +562,64 @@ class Drone:
                     f"Error encountered while encoding frame to jpeg: {e}",
                     exc_info=True,
                 )
+
+    def apply_face_detection(self, frame):
+        """
+        Applies face detection to the provided frame and initiates
+        drone movement based on the location of detected face.
+
+        Args:
+            frame: A single frame of video.
+
+        Returns:
+            frame: The same frame after applying face detection.
+        """
+        gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+        faces = self.faceCascade.detectMultiScale(gray, 1.3, 5)
+        for x, y, w, h in faces:
+            cv.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+
+            # self.faceCenterX = x + (w / 2)
+            # self.faceCenterY = y + (h / 2)
+
+            # diffX = self.frameCenterX - self.faceCenterX
+            # diffY = self.frameCenterY - self.faceCenterY
+
+            # self.faceArea = w * h
+            # self.facePortion = self.faceArea / self.frameArea
+
+            # droneX, droneY, droneZ = self.get_drone_movement(diffX, diffY)
+
+            # self.send_command(
+            #     f"go {droneX} {droneY} {droneZ} {self.defaultSpeed}", blocking=False
+            # )
+
+        return frame
+
+    def get_drone_movement(self, diffX, diffY):
+        """
+        Determines the drone's movement based on the differences in
+        the x and y coordinates of the frame center and face center.
+
+        Args:
+            diffX: The difference in the x coordinates.
+            diffY: The difference in the y coordinates.
+
+        Returns:
+            droneX, droneY, droneZ: The drone's movement in the x, y, and z directions.
+        """
+        droneX, droneY, droneZ = 0, 0, 0
+        if diffX < -30:
+            droneY = -30
+        if diffX > 30:
+            droneY = 30
+        if diffY < -15:
+            droneZ = -30
+        if diffY > 15:
+            droneZ = 30
+        if self.facePortion > 0.3:
+            droneX = -30
+        if self.facePortion < 0.2:
+            droneX = 30
+
+        return droneX, droneY, droneZ
