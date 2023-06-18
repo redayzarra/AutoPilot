@@ -1,3 +1,4 @@
+import inspect
 import json
 import logging
 import os
@@ -54,7 +55,10 @@ class Drone:
         self.droneAddress = (self.droneIP, self.dronePort)
 
         # Retrieve face detection model path from configuration
-        self.faceDetectFile = "./drone-project/backend/models/FaceDetection.xml"
+        current_dir = os.path.dirname(
+            os.path.abspath(inspect.getfile(inspect.currentframe()))
+        )
+        self.faceDetectFile = os.path.join(current_dir, "FaceDetection.xml")
 
         # Initialize socket, response, and thread variables
         self.initialize_communication()
