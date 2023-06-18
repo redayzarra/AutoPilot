@@ -1,4 +1,5 @@
 import os
+import time
 
 from flask import Response, jsonify, request
 from flask_cors import CORS
@@ -103,6 +104,7 @@ def drone_query(query):
     try:
         response = myDrone.query_drone(f"{query}?")
         app.logger.info(f"Drone query '{query}?' response: {response}")
+        time.sleep(2)
         return jsonify({"status": "success", "response": response}), 200
     except Exception as e:
         app.logger.error(f"Error during drone query: {e}")

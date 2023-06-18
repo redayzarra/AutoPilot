@@ -53,6 +53,9 @@ class Drone:
         self.hostAddress = (self.hostIP, self.hostPort)
         self.droneAddress = (self.droneIP, self.dronePort)
 
+        # Retrieve face detection model path from configuration
+        self.faceDetectFile = "./drone-project/backend/models/FaceDetection.xml"
+
         # Initialize socket, response, and thread variables
         self.initialize_communication()
 
@@ -64,9 +67,6 @@ class Drone:
         self.defaultDistance = config["defaultDistance"]
         self.defaultSpeed = config["defaultSpeed"]
         self.defaultDegree = config["defaultDegree"]
-
-        # Retrieve face detection model path from configuration
-        self.faceDetectFile = "./drone-project/backend/models/FaceDetection.xml"
 
         # Apply default drone speed
         self.set_speed(self.defaultSpeed)
