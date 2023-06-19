@@ -15,17 +15,25 @@ The project integrates a robust Flask backend server, which facilitates direct i
 
 Outside of web integration, I have extended the drone's capabilities to the realm of facial recognition. Leveraging OpenCV, the Tello EDU drone is now equipped with face tracking abilities. As you navigate the drone, you can observe the tracking in action on the live video stream, straight from the built-in camera to the React website. This feature opens up a world of possibilities for innovative drone applications – I plan to make a hand tracking Drone.
 
-## Prerequisites
-
-### Libraries
-
-Before you begin, ensure you have met the following requirements:
-- You have installed Python 3.6+
-- You have installed Flask 1.0+
-- You have installed Node.js and npm
-- You have installed the latest version of React
-
 #### ⚠️ **ATTENTION:** Do not bother using the Tello EDU app, even if you got the Tello EDU drone. Before you start using the drone, you need to authorize your drone. This can be done through the [Tello App](https://apps.apple.com/us/app/tello/id1330559633). 
+
+## Features
+
+**React Web Interface**: AutoPilot provides a locally hosted, user-friendly web interface. This lets you control your Tello EDU Drone directly from your browser, removing dependency on the Tello App for drone control.
+
+**Configurable Default Values**: Tailor drone behaviors and system parameters according to your needs and preferences. This is achievable via the config.json file.
+
+**Keyboard Inputs for Drone Control**: Control the drone using simple keyboard inputs on the website. Issue commands like taking off, landing, moving, rotating, and flipping.
+
+**Real-Time Video Stream**: View the drone's perspective in real-time through a live video stream directly displayed on the website.
+
+**Advanced Drone Maneuvers**: Command your drone to perform flips and adjust its altitude directly from the website.
+
+**Face Tracking**: Utilize OpenCV to equip your drone with face tracking abilities. Recognize and track faces in real-time, adding to the unique functionalities of your drone.
+
+**Flask Backend Server**: A robust Flask backend server interacts directly with the Tello EDU drone. This server can issue commands for takeoff, landing, moving, rotating, flipping, and even setting the drone to patrol.
+
+**Extensive API**: Interact programmatically with your drone through a comprehensive set of API endpoints. Issue commands and receive drone data at your convenience.
 
 ## Setup and Installation
 
@@ -54,19 +62,12 @@ cd frontend
 npm install
 ```
 
-## Mobile Drone Test
+## Drone Test
 
-1. Turn the drone on using the side button. Ensure that the drone is charged
-2. Turn Airplane mode on
-3. Connect to the Tello Drone Wi-Fi network. No password should be required
-4. Open the Tello App
-5. Fly your drone!
-
-## PC Drone Test
-
-1. Turn the drone on using the side button. Ensure that the drone is charged
+1. Turn the drone on using the side button. Ensure that the drone is charged and authorized (Tello App)
 2. Connect to the Tello Drone Wi-Fi network. No password should be required
 3. Navigate to the project directory and run:
+
 ```bash
 python test.py
 ```
@@ -79,18 +80,17 @@ python test.py
 * Moved down
 * Landed
 
-## Usage 
+## Running AutoPilot
 
-### Backend
+### 1. Start the backend server
 
-To run the backend server, navigate to the "Drone" directory or run:
+Navigate to the project directory and run:
 ```bash
-cd DroneControlSystem/Drone/controllers
-python server.py
+python -m backend.controllers.server
 ```
 The backend server is accessible at http://localhost:5000.
 
-### Frontend
+### 2. Run the website
 
 To run the frontend React application, navigate to the frontend directory or run:
 ```bash
@@ -98,6 +98,10 @@ cd frontend
 npm run dev
 ```
 The frontend application is accessible at [http://localhost:5173/](http://localhost:5173/).
+
+### 3. Reload the website
+
+You may need to reload the website for all the necessary components to work again. Reloading the website a couple of times ensures that everything is working properly.
 
 ## API
 
