@@ -7,7 +7,6 @@ import socket
 import subprocess
 import threading
 import time
-from enum import Enum
 
 import cv2 as cv
 import numpy as np

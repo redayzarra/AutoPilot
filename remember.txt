@@ -1,8 +1,0 @@
-# Turn the server on:
-
-python -m backend.controllers.server
-
-# Turn the website on:
-
-cd frontend
-npm run dev
