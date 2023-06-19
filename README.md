@@ -13,6 +13,15 @@ AutoPilot is made for controlling the Tello EDU Drone through a locally-hosted w
 
 </div>
 
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Setup and Installation](#setup-and-installation)
+4. [Drone Test](#drone-test)
+5. [Running AutoPilot](#running-autopilot)
+6. [API](#api)
+7. [Contributing](#contributing)
+8. [License](#license)
 
 ## Overview
 
