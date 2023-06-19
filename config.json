@@ -3,10 +3,11 @@
     "hostPort": 8889,
     "droneIP": "192.168.10.1",
     "dronePort": 8889,
-    "defaultDistance": 100,
-    "defaultSpeed": 100,
-    "defaultDegree": 30,
     "frameWidth": 960,
     "frameHeight": 720,
-    "videoPort": 11111
+    "videoPort": 11111,
+    
+    "defaultDistance": 100,
+    "defaultSpeed": 100,
+    "defaultDegree": 30
 }

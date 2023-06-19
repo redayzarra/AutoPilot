@@ -1,6 +1,6 @@
 <div align="center">
  
-  <img src="https://github.com/redayzarra/AutoPilot/assets/113388793/a22ba189-41be-4926-836a-466e47016bb7" alt="PocketTrader_GUI">
+  <img src="https://github.com/redayzarra/AutoPilot/assets/113388793/a22ba189-41be-4926-836a-466e47016bb7" alt="AutoPilot_Logo">
 
 </div>
 
@@ -9,7 +9,7 @@ AutoPilot is a solution for controlling the Tello EDU Drone through a locally-ho
 
 <div align="center">
 
-  <img src="https://github.com/redayzarra/AutoPilot/assets/113388793/ce24473c-fa23-4d6f-9a2a-bb6d584ee4e8" alt="PocketTrader_GUI">
+  <img src="https://github.com/redayzarra/AutoPilot/assets/113388793/ce24473c-fa23-4d6f-9a2a-bb6d584ee4e8" alt="AutoPilot_Website">
 
 </div>
 
