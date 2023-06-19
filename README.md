@@ -22,7 +22,7 @@ The project integrates a robust Flask backend server, which facilitates direct i
 
 Outside of web integration, I have extended the drone's capabilities to the realm of facial recognition. Leveraging OpenCV, the Tello EDU drone is now equipped with face tracking abilities. As you navigate the drone, you can observe the tracking in action on the live video stream, straight from the built-in camera to the React website. This feature opens up a world of possibilities for innovative drone applications – I plan to make a hand tracking Drone.
 
-#### ⚠️ **ATTENTION:** Do not bother using the Tello EDU app, even if you got the Tello EDU drone. Before you start using the drone, you need to authorize your drone. This can be done through the [Tello App](https://apps.apple.com/us/app/tello/id1330559633). 
+#### ⚠️Do not bother using the Tello EDU app, even if you got the Tello EDU drone. Before you start using the drone, you need to authorize your drone. This can be done through the [Tello App](https://apps.apple.com/us/app/tello/id1330559633). 
 
 ## Features
 
